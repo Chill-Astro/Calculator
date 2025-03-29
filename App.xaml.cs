@@ -1,4 +1,7 @@
-﻿using Calculator.Activation;
+﻿using System;
+using System.Threading.Tasks;
+
+using Calculator.Activation;
 using Calculator.Contracts.Services;
 using Calculator.Core.Contracts.Services;
 using Calculator.Core.Services;
@@ -6,14 +9,14 @@ using Calculator.Models;
 using Calculator.Services;
 using Calculator.ViewModels;
 using Calculator.Views;
+
+using LaunchActivatedEventArgs = Microsoft.UI.Xaml.LaunchActivatedEventArgs;
+
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media.Animation;
-using System;
-using System.Threading.Tasks;
-using LaunchActivatedEventArgs = Microsoft.UI.Xaml.LaunchActivatedEventArgs;
 
 namespace Calculator
 {
@@ -66,6 +69,10 @@ namespace Calculator
                 services.AddSingleton<IFileService, FileService>();
 
                 // Views and ViewModels
+                services.AddTransient<ApproxViewModel>();
+                services.AddTransient<ApproxPage>();
+                services.AddTransient<FactorialViewModel>();
+                services.AddTransient<FactorialPage>();
                 services.AddTransient<SettingsViewModel>();
                 services.AddTransient<SettingsPage>();
                 services.AddTransient<CIViewModel>();

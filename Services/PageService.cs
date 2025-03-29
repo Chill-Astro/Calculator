@@ -20,6 +20,8 @@ public class PageService : IPageService
         Configure<CIViewModel, CIPage>();
         Configure<SettingsViewModel, SettingsPage>();
         Configure<SplashViewModel, SplashPage>();
+        Configure<FactorialViewModel, FactorialPage>();
+        Configure<ApproxViewModel, ApproxPage>();
     }
 
     public Type GetPageType(string key)

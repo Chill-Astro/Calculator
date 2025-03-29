@@ -59,17 +59,27 @@
                 <NavigationViewItemHeader Content="Extras"/>
                 <NavigationViewItem x:Uid="Shell_HF" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.HFViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe903;"/>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe901;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_SI" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.SIViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe905;"/>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe902;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_CI" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.CIViewModel">
                     <NavigationViewItem.Icon>
-                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe901;"/>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe903;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Factorial" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.FactorialViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe904;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Approx" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.ApproxViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe905;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.MenuItems>
