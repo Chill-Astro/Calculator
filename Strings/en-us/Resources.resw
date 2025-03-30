@@ -177,4 +177,91 @@
   <data name="Shell_Approx.Content" xml:space="preserve">
     <value>Approximation</value>
   </data>
+  <data name="Shell_Area.Content" xml:space="preserve">
+    <value>Area Calculator</value>
+  </data>
+  <data name="Shell_ETArea.Content" xml:space="preserve">
+    <value>ETArea</value>
+  </data>
+  <data name="Shell_ITArea.Content" xml:space="preserve">
+    <value>ITArea</value>
+  </data>
+  <data name="Shell_SquareArea.Content" xml:space="preserve">
+    <value>SquareArea</value>
+  </data>
+  <data name="Shell_RectArea.Content" xml:space="preserve">
+    <value>RectArea</value>
+  </data>
+  <data name="Shell_RhombusArea.Content" xml:space="preserve">
+    <value>RhombusArea</value>
+  </data>
+  <data name="Shell_CircleArea.Content" xml:space="preserve">
+    <value>CircleArea</value>
+  </data>
+  <data name="Shell_SCircleArea.Content" xml:space="preserve">
+    <value>SCircleArea</value>
+  </data>
+  <data name="Shell_Volume.Content" xml:space="preserve">
+    <value>Volume Calculator</value>
+  </data>
+  <data name="Shell_SurfaceArea.Content" xml:space="preserve">
+    <value>Surface Area</value>
+  </data>
+  <data name="Shell_CubeVolume.Content" xml:space="preserve">
+    <value>CubeVolume</value>
+  </data>
+  <data name="Shell_CuboidVolume.Content" xml:space="preserve">
+    <value>CuboidVolume</value>
+  </data>
+  <data name="Shell_CylinderVolume.Content" xml:space="preserve">
+    <value>CylinderVolume</value>
+  </data>
+  <data name="Shell_ConeVolume.Content" xml:space="preserve">
+    <value>ConeVolume</value>
+  </data>
+  <data name="Shell_Sphere.Content" xml:space="preserve">
+    <value>Sphere</value>
+  </data>
+  <data name="Shell_CubeSA.Content" xml:space="preserve">
+    <value>CubeSA</value>
+  </data>
+  <data name="Shell_CuboidSA.Content" xml:space="preserve">
+    <value>CuboidSA</value>
+  </data>
+  <data name="Shell_CylinderSA.Content" xml:space="preserve">
+    <value>CylinderSA</value>
+  </data>
+  <data name="Shell_ConeSA.Content" xml:space="preserve">
+    <value>ConeSA</value>
+  </data>
+  <data name="Shell_SphereSA.Content" xml:space="preserve">
+    <value>SphereSA</value>
+  </data>
+  <data name="Shell_Diagonal.Content" xml:space="preserve">
+    <value>Diagonal Calculator</value>
+  </data>
+  <data name="Shell_Perimeter.Content" xml:space="preserve">
+    <value>Perimeter Calculator</value>
+  </data>
+  <data name="Shell_ETPerm.Content" xml:space="preserve">
+    <value>ETPerm</value>
+  </data>
+  <data name="Shell_ITPerm.Content" xml:space="preserve">
+    <value>ITPerm</value>
+  </data>
+  <data name="Shell_SquarePerm.Content" xml:space="preserve">
+    <value>SquarePerm</value>
+  </data>
+  <data name="Shell_RectPerm.Content" xml:space="preserve">
+    <value>RectPerm</value>
+  </data>
+  <data name="Shell_RhombusPerm.Content" xml:space="preserve">
+    <value>RhombusPerm</value>
+  </data>
+  <data name="Shell_CirclePerm.Content" xml:space="preserve">
+    <value>CirclePerm</value>
+  </data>
+  <data name="Shell_SCirclePerm.Content" xml:space="preserve">
+    <value>SCirclePerm</value>
+  </data>
 </root>

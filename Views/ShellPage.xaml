@@ -56,12 +56,38 @@
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe900;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItemHeader Content="Extras"/>
+                <NavigationViewItemHeader Content="Mensuration"/>
                 <NavigationViewItem x:Uid="Shell_HF" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.HFViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe901;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Perimeter" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.PerimeterViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe909;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Area" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.AreaViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe906;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Volume" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.VolumeViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe907;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_SurfaceArea" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.SurfaceAreaViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe908;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Diagonal" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.DiagonalViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe910;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemHeader Content="Finance"/>
                 <NavigationViewItem x:Uid="Shell_SI" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.SIViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe902;"/>
@@ -72,6 +98,7 @@
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe903;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItemHeader Content="Extras"/>
                 <NavigationViewItem x:Uid="Shell_Factorial" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.FactorialViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe904;"/>

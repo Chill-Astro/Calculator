@@ -22,6 +22,35 @@ public class PageService : IPageService
         Configure<SplashViewModel, SplashPage>();
         Configure<FactorialViewModel, FactorialPage>();
         Configure<ApproxViewModel, ApproxPage>();
+        Configure<AreaViewModel, AreaPage>();
+        Configure<ETAreaViewModel, ETAreaPage>();
+        Configure<ITAreaViewModel, ITAreaPage>();
+        Configure<SquareAreaViewModel, SquareAreaPage>();
+        Configure<RectAreaViewModel, RectAreaPage>();
+        Configure<RhombusAreaViewModel, RhombusAreaPage>();
+        Configure<CircleAreaViewModel, CircleAreaPage>();
+        Configure<SCircleAreaViewModel, SCircleAreaPage>();
+        Configure<VolumeViewModel, VolumePage>();
+        Configure<SurfaceAreaViewModel, SurfaceAreaPage>();
+        Configure<CubeVolumeViewModel, CubeVolumePage>();
+        Configure<CuboidVolumeViewModel, CuboidVolumePage>();
+        Configure<CylinderVolumeViewModel, CylinderVolumePage>();
+        Configure<ConeVolumeViewModel, ConeVolumePage>();
+        Configure<SphereViewModel, SpherePage>();
+        Configure<CubeSAViewModel, CubeSAPage>();
+        Configure<CuboidSAViewModel, CuboidSAPage>();
+        Configure<CylinderSAViewModel, CylinderSAPage>();
+        Configure<ConeSAViewModel, ConeSAPage>();
+        Configure<SphereSAViewModel, SphereSAPage>();
+        Configure<DiagonalViewModel, DiagonalPage>();
+        Configure<PerimeterViewModel, PerimeterPage>();
+        Configure<ETPermViewModel, ETPermPage>();
+        Configure<ITPermViewModel, ITPermPage>();
+        Configure<SquarePermViewModel, SquarePermPage>();
+        Configure<RectPermViewModel, RectPermPage>();
+        Configure<RhombusPermViewModel, RhombusPermPage>();
+        Configure<CirclePermViewModel, CirclePermPage>();
+        Configure<SCirclePermViewModel, SCirclePermPage>();
     }
 
     public Type GetPageType(string key)
