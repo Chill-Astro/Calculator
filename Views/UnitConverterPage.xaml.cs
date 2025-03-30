@@ -42,7 +42,7 @@ public sealed partial class UnitConverterPage : Page
                 ToUnitComboBox.SelectedIndex = 1; // Default to a different unit
             }
         }
-    }
+    }    
 
     private void ConvertButton_Click(object sender, RoutedEventArgs e)
     {
@@ -103,40 +103,106 @@ public sealed partial class UnitConverterPage : Page
         }
     }
 
-    // Conversion logic functions (to be implemented)
+    // Conversion logic functions
     private double ConvertLength(double value, string from, string to)
     {
-        // Implement length conversion logic
         if (from == to) return value;
-        // Example conversions (you need to add all)
-        if (from == "Meters" && to == "Feet") return value * 3.28084;
-        if (from == "Feet" && to == "Meters") return value / 3.28084;
-        if (from == "Meters" && to == "Kilometers") return value / 1000;
-        if (from == "Kilometers" && to == "Meters") return value * 1000;
-        // ... add many more length conversions
-        return 0; // Placeholder
+        double meters = 0;
+
+        // Convert to meters (base unit)
+        switch (from)
+        {
+            case "Meters": meters = value; break;
+            case "Feet": meters = value * 0.3048; break;
+            case "Inches": meters = value * 0.0254; break;
+            case "Kilometers": meters = value * 1000; break;
+            case "Miles": meters = value * 1609.34; break;
+            case "Centimeters": meters = value * 0.01; break;
+            case "Millimeters": meters = value * 0.001; break;
+            case "Yards": meters = value * 0.9144; break;
+            case "Nautical Miles": meters = value * 1852; break;
+        }
+
+        // Convert from meters to the target unit
+        switch (to)
+        {
+            case "Meters": return meters;
+            case "Feet": return meters / 0.3048;
+            case "Inches": return meters / 0.0254;
+            case "Kilometers": return meters / 1000;
+            case "Miles": return meters / 1609.34;
+            case "Centimeters": return meters / 0.01;
+            case "Millimeters": return meters / 0.001;
+            case "Yards": return meters / 0.9144;
+            case "Nautical Miles": return meters / 1852;
+            default: return 0;
+        }
     }
 
     private double ConvertWeight(double value, string from, string to)
     {
-        // Implement weight conversion logic
         if (from == to) return value;
-        // Example conversions
-        if (from == "Kilograms" && to == "Pounds") return value * 2.20462;
-        if (from == "Pounds" && to == "Kilograms") return value / 2.20462;
-        // ... add many more weight conversions
-        return 0; // Placeholder
+        double kilograms = 0;
+
+        switch (from)
+        {
+            case "Kilograms": kilograms = value; break;
+            case "Pounds": kilograms = value * 0.453592; break;
+            case "Grams": kilograms = value / 1000; break;
+            case "Ounces": kilograms = value * 0.0283495; break;
+            case "Milligrams": kilograms = value / 1000000; break;
+            case "Stones": kilograms = value * 6.35029; break;
+            case "Tons (metric)": kilograms = value * 1000; break;
+            case "Tons (US)": kilograms = value * 907.185; break;
+        }
+
+        switch (to)
+        {
+            case "Kilograms": return kilograms;
+            case "Pounds": return kilograms / 0.453592;
+            case "Grams": return kilograms * 1000;
+            case "Ounces": return kilograms / 0.0283495;
+            case "Milligrams": return kilograms * 1000000;
+            case "Stones": return kilograms / 6.35029;
+            case "Tons (metric)": return kilograms / 1000;
+            case "Tons (US)": return kilograms / 907.185;
+            default: return 0;
+        }
     }
 
     private double ConvertVolume(double value, string from, string to)
     {
-        // Implement volume conversion logic
         if (from == to) return value;
-        // Example conversions
-        if (from == "Liters" && to == "Gallons (US)") return value * 0.264172;
-        if (from == "Gallons (US)" && to == "Liters") return value / 0.264172;
-        // ... add many more volume conversions
-        return 0; // Placeholder
+        double liters = 0;
+
+        switch (from)
+        {
+            case "Liters": liters = value; break;
+            case "Gallons (US)": liters = value * 3.78541; break;
+            case "Gallons (UK)": liters = value * 4.54609; break;
+            case "Cubic Meters": liters = value * 1000; break;
+            case "Cubic Feet": liters = value * 28.3168; break;
+            case "Cubic Inches": liters = value * 0.0163871; break;
+            case "Milliliters": liters = value / 1000; break;
+            case "Cups (US)": liters = value * 0.240; break; // Approximation
+            case "Pints (US)": liters = value * 0.473176; break;
+            case "Quarts (US)": liters = value * 0.946353; break;
+        }
+
+        switch (to)
+        {
+            case "Liters": return liters;
+            case "Gallons (US)": return liters / 3.78541;
+            case "Gallons (UK)": return liters / 4.54609;
+            case "Cubic Meters": return liters / 1000;
+            case "Cubic Feet": return liters / 28.3168;
+            case "Cubic Inches": return liters / 0.0163871;
+            case "Milliliters": return liters * 1000;
+            case "Cups (US)": return liters / 0.240; // Approximation
+            case "Pints (US)": return liters / 0.473176;
+            case "Quarts (US)": return liters / 0.946353;
+            default: return 0;
+        }
     }
 
     private double ConvertTemperature(double value, string from, string to)
@@ -148,63 +214,184 @@ public sealed partial class UnitConverterPage : Page
         if (from == "Kelvin" && to == "Celsius") return value - 273.15;
         if (from == "Fahrenheit" && to == "Kelvin") return (value - 32) * 5 / 9 + 273.15;
         if (from == "Kelvin" && to == "Fahrenheit") return (value - 273.15) * 9 / 5 + 32;
-        return 0; // Placeholder
+        return 0;
     }
 
     private double ConvertArea(double value, string from, string to)
     {
-        // Implement area conversion logic
         if (from == to) return value;
-        // Add area conversions
-        return 0; // Placeholder
+        double squareMeters = 0;
+
+        switch (from)
+        {
+            case "Square Meters": squareMeters = value; break;
+            case "Square Feet": squareMeters = value * 0.092903; break;
+            case "Square Inches": squareMeters = value * 0.00064516; break;
+            case "Square Kilometers": squareMeters = value * 1000000; break;
+            case "Square Miles": squareMeters = value * 2589988.11; break;
+            case "Hectares": squareMeters = value * 10000; break;
+            case "Acres": squareMeters = value * 4046.86; break;
+        }
+
+        switch (to)
+        {
+            case "Square Meters": return squareMeters;
+            case "Square Feet": return squareMeters / 0.092903;
+            case "Square Inches": return squareMeters / 0.00064516;
+            case "Square Kilometers": return squareMeters / 1000000;
+            case "Square Miles": return squareMeters / 2589988.11;
+            case "Hectares": return squareMeters / 10000;
+            case "Acres": return squareMeters / 4046.86;
+            default: return 0;
+        }
     }
 
     private double ConvertTime(double value, string from, string to)
     {
-        // Implement time conversion logic
         if (from == to) return value;
-        // Add time conversions
-        return 0; // Placeholder
+        double seconds = 0;
+
+        switch (from)
+        {
+            case "Seconds": seconds = value; break;
+            case "Minutes": seconds = value * 60; break;
+            case "Hours": seconds = value * 3600; break;
+            case "Days": seconds = value * 86400; break;
+            case "Weeks": seconds = value * 604800; break;
+            case "Years": seconds = value * 31536000; break; // Assuming 365 days
+        }
+
+        switch (to)
+        {
+            case "Seconds": return seconds;
+            case "Minutes": return seconds / 60;
+            case "Hours": return seconds / 3600;
+            case "Days": return seconds / 86400;
+            case "Weeks": return seconds / 604800;
+            case "Years": return seconds / 31536000;
+            default: return 0;
+        }
     }
 
     private double ConvertSpeed(double value, string from, string to)
     {
-        // Implement speed conversion logic
         if (from == to) return value;
-        // Add speed conversions
-        return 0; // Placeholder
+        double metersPerSecond = 0;
+
+        switch (from)
+        {
+            case "Meters per second": metersPerSecond = value; break;
+            case "Kilometers per hour": metersPerSecond = value * 1000 / 3600; break;
+            case "Miles per hour": metersPerSecond = value * 1609.34 / 3600; break;
+            case "Knots": metersPerSecond = value * 1.852; break;
+        }
+
+        switch (to)
+        {
+            case "Meters per second": return metersPerSecond;
+            case "Kilometers per hour": return metersPerSecond * 3600 / 1000;
+            case "Miles per hour": return metersPerSecond * 3600 / 1609.34;
+            case "Knots": return metersPerSecond / 1.852;
+            default: return 0;
+        }
     }
 
     private double ConvertEnergy(double value, string from, string to)
     {
-        // Implement energy conversion logic
         if (from == to) return value;
-        // Add energy conversions
-        return 0; // Placeholder
+        double joules = 0;
+
+        switch (from)
+        {
+            case "Joules": joules = value; break;
+            case "Kilojoules": joules = value * 1000; break;
+            case "Calories": joules = value * 4.184; break;
+            case "Kilocalories": joules = value * 4184; break;
+            case "British Thermal Units": joules = value * 1055.06; break;
+        }
+
+        switch (to)
+        {
+            case "Joules": return joules;
+            case "Kilojoules": return joules / 1000;
+            case "Calories": return joules / 4.184;
+            case "Kilocalories": return joules / 4184;
+            case "British Thermal Units": return joules / 1055.06;
+            default: return 0;
+        }
     }
 
     private double ConvertPressure(double value, string from, string to)
     {
-        // Implement pressure conversion logic
         if (from == to) return value;
-        // Add pressure conversions
-        return 0; // Placeholder
+        double pascals = 0;
+
+        switch (from)
+        {
+            case "Pascals": pascals = value; break;
+            case "Kilopascals": pascals = value * 1000; break;
+            case "Bar": pascals = value * 100000; break;
+            case "Pounds per square inch": pascals = value * 6894.76; break;
+            case "Atmospheres": pascals = value * 101325; break;
+        }
+
+        switch (to)
+        {
+            case "Pascals": return pascals;
+            case "Kilopascals": return pascals / 1000;
+            case "Bar": return pascals / 100000;
+            case "Pounds per square inch": return pascals / 6894.76;
+            case "Atmospheres": return pascals / 101325;
+            default: return 0;
+        }
     }
 
     private double ConvertPower(double value, string from, string to)
     {
-        // Implement power conversion logic
         if (from == to) return value;
-        // Add power conversions
-        return 0; // Placeholder
+        double watts = 0;
+
+        switch (from)
+        {
+            case "Watts": watts = value; break;
+            case "Kilowatts": watts = value * 1000; break;
+            case "Horsepower": watts = value * 745.7; break;
+        }
+
+        switch (to)
+        {
+            case "Watts": return watts;
+            case "Kilowatts": return watts / 1000;
+            case "Horsepower": return watts / 745.7;
+            default: return 0;
+        }
     }
 
     private double ConvertData(double value, string from, string to)
     {
-        // Implement data conversion logic (consider powers of 1024)
         if (from == to) return value;
-        // Add data conversions
-        return 0; // Placeholder
+        double bytes = 0;
+
+        switch (from)
+        {
+            case "Bits": bytes = value / 8; break;
+            case "Bytes": bytes = value; break;
+            case "Kilobytes": bytes = value * 1024; break;
+            case "Megabytes": bytes = value * 1024 * 1024; break;
+            case "Gigabytes": bytes = value * 1024 * 1024 * 1024; break;
+            case "Terabytes": bytes = value * 1024 * 1024 * 1024 * 1024; break;
+        }
+
+        switch (to)
+        {
+            case "Bits": return bytes * 8;
+            case "Bytes": return bytes;
+            case "Kilobytes": return bytes / 1024;
+            case "Megabytes": return bytes / (1024 * 1024);
+            case "Gigabytes": return bytes / (1024 * 1024 * 1024);
+            case "Terabytes": return bytes / (1024 * 1024 * 1024 * 1024L);
+            default: return 0;
+        }
     }
 
     private double ConvertAngle(double value, string from, string to)
@@ -212,6 +399,6 @@ public sealed partial class UnitConverterPage : Page
         if (from == to) return value;
         if (from == "Degrees" && to == "Radians") return value * Math.PI / 180;
         if (from == "Radians" && to == "Degrees") return value * 180 / Math.PI;
-        return 0; // Placeholder
+        return 0;
     }
 }

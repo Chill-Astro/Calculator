@@ -11,7 +11,7 @@
 				<TextBlock Text="Select Category :" Style="{StaticResource BaseTextBlockStyle}"/>
 				<ComboBox x:Name="CategoryComboBox" Width="250" HorizontalAlignment="Stretch" SelectionChanged="CategoryComboBox_SelectionChanged">
 					<ComboBoxItem Content="Length"/>
-					<ComboBoxItem Content="Weight [Mass]"/>
+					<ComboBoxItem Content="Weight (Mass)"/>
 					<ComboBoxItem Content="Volume"/>
 					<ComboBoxItem Content="Temperature"/>
 					<ComboBoxItem Content="Area"/>
@@ -20,7 +20,7 @@
 					<ComboBoxItem Content="Energy"/>
 					<ComboBoxItem Content="Pressure"/>
 					<ComboBoxItem Content="Power"/>
-					<ComboBoxItem Content="Data [Digital Storage]"/>
+					<ComboBoxItem Content="Data (Digital Storage)"/>
 					<ComboBoxItem Content="Angle"/>
 				</ComboBox>
 
