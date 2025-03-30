@@ -264,4 +264,16 @@
   <data name="Shell_SCirclePerm.Content" xml:space="preserve">
     <value>SCirclePerm</value>
   </data>
+  <data name="Shell_SquareDiag.Content" xml:space="preserve">
+    <value>SquareDiag</value>
+  </data>
+  <data name="Shell_RectDiag.Content" xml:space="preserve">
+    <value>RectDiag</value>
+  </data>
+  <data name="Shell_CubeDiag.Content" xml:space="preserve">
+    <value>CubeDiag</value>
+  </data>
+  <data name="Shell_CuboidDiag.Content" xml:space="preserve">
+    <value>CuboidDiag</value>
+  </data>
 </root>

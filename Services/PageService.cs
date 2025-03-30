@@ -51,6 +51,10 @@ public class PageService : IPageService
         Configure<RhombusPermViewModel, RhombusPermPage>();
         Configure<CirclePermViewModel, CirclePermPage>();
         Configure<SCirclePermViewModel, SCirclePermPage>();
+        Configure<SquareDiagViewModel, SquareDiagPage>();
+        Configure<RectDiagViewModel, RectDiagPage>();
+        Configure<CubeDiagViewModel, CubeDiagPage>();
+        Configure<CuboidDiagViewModel, CuboidDiagPage>();
     }
 
     public Type GetPageType(string key)

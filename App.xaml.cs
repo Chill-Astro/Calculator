@@ -69,6 +69,14 @@ namespace Calculator
                 services.AddSingleton<IFileService, FileService>();
 
                 // Views and ViewModels
+                services.AddTransient<CuboidDiagViewModel>();
+                services.AddTransient<CuboidDiagPage>();
+                services.AddTransient<CubeDiagViewModel>();
+                services.AddTransient<CubeDiagPage>();
+                services.AddTransient<RectDiagViewModel>();
+                services.AddTransient<RectDiagPage>();
+                services.AddTransient<SquareDiagViewModel>();
+                services.AddTransient<SquareDiagPage>();
                 services.AddTransient<SCirclePermViewModel>();
                 services.AddTransient<SCirclePermPage>();
                 services.AddTransient<CirclePermViewModel>();
