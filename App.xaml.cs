@@ -69,6 +69,8 @@ namespace Calculator
                 services.AddSingleton<IFileService, FileService>();
 
                 // Views and ViewModels
+                services.AddTransient<BaseConverterViewModel>();
+                services.AddTransient<BaseConverterPage>();
                 services.AddTransient<UnitConverterViewModel>();
                 services.AddTransient<UnitConverterPage>();
                 services.AddTransient<DateDifferenceViewModel>();

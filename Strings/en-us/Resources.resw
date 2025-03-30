@@ -312,4 +312,7 @@
   <data name="Shell_UnitConverter.Content" xml:space="preserve">
     <value>Unit Converter</value>
   </data>
+  <data name="Shell_BaseConverter.Content" xml:space="preserve">
+    <value>Base Converter</value>
+  </data>
 </root>

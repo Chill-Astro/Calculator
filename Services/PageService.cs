@@ -67,6 +67,7 @@ public class PageService : IPageService
         Configure<DicountViewModel, DiscountPage>();
         Configure<DateDifferenceViewModel, DateDifferencePage>();
         Configure<UnitConverterViewModel, UnitConverterPage>();
+        Configure<BaseConverterViewModel, BaseConverterPage>();
     }
 
     public Type GetPageType(string key)
