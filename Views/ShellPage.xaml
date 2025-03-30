@@ -56,6 +56,12 @@
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe900;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItemHeader Content="Converters"/>
+                <NavigationViewItem x:Uid="Shell_UnitConverter" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.UnitConverterViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe917;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItemHeader Content="Mensuration"/>
                 <NavigationViewItem x:Uid="Shell_HF" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.HFViewModel">
                     <NavigationViewItem.Icon>
@@ -82,6 +88,11 @@
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe908;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_CSurfaceArea" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.CSurfaceAreaViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe913;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_Diagonal" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.DiagonalViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe910;"/>
@@ -98,7 +109,22 @@
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe903;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_Dicount" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.DicountViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe915;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItemHeader Content="Extras"/>
+                <NavigationViewItem x:Uid="Shell_AgeCalc" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.AgeCalcViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe912;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_DateDifference" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.DateDifferenceViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe916;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItem x:Uid="Shell_Factorial" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.FactorialViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe904;"/>
@@ -107,6 +133,16 @@
                 <NavigationViewItem x:Uid="Shell_Approx" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.ApproxViewModel">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe905;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_PrimeCheck" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.PrimeCheckViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe911;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItem x:Uid="Shell_RTCheck" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.RTCheckViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe914;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
             </NavigationView.MenuItems>

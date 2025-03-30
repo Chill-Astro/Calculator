@@ -205,7 +205,7 @@
     <value>Volume Calculator</value>
   </data>
   <data name="Shell_SurfaceArea.Content" xml:space="preserve">
-    <value>Surface Area</value>
+    <value>Total Surface Area</value>
   </data>
   <data name="Shell_CubeVolume.Content" xml:space="preserve">
     <value>CubeVolume</value>
@@ -275,5 +275,41 @@
   </data>
   <data name="Shell_CuboidDiag.Content" xml:space="preserve">
     <value>CuboidDiag</value>
+  </data>
+  <data name="Shell_PrimeCheck.Content" xml:space="preserve">
+    <value>Prime no. Checker</value>
+  </data>
+  <data name="Shell_AgeCalc.Content" xml:space="preserve">
+    <value>Age Calculator</value>
+  </data>
+  <data name="Shell_TriArea.Content" xml:space="preserve">
+    <value>TriArea</value>
+  </data>
+  <data name="Shell_RTCheck.Content" xml:space="preserve">
+    <value>Right Triangle Checker</value>
+  </data>
+  <data name="Shell_RoomArea.Content" xml:space="preserve">
+    <value>RoomArea</value>
+  </data>
+  <data name="Shell_CSurfaceArea.Content" xml:space="preserve">
+    <value>Curved Surface Area</value>
+  </data>
+  <data name="Shell_CylinderCSA.Content" xml:space="preserve">
+    <value>CylinderCSA</value>
+  </data>
+  <data name="Shell_ConeCSA.Content" xml:space="preserve">
+    <value>ConeCSA</value>
+  </data>
+  <data name="Shell_SphereCSA.Content" xml:space="preserve">
+    <value>SphereCSA</value>
+  </data>
+  <data name="Shell_Dicount.Content" xml:space="preserve">
+    <value>Dicounted Price Calculator</value>
+  </data>
+  <data name="Shell_DateDifference.Content" xml:space="preserve">
+    <value>Date Difference Calculator</value>
+  </data>
+  <data name="Shell_UnitConverter.Content" xml:space="preserve">
+    <value>Unit Converter</value>
   </data>
 </root>

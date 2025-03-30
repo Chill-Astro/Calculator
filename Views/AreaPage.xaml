@@ -10,11 +10,13 @@
             <ComboBox x:Name="ShapeComboBox" Width="230" HorizontalAlignment="Stretch" SelectedIndex="0" Background="Transparent" BorderThickness ="0" SelectionChanged="ShapeComboBox_SelectionChanged">
                 <ComboBoxItem Content="Equilateral Triangle"/>
                 <ComboBoxItem Content="Isosceles Triangle"/>
+                <ComboBoxItem Content="Standard Triangle"/>
                 <ComboBoxItem Content="Square"/>
                 <ComboBoxItem Content="Rectangle / Parallelogram"/>
                 <ComboBoxItem Content="Rhombus"/>
                 <ComboBoxItem Content="Circle"/>
                 <ComboBoxItem Content="Semi-circle"/>
+                <ComboBoxItem Content="Room"/>
             </ComboBox>
         </StackPanel>
         <Frame x:Name="ContentFrame" Margin="10,50,10,10"/>

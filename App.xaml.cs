@@ -69,6 +69,30 @@ namespace Calculator
                 services.AddSingleton<IFileService, FileService>();
 
                 // Views and ViewModels
+                services.AddTransient<UnitConverterViewModel>();
+                services.AddTransient<UnitConverterPage>();
+                services.AddTransient<DateDifferenceViewModel>();
+                services.AddTransient<DateDifferencePage>();
+                services.AddTransient<DicountViewModel>();
+                services.AddTransient<DiscountPage>();
+                services.AddTransient<SphereCSAViewModel>();
+                services.AddTransient<SphereCSAPage>();
+                services.AddTransient<ConeCSAViewModel>();
+                services.AddTransient<ConeCSAPage>();
+                services.AddTransient<CylinderCSAViewModel>();
+                services.AddTransient<CylinderCSAPage>();
+                services.AddTransient<CSurfaceAreaViewModel>();
+                services.AddTransient<CSurfaceAreaPage>();
+                services.AddTransient<RoomAreaViewModel>();
+                services.AddTransient<RoomAreaPage>();
+                services.AddTransient<RTCheckViewModel>();
+                services.AddTransient<RTCheckPage>();
+                services.AddTransient<TriAreaViewModel>();
+                services.AddTransient<TriAreaPage>();
+                services.AddTransient<AgeCalcViewModel>();
+                services.AddTransient<AgeCalcPage>();
+                services.AddTransient<PrimeCheckViewModel>();
+                services.AddTransient<PrimeCheckPage>();
                 services.AddTransient<CuboidDiagViewModel>();
                 services.AddTransient<CuboidDiagPage>();
                 services.AddTransient<CubeDiagViewModel>();

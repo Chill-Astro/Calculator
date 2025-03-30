@@ -38,14 +38,11 @@ public sealed partial class PerimeterPage : Page
                 case "Isosceles Triangle":
                     ContentFrame.Navigate(typeof(ITPermPage));
                     break;
-                case "Square":
+                case "Square / Rhombus":
                     ContentFrame.Navigate(typeof(SquarePermPage));
                     break;
                 case "Rectangle / Parallelogram":
                     ContentFrame.Navigate(typeof(RectPermPage));
-                    break;
-                case "Rhombus":
-                    ContentFrame.Navigate(typeof(RhombusPermPage));
                     break;
                 case "Circle":
                     ContentFrame.Navigate(typeof(CirclePermPage));

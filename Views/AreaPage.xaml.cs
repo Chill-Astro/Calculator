@@ -38,6 +38,9 @@ public sealed partial class AreaPage : Page
                 case "Isosceles Triangle":
                     ContentFrame.Navigate(typeof(ITAreaPage));
                     break;
+                case "Standard Triangle":
+                    ContentFrame.Navigate(typeof(TriAreaPage));
+                    break;
                 case "Square":
                     ContentFrame.Navigate(typeof(SquareAreaPage));
                     break;
@@ -52,6 +55,9 @@ public sealed partial class AreaPage : Page
                     break;
                 case "Semi-circle":
                     ContentFrame.Navigate(typeof(SCircleAreaPage));
+                    break;
+                case "Room":
+                    ContentFrame.Navigate(typeof(RoomAreaPage));
                     break;
             }
         }

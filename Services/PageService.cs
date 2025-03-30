@@ -55,6 +55,18 @@ public class PageService : IPageService
         Configure<RectDiagViewModel, RectDiagPage>();
         Configure<CubeDiagViewModel, CubeDiagPage>();
         Configure<CuboidDiagViewModel, CuboidDiagPage>();
+        Configure<PrimeCheckViewModel, PrimeCheckPage>();
+        Configure<AgeCalcViewModel, AgeCalcPage>();
+        Configure<TriAreaViewModel, TriAreaPage>();
+        Configure<RTCheckViewModel, RTCheckPage>();
+        Configure<RoomAreaViewModel, RoomAreaPage>();
+        Configure<CSurfaceAreaViewModel, CSurfaceAreaPage>();
+        Configure<CylinderCSAViewModel, CylinderCSAPage>();
+        Configure<ConeCSAViewModel, ConeCSAPage>();
+        Configure<SphereCSAViewModel, SphereCSAPage>();
+        Configure<DicountViewModel, DiscountPage>();
+        Configure<DateDifferenceViewModel, DateDifferencePage>();
+        Configure<UnitConverterViewModel, UnitConverterPage>();
     }
 
     public Type GetPageType(string key)
