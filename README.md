@@ -14,22 +14,13 @@ Features Include :
 - More Powerful and Feature Rich than PyCalc-GUI and PyCalc and it's deravatives ✅
 - More User-Friendly ✅
 
-Here's the Preview of my Calculator : 
+Here's the latest preview as of v11.26100.4.0 :
 
-![Screen Recording 2025-03-26 011135(2)](https://github.com/user-attachments/assets/58ebbb9d-a37b-497f-b16e-3dde582d8f07)
-
-New Splash Screen Added in v11.26100.2.0 : 
-
-https://github.com/user-attachments/assets/af319786-19bf-48e2-a533-996c89cf170d
-
-Added App Execution Aliases as : wincalc.exe | cac.exe | calc+.exe  in v11.26100.3.0 :
-
-https://github.com/user-attachments/assets/a4a89a93-f358-4a26-ad5a-9a504bd0851e
+https://github.com/user-attachments/assets/e1367c7f-4bb9-45c1-bd54-8cc649261934
 
 What's Left [ That I coudn't implement ] :
 
 - Keymaps for All Operators and %. 
-- Certain UI Stuff.
 - History [ You CAN Implement my prototype HistoryPage.xaml! ]
 
 Requirements :
