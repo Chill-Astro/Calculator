@@ -10,6 +10,11 @@
     Loaded="CalculatorPage_Loaded">
     <Page.Resources>
         <Style TargetType="Button" x:Key="CalculatorButtonStyle">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <AcrylicBrush Opacity="1.0" TintColor="{ThemeResource SystemChromeLowColor}" FallbackColor="{ThemeResource SystemChromeLowColor}"/>
+                </Setter.Value>
+            </Setter>
             <Setter Property="Background" Value="{ThemeResource ButtonBackground}"/>
             <Setter Property="Foreground" Value="{ThemeResource ButtonForeground}"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -77,6 +82,11 @@
         </Style>
 
         <Style TargetType="Button" x:Key="NumberButtonStyle" BasedOn="{StaticResource CalculatorButtonStyle}">
+            <Setter Property="Background">
+                <Setter.Value>
+                    <AcrylicBrush Opacity="1.0" TintColor="{ThemeResource SystemChromeLowColor}" FallbackColor="{ThemeResource SystemChromeLowColor}"/>
+                </Setter.Value>
+            </Setter>
             <Setter Property="Background" Value="{ThemeResource ButtonBackground}"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontWeight" Value="Normal"/>
