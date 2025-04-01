@@ -68,7 +68,7 @@ public sealed partial class CalculatorPage : Page
             if (double.TryParse(DisplayTextBlock.Text, out double currentNumber))
             {
                 _currentNumber = currentNumber;
-                DisplayTextBlock.Text = currentNumber.ToString("N0");
+                DisplayTextBlock.Text = currentNumber.ToString("");
             }
         }
     }
