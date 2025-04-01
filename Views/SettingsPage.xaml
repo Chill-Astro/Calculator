@@ -6,7 +6,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:helpers="using:Calculator.Helpers"
     xmlns:xaml="using:Microsoft.UI.Xaml"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Padding="0">
     <Page.Resources>
         <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
     </Page.Resources>
@@ -48,6 +49,14 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                 </StackPanel>
+                <StackPanel Margin="0,10,0,0">
+                    <TextBlock Text="Mica Style" Style="{StaticResource BodyTextBlockStyle}" />
+                    <ToggleSwitch
+                       OnContent="Mica Alt"
+                       OffContent="Mica"
+                       IsOn="{x:Bind ViewModel.IsMicaAltEnabled, Mode=TwoWay}"
+                       Margin="0,5,0,0" />
+                </StackPanel>
             </StackPanel>
             <TextBlock Text="About" Style="{ThemeResource SubtitleTextBlockStyle}" />
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
@@ -81,6 +90,7 @@
                              VerticalAlignment="Center"/>
                     </StackPanel>
                 </HyperlinkButton>
+                <TextBlock x:Uid="Settings_BackgroundEffect" Style="{ThemeResource SubtitleTextBlockStyle}" />
             </StackPanel>
         </StackPanel>
     </Grid>

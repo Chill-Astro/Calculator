@@ -42,6 +42,7 @@ namespace Calculator
         {
             get; set;
         }
+        // File: App.xaml.cs
         public App()
         {
             InitializeComponent();
@@ -60,11 +61,10 @@ namespace Calculator
                 services.AddSingleton<ILocalSettingsService, LocalSettingsService>();
                 services.AddSingleton<IThemeSelectorService, ThemeSelectorService>();
                 services.AddTransient<INavigationViewService, NavigationViewService>();
-
+                services.AddSingleton<IMicaService, MicaService>();
                 services.AddSingleton<IActivationService, ActivationService>();
                 services.AddSingleton<IPageService, PageService>();
                 services.AddSingleton<INavigationService, NavigationService>();
-
                 // Core Services
                 services.AddSingleton<IFileService, FileService>();
 
@@ -187,12 +187,14 @@ namespace Calculator
 
             UnhandledException += App_UnhandledException;
         }
-        private void App_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
-        {       
-        }
+
         protected async override void OnLaunched(LaunchActivatedEventArgs args)
         {
             base.OnLaunched(args);
+
+            // Load Mica setting
+            var micaService = App.GetService<IMicaService>();
+            await micaService.LoadMicaSettingAsync();
 
             // Display the splash screen Page
             var splashScreen = new SplashPage(); // Instantiate your SplashPage
@@ -214,5 +216,9 @@ namespace Calculator
             MainWindow.Content = new ShellPage(shellViewModel);
             await App.GetService<IActivationService>().ActivateAsync(args);
         }
+
+        private void App_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
+        {       
+        }        
     }
 }
