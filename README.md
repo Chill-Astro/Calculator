@@ -14,9 +14,9 @@ Features Include :
 - More Powerful and Feature Rich than PyCalc-GUI and PyCalc and it's deravatives ✅
 - More User-Friendly ✅
 
-Here's the latest preview as of v11.26100.4.0 :
+Here's the latest preview as of v11.26100.5.0 :
 
-https://github.com/user-attachments/assets/e1367c7f-4bb9-45c1-bd54-8cc649261934
+https://github.com/user-attachments/assets/a2bc2dca-39fa-4169-83d1-457b58ae921f
 
 What's Left [ That I coudn't implement ] :
 
