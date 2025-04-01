@@ -15,11 +15,10 @@
             x:Name="ContentArea">
             <TextBlock x:Uid="Settings_Personalization" Style="{ThemeResource SubtitleTextBlockStyle}" />
             <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
-                <TextBlock x:Uid="Settings_Theme" />
-
+                <TextBlock Text="Theme" />
                 <StackPanel Margin="{StaticResource XSmallTopMargin}">
                     <RadioButton
-                        x:Uid="Settings_Theme_Light"
+                        Content="Light"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Light, Mode=OneWay}"
                         FontSize="15"
@@ -29,7 +28,7 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                     <RadioButton
-                        x:Uid="Settings_Theme_Dark"
+                        Content="Dark"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Dark, Mode=OneWay}"
                         FontSize="15"
@@ -39,7 +38,7 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                     <RadioButton
-                        x:Uid="Settings_Theme_Default"
+                        Content="Default"
                         Command="{x:Bind ViewModel.SwitchThemeCommand}"
                         IsChecked="{x:Bind ViewModel.ElementTheme, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter=Default, Mode=OneWay}"
                         FontSize="15"
@@ -50,24 +49,38 @@
                     </RadioButton>
                 </StackPanel>
             </StackPanel>
-
-            <TextBlock x:Uid="Settings_About" Style="{ThemeResource SubtitleTextBlockStyle}" />
-            <TextBlock
-                x:Uid="Settings_AboutDescription"
-                Margin="{StaticResource XSmallTopMargin}"
-                Style="{ThemeResource BodyTextBlockStyle}" 
-                FontSize="1"/>
-
+            <TextBlock Text="About" Style="{ThemeResource SubtitleTextBlockStyle}" />
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                <TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}" Style="{ThemeResource BodyTextBlockStyle}" />
-
-                <TextBlock
-                    x:Uid="Settings_AboutDescription"
-                    Margin="{StaticResource XSmallTopMargin}"
-                    Style="{ThemeResource BodyTextBlockStyle}" 
-                    FontSize="1"/>
-                <HyperlinkButton x:Uid="SettingsPage_PrivacyTermsLink" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" />
-                <HyperlinkButton x:Uid="SettingsPage_Yt" Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" />
+                <HyperlinkButton Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" NavigateUri="https://github.com/Chill-Astro/Calculator/releases/tag/Latest">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontFamily="ms-appx:///Assets/Fonts/icomoon.ttf#icomoon"
+                            Text="&#xe900;"
+                            FontSize="18" VerticalAlignment="Center" />
+                        <TextBlock Text="{x:Bind ViewModel.VersionDescription, Mode=OneWay}"
+                            Margin="5,0,0,0"
+                            VerticalAlignment="Center"/>
+                    </StackPanel>
+                </HyperlinkButton>
+                <HyperlinkButton Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" NavigateUri="https://github.com/Chill-Astro">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontFamily="ms-appx:///Assets/Fonts/icomoon.ttf#icomoon"
+                   Text="&#xe90a;"
+                   FontSize="18" VerticalAlignment="Center" />
+                        <TextBlock Text=" Chill-Astro"
+                   Margin="5,0,0,0"
+                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                </HyperlinkButton>
+                <HyperlinkButton Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" NavigateUri="https://youtube.com/@artistic_astronaut">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock FontFamily="ms-appx:///Assets/Fonts/icomoon.ttf#icomoon"
+                            Text="&#xe90b;"
+                            FontSize="18" VerticalAlignment="Center" />
+                        <TextBlock Text=" @artistic_astronaut"
+                             Margin="5,0,0,0"
+                             VerticalAlignment="Center"/>
+                    </StackPanel>
+                </HyperlinkButton>
             </StackPanel>
         </StackPanel>
     </Grid>

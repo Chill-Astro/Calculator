@@ -150,27 +150,6 @@
   <data name="Settings_Theme_Default.Content" xml:space="preserve">
     <value>Default</value>
   </data>
-  <data name="Settings_About.Text" xml:space="preserve">
-    <value>About</value>
-  </data>
-  <data name="Settings_AboutDescription.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="SettingsPage_PrivacyTermsLink.Content" xml:space="preserve">
-    <value>Github [Chill-Astro]</value>
-  </data>
-  <data name="SettingsPage_PrivacyTermsLink.NavigateUri" xml:space="preserve">
-    <value>https://github.com/Chill-Astro</value>
-  </data>
-  <data name="SettingsPage_YT.Content" xml:space="preserve">
-    <value>Youtube [Artisitc Astroanut]</value>
-  </data>
-  <data name="SettingsPage_YT.NavigateUri" xml:space="preserve">
-    <value>https://youtube.com/@artistic_astronaut</value>
-  </data>
-  <data name="Shell_Splash.Content" xml:space="preserve">
-    <value />
-  </data>
   <data name="Shell_Factorial.Content" xml:space="preserve">
     <value>Factorial Calculator</value>
   </data>
@@ -180,62 +159,11 @@
   <data name="Shell_Area.Content" xml:space="preserve">
     <value>Area Calculator</value>
   </data>
-  <data name="Shell_ETArea.Content" xml:space="preserve">
-    <value>ETArea</value>
-  </data>
-  <data name="Shell_ITArea.Content" xml:space="preserve">
-    <value>ITArea</value>
-  </data>
-  <data name="Shell_SquareArea.Content" xml:space="preserve">
-    <value>SquareArea</value>
-  </data>
-  <data name="Shell_RectArea.Content" xml:space="preserve">
-    <value>RectArea</value>
-  </data>
-  <data name="Shell_RhombusArea.Content" xml:space="preserve">
-    <value>RhombusArea</value>
-  </data>
-  <data name="Shell_CircleArea.Content" xml:space="preserve">
-    <value>CircleArea</value>
-  </data>
-  <data name="Shell_SCircleArea.Content" xml:space="preserve">
-    <value>SCircleArea</value>
-  </data>
   <data name="Shell_Volume.Content" xml:space="preserve">
     <value>Volume Calculator</value>
   </data>
   <data name="Shell_SurfaceArea.Content" xml:space="preserve">
     <value>Total Surface Area</value>
-  </data>
-  <data name="Shell_CubeVolume.Content" xml:space="preserve">
-    <value>CubeVolume</value>
-  </data>
-  <data name="Shell_CuboidVolume.Content" xml:space="preserve">
-    <value>CuboidVolume</value>
-  </data>
-  <data name="Shell_CylinderVolume.Content" xml:space="preserve">
-    <value>CylinderVolume</value>
-  </data>
-  <data name="Shell_ConeVolume.Content" xml:space="preserve">
-    <value>ConeVolume</value>
-  </data>
-  <data name="Shell_Sphere.Content" xml:space="preserve">
-    <value>Sphere</value>
-  </data>
-  <data name="Shell_CubeSA.Content" xml:space="preserve">
-    <value>CubeSA</value>
-  </data>
-  <data name="Shell_CuboidSA.Content" xml:space="preserve">
-    <value>CuboidSA</value>
-  </data>
-  <data name="Shell_CylinderSA.Content" xml:space="preserve">
-    <value>CylinderSA</value>
-  </data>
-  <data name="Shell_ConeSA.Content" xml:space="preserve">
-    <value>ConeSA</value>
-  </data>
-  <data name="Shell_SphereSA.Content" xml:space="preserve">
-    <value>SphereSA</value>
   </data>
   <data name="Shell_Diagonal.Content" xml:space="preserve">
     <value>Diagonal Calculator</value>
@@ -243,65 +171,17 @@
   <data name="Shell_Perimeter.Content" xml:space="preserve">
     <value>Perimeter Calculator</value>
   </data>
-  <data name="Shell_ETPerm.Content" xml:space="preserve">
-    <value>ETPerm</value>
-  </data>
-  <data name="Shell_ITPerm.Content" xml:space="preserve">
-    <value>ITPerm</value>
-  </data>
-  <data name="Shell_SquarePerm.Content" xml:space="preserve">
-    <value>SquarePerm</value>
-  </data>
-  <data name="Shell_RectPerm.Content" xml:space="preserve">
-    <value>RectPerm</value>
-  </data>
-  <data name="Shell_RhombusPerm.Content" xml:space="preserve">
-    <value>RhombusPerm</value>
-  </data>
-  <data name="Shell_CirclePerm.Content" xml:space="preserve">
-    <value>CirclePerm</value>
-  </data>
-  <data name="Shell_SCirclePerm.Content" xml:space="preserve">
-    <value>SCirclePerm</value>
-  </data>
-  <data name="Shell_SquareDiag.Content" xml:space="preserve">
-    <value>SquareDiag</value>
-  </data>
-  <data name="Shell_RectDiag.Content" xml:space="preserve">
-    <value>RectDiag</value>
-  </data>
-  <data name="Shell_CubeDiag.Content" xml:space="preserve">
-    <value>CubeDiag</value>
-  </data>
-  <data name="Shell_CuboidDiag.Content" xml:space="preserve">
-    <value>CuboidDiag</value>
-  </data>
   <data name="Shell_PrimeCheck.Content" xml:space="preserve">
     <value>Prime no. Checker</value>
   </data>
   <data name="Shell_AgeCalc.Content" xml:space="preserve">
     <value>Age Calculator</value>
   </data>
-  <data name="Shell_TriArea.Content" xml:space="preserve">
-    <value>TriArea</value>
-  </data>
   <data name="Shell_RTCheck.Content" xml:space="preserve">
     <value>Right Triangle Checker</value>
   </data>
-  <data name="Shell_RoomArea.Content" xml:space="preserve">
-    <value>RoomArea</value>
-  </data>
   <data name="Shell_CSurfaceArea.Content" xml:space="preserve">
     <value>Curved Surface Area</value>
-  </data>
-  <data name="Shell_CylinderCSA.Content" xml:space="preserve">
-    <value>CylinderCSA</value>
-  </data>
-  <data name="Shell_ConeCSA.Content" xml:space="preserve">
-    <value>ConeCSA</value>
-  </data>
-  <data name="Shell_SphereCSA.Content" xml:space="preserve">
-    <value>SphereCSA</value>
   </data>
   <data name="Shell_Dicount.Content" xml:space="preserve">
     <value>Dicounted Price Calculator</value>
