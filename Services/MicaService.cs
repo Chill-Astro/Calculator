@@ -25,27 +25,14 @@ public class MicaService : IMicaService
     {
         if (App.MainWindow == null) return;
 
-        if (IsMicaSupported())
+        if (IsMicaSupported() && IsMicaAltEnabled)
         {
-            if (IsMicaAltEnabled)
-            {
-                App.MainWindow.SystemBackdrop = new MicaBackdrop { Kind = MicaKind.BaseAlt };
-            }
-            else
-            {
-                App.MainWindow.SystemBackdrop = new MicaBackdrop { Kind = MicaKind.Base };
-            }
+            App.MainWindow.SystemBackdrop = new MicaBackdrop { Kind = MicaKind.BaseAlt };
+
         }
         else
         {
-            App.MainWindow.SystemBackdrop = null;
-            if (App.MainWindow.Content is FrameworkElement rootElement)
-            {
-                if (rootElement is Control controlElement)
-                {
-                    controlElement.Background = new SolidColorBrush(currentTheme == ElementTheme.Dark ? Microsoft.UI.Colors.Black : Microsoft.UI.Colors.White);
-                }
-            }
+            App.MainWindow.SystemBackdrop = new DesktopAcrylicBackdrop();
         }
     }
 
