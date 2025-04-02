@@ -18,7 +18,7 @@ Here's the latest preview as of v11.26100.5.0 :
 
 https://github.com/user-attachments/assets/a2bc2dca-39fa-4169-83d1-457b58ae921f
 
-New Settings Page in v11.26100.7.0 :
+New Settings Page in v11.26100.7.0 [ With Acrylic Option ]:
 
 https://github.com/user-attachments/assets/dcea1a2b-077c-4a51-939c-f54dc8d3f19f
 
