@@ -24,7 +24,7 @@
 		<AppxBundlePlatforms>x86|x64|arm64</AppxBundlePlatforms>
 		<SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
 		<AppxPackageDir>C:\Users\Master\Downloads\</AppxPackageDir>
-		<PlatformTarget>AnyCPU</PlatformTarget>
+		<PlatformTarget>x64</PlatformTarget>
 		<Title>Chill-Astro's Calculator</Title>
 	</PropertyGroup>
 	<ItemGroup>
