@@ -8,12 +8,6 @@ Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
 ---
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
- [![Tech: C#](https://img.shields.io/badge/-C%23-a3be8c.svg?style=flat)](https://learn.microsoft.com/en-us/dotnet/csharp/)
- [![Tech: WinUI 3](https://img.shields.io/badge/-WinUI%203-5e81ac.svg?style=flat)](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/)
-
----
-
 ### What are Scripted Actions?
 
 Scripted Actions are the core feature that sets this calculator apart. Instead of performing one-off calculations, you can utilize predefined actions for specific tasks. Simply input the required values for a chosen action, and the calculator provides the output.
