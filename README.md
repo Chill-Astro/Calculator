@@ -16,7 +16,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 
 ---
 
-### Key Features
+### Key Features :
 
 * **Scripted Actions:** Perform specialized calculations with ease using dedicated interfaces.
 * **Modern UI:** Enjoy a clean and intuitive user interface designed with usability in mind.
@@ -26,7 +26,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 
   ---
 
-### Previews
+### Previews :
 
 * **Latest Preview [ v11.26100.5.0 ]:**
 
@@ -38,7 +38,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 
 ---
 
-### Installation
+### Installation : 
 
 1.  Download the `.msix` and `.cer` files from the [releases page.](https://github.com/Chill-Astro/Calculator/releases/tag/Latest).
 2.  Import the `.cer` file to your trusted root certificates store. (This is only required for the first installation).
@@ -46,7 +46,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 
 ---
 
-### Requirements
+### Requirements :
 
 * **Operating System:** Windows 11 or Windows 10 version 20H2 (Build 19041) or higher.
 * **For Building from Source:**
