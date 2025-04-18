@@ -2,7 +2,7 @@
 
 **A Simple Calculator Elevated with Powerful Scripted Actions**
 
-Calculator by Chill-Astro isn't just another calculator; it's a versatile tool designed for Windows users seeking enhanced functionality through **Scripted Actions**. This intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful and user-friendly than standard calculators.
+This isn't just another calculator; it's a versatile tool designed for Windows users seeking enhanced functionality through **Scripted Actions**. This intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful and user-friendly than standard calculators.
 
 Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
@@ -17,7 +17,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 * **Scripted Actions:** Perform specialized calculations with ease using dedicated interfaces.
 * **Modern UI:** Enjoy a clean and intuitive user interface designed with usability in mind.
 * **Theme Switching:** Customize your experience with built-in theme options, including MicaAlt Blur and Acrylic effects (available in v11.26100.7.0+).
-* **Enhanced Capability:** Offers more features and power compared to applications like PyCalc-GUI and its derivatives.
+* **Enhanced Capability:** Offers more features and power compared tomy other applications like PyCalc-GUI and its derivatives.
 * **User-Friendly:** Designed for ease of use, making complex tasks accessible.
 
 ### Previews
