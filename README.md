@@ -9,8 +9,8 @@ Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 ---
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
- ![Tech: C#](https://img.shields.io/badge/-C%23-a3be8c.svg?style=flat)
- ![Tech: WinUI 3](https://img.shields.io/badge/-WinUI%203-5e81ac.svg?style=flat)
+ [![Tech: C#](https://img.shields.io/badge/-C%23-a3be8c.svg?style=flat)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+ [![Tech: WinUI 3](https://img.shields.io/badge/-WinUI%203-5e81ac.svg?style=flat)](https://learn.microsoft.com/en-us/windows/apps/winui/winui3/)
 
 ---
 
