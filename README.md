@@ -6,11 +6,21 @@ This isn't just another calculator; it's a versatile tool designed for Windows u
 
 Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
+---
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+ ![Tech: C#](https://img.shields.io/badge/-C%23-a3be8c.svg?style=flat)
+ ![Tech: WinUI 3](https://img.shields.io/badge/-WinUI%203-5e81ac.svg?style=flat)
+
+---
+
 ### What are Scripted Actions?
 
 Scripted Actions are the core feature that sets this calculator apart. Instead of performing one-off calculations, you can utilize predefined actions for specific tasks. Simply input the required values for a chosen action, and the calculator provides the output.
 
-**Example:** The **Heron's Formula Page** allows you to input the lengths of a triangle's sides and instantly get its area. This is just the beginning, with plans to expand the library of available actions to cover a wide range of calculations.
+**Example:** The **Heron's Formula Page** allows you to input the lengths of a triangle's sides and instantly get its area.
+
+---
 
 ### Key Features
 
@@ -19,6 +29,8 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 * **Theme Switching:** Customize your experience with built-in theme options, including MicaAlt Blur and Acrylic effects (available in v11.26100.7.0+).
 * **Enhanced Capability:** Offers more features and power compared tomy other applications like PyCalc-GUI and its derivatives.
 * **User-Friendly:** Designed for ease of use, making complex tasks accessible.
+
+  ---
 
 ### Previews
 
@@ -30,11 +42,15 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
   
    https://github.com/user-attachments/assets/dcea1a2b-077c-4a51-939c-f54dc8d3f19f
 
+---
+
 ### Installation
 
 1.  Download the `.msix` and `.cer` files from the [releases page.](https://github.com/Chill-Astro/Calculator/releases/tag/Latest).
 2.  Import the `.cer` file to your trusted root certificates store. (This is only required for the first installation).
 3.  Install the `.msix` file as you normally would.
+
+---
 
 ### Requirements
 
@@ -44,17 +60,11 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
     * .NET 7.0
     * Windows App SDK 26100.xxxx
 
-### What's Next? (Upcoming Features & Contributions)
+---
+
+### What's Next?
 
 * Keymaps for All Operators and %.
 * History Functionality [ A prototype `HistoryPage.xaml` is available and can be implemented! ].
 
-### Note on Development
-
-This project is a personal learning endeavor, marking my first time working with WinAppSDK, C#, and XAML. Development is ongoing, and contributions are welcome!
-
-**NOTE:** Portions of this code were AI-generated. Everything is reviewed and tested.
-
 ---
-
-Feel free to contribute to the development and creare forks of the app!
