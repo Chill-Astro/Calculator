@@ -1,4 +1,4 @@
-# Calculator by Chill-Astro: Beyond the Basics
+# Calculator by Chill-Astro
 
 **A Simple Calculator Elevated with Powerful Scripted Actions**
 
