@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/Chill-Astro/Calculator/blob/master/Assets/StoreLogo.scale-400.png" width="100px" height="100px" alt="Calculator Logo">
 </p>
-<h1 align="center">Calculator v11.26100.7.0</h1>
+<h1 align="center">Calculator by Chill-Astro</h1>
 
 **A Simple Calculator Elevated with Powerful Scripted Actions**
 
