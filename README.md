@@ -1,4 +1,7 @@
-# Calculator by Chill-Astro
+<p align="center">
+  <img src="https://github.com/Chill-Astro/Calculator/blob/master/Assets/StoreLogo.scale-400.png" width="100px" height="100px" alt="Calculator Logo">
+</p>
+<h1 align="center">Calculator by Chill-Astro</h1>
 
 **A Simple Calculator Elevated with Powerful Scripted Actions**
 
@@ -49,9 +52,10 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 ### Requirements :
 
 * **Operating System:** Windows 11 or Windows 10 version 20H2 [ 19041 or higher ].
+
 * **For Building from Source:**
     * Visual Studio with the WinUI and .NET development workloads.
-    * .NET 7.0
+    * .NET 8.0 SDK
     * Windows App SDK 26100.xxxx
 
 ---
