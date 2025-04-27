@@ -24,7 +24,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 * **Scripted Actions:** Perform specialized calculations with ease using dedicated interfaces.
 * **Modern UI:** Enjoy a clean and intuitive user interface designed with usability in mind.
 * **Theme Switching:** Customize your experience with built-in theme options, including MicaAlt Blur and Acrylic effects [ available in v11.26100.7.0+ ].
-* **Enhanced Capability:** Offers more features and power compared tomy other applications like PyCalc-GUI and its derivatives.
+* **Enhanced Capability:** Offers more features and power compared to PyCalc-SE & PyCalc Combined!
 * **User-Friendly:** Designed for ease of use, making complex tasks accessible.
 
   ---
