@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Chill-Astro/Calculator/blob/master/Assets/StoreLogo.scale-400.png" width="100px" height="100px" alt="Calculator Logo">
+  <img src="https://github.com/Chill-Astro/Calculator/blob/main/Assets/StoreLogo.scale-400.png" width="100px" height="100px" alt="Calculator Logo">
 </p>
 <h1 align="center">Calculator by Chill-Astro</h1>
 
