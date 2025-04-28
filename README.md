@@ -43,7 +43,7 @@ Scripted Actions are the core feature that sets this calculator apart. Instead o
 
 ### Installation : 
 
-1.  Download the `.msix` and `.cer` files from the [releases page.](https://github.com/Chill-Astro/Calculator/releases/tag/Latest).
+1.  Download the `.msix` and `.cer` files from the [releases page.](https://github.com/Chill-Astro/Calculator/releases/tag/Latest)
 2.  Import the `.cer` file to your trusted root certificates store. (This is only required for the first installation).
 3.  Install the `.msix` file as you normally would.
 
