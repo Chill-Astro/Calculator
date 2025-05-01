@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Calculator by Chill-Astro</h1>
 
-It's a  Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
+It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
 Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
