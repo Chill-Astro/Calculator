@@ -35,7 +35,7 @@ Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
 ## Installation : 
 
-1.  Download the `.msix` and `.cer` files from the [releases page.](https://github.com/Chill-Astro/Calculator/releases)
+1.  Download the `.msix` and `.cer` files from the [releases](https://github.com/Chill-Astro/Calculator/releases/latest) page.
 2.  Import the `.cer` file to your trusted root certificates store. (This is only required for the first installation).
 3.  Install the `.msix` file as you normally would.
 
