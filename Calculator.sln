@@ -43,8 +43,8 @@ Global
 		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Debug|x86.Build.0 = Debug|x86
 		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|arm64.ActiveCfg = Release|arm64
 		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|arm64.Build.0 = Release|arm64
-		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|x64.ActiveCfg = Release|Any CPU
-		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|x64.Build.0 = Release|Any CPU
+		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|x64.ActiveCfg = Release|x64
+		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|x64.Build.0 = Release|x64
 		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|x86.ActiveCfg = Release|x86
 		{BCAF65F8-F6B7-D22D-6FF9-99B221943228}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection

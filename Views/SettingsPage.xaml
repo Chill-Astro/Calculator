@@ -60,7 +60,7 @@
             </StackPanel>
             <TextBlock Text="About" Style="{ThemeResource SubtitleTextBlockStyle}" />
             <StackPanel Margin="{StaticResource XSmallTopMargin}">
-                <HyperlinkButton Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" NavigateUri="https://github.com/Chill-Astro/Calculator/releases/tag/Latest">
+                <HyperlinkButton Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" NavigateUri="https://github.com/Chill-Astro/Calculator/releases">
                     <StackPanel Orientation="Horizontal">
                         <TextBlock FontFamily="ms-appx:///Assets/Fonts/icomoon.ttf#icomoon"
                             Text="&#xe900;"
@@ -78,16 +78,6 @@
                         <TextBlock Text=" Chill-Astro"
                    Margin="5,0,0,0"
                    VerticalAlignment="Center"/>
-                    </StackPanel>
-                </HyperlinkButton>
-                <HyperlinkButton Margin="{StaticResource SettingsPageHyperlinkButtonMargin}" NavigateUri="https://youtube.com/@artistic_astronaut">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="ms-appx:///Assets/Fonts/icomoon.ttf#icomoon"
-                            Text="&#xe90b;"
-                            FontSize="18" VerticalAlignment="Center" />
-                        <TextBlock Text=" @artistic_astronaut"
-                             Margin="5,0,0,0"
-                             VerticalAlignment="Center"/>
                     </StackPanel>
                 </HyperlinkButton>
                 <TextBlock x:Uid="Settings_BackgroundEffect" Style="{ThemeResource SubtitleTextBlockStyle}" />
