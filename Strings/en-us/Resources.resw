@@ -195,4 +195,7 @@
   <data name="Shell_BaseConverter.Content" xml:space="preserve">
     <value>Base Converter</value>
   </data>
+  <data name="Shell_QuadEqn.Content" xml:space="preserve">
+    <value>Quadratic Equation Solver</value>
+  </data>
 </root>

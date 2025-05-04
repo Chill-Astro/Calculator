@@ -69,6 +69,8 @@ namespace Calculator
                 services.AddSingleton<IFileService, FileService>();
 
                 // Views and ViewModels
+                services.AddTransient<QuadEqnViewModel>();
+                services.AddTransient<QuadEqnPage>();
                 services.AddTransient<BaseConverterViewModel>();
                 services.AddTransient<BaseConverterPage>();
                 services.AddTransient<UnitConverterViewModel>();

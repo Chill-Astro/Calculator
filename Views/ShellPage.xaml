@@ -103,6 +103,12 @@
                         <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe910;"/>
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItemHeader Content="Algebra"/>
+                <NavigationViewItem x:Uid="Shell_QuadEqn" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.QuadEqnViewModel">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{StaticResource icomoonFontFamily}" Glyph="&#xe919;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItemHeader Content="Finance"/>
                 <NavigationViewItem x:Uid="Shell_SI" helpers:NavigationHelper.NavigateTo="Calculator.ViewModels.SIViewModel">
                     <NavigationViewItem.Icon>

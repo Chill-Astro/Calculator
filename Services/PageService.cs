@@ -68,6 +68,7 @@ public class PageService : IPageService
         Configure<DateDifferenceViewModel, DateDifferencePage>();
         Configure<UnitConverterViewModel, UnitConverterPage>();
         Configure<BaseConverterViewModel, BaseConverterPage>();
+        Configure<QuadEqnViewModel, QuadEqnPage>();
     }
 
     public Type GetPageType(string key)
