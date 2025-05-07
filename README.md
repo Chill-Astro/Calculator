@@ -56,6 +56,7 @@ Currently available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 - [Icons8](https://icons8.com) : For Unit Convertor, 
 - [SVG REPO](https://www.svgrepo.com/) : For Calculaor, Unit Convertor, Heron's Formula, and most of the icons.
 - [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
+- [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons [ Upcoming Release ].
 
 ### What's Next?
 
