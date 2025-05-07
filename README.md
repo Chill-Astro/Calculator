@@ -51,6 +51,12 @@ Currently available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
 ---
 
+## Icon Sources and Credits :
+
+- [Icons8](https://icons8.com) : For Unit Convertor, 
+- [SVG REPO](https://www.svgrepo.com/) : For Calculaor, Unit Convertor, Heron's Formula, and most of the icons.
+- [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
+
 ### What's Next?
 
 * Keymaps for All Operators and %.
