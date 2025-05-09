@@ -24,7 +24,7 @@
                     <KeyboardAccelerator Key="Enter" />
                 </Button.KeyboardAccelerators>
             </Button>
-            <TextBlock x:Name="AreaTextBlock" Text="OUTPUT AREA" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="12"/>
+            <TextBlock x:Name="AreaTextBlock" IsTextSelectionEnabled="True" Text="OUTPUT AREA" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="12"/>
         </StackPanel>
     </Grid>
 </Page>

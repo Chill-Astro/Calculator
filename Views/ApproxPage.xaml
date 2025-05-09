@@ -15,7 +15,7 @@
                     HorizontalAlignment="Center"
                     Margin="0,15,0,0"
                     Style="{StaticResource AccentButtonStyle}" />
-			<TextBlock x:Name="RoundedTextBlock" Text="OUTPUT AREA" FontWeight="SemiBold" FontSize="12" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="RoundedTextBlock" Text="OUTPUT AREA" FontWeight="SemiBold" FontSize="12" IsTextSelectionEnabled="True" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center"/>
 		</StackPanel>
 	</Grid>        
 </Page>

@@ -16,8 +16,8 @@
                     HorizontalAlignment="Center"
                     Margin="0,15,0,0"
                     Style="{StaticResource AccentButtonStyle}" />
-			<TextBlock x:Name="DiscountAmountTextBlock" Text="DISCOUNT OUTPUT" FontWeight="SemiBold" FontSize="12" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center"/>
-			<TextBlock x:Name="FinalPriceTextBlock" Text="FINAL PRICE" FontWeight="SemiBold" FontSize="12" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="DiscountAmountTextBlock" IsTextSelectionEnabled="True" Text="DISCOUNT OUTPUT" FontWeight="SemiBold" FontSize="12" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="FinalPriceTextBlock" IsTextSelectionEnabled="True" Text="FINAL PRICE" FontWeight="SemiBold" FontSize="12" Style="{StaticResource BodyTextBlockStyle}" HorizontalAlignment="Center"/>
 		</StackPanel>
 	</Grid>
 </Page>
