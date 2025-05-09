@@ -6,20 +6,27 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="Transparent">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <!-- Title and Clear Button -->
             <RowDefinition Height="*"/>
+            <!-- History List -->
         </Grid.RowDefinitions>
 
-        <TextBlock Text="History" Style="{StaticResource TitleTextBlockStyle}" Margin="20"/>
+        <!-- Title and Clear Button -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20">
+            <Button Content="Clear" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,0"
+                    Click="ClearHistoryButton_Click" Style="{StaticResource AccentButtonStyle}"/>
+        </StackPanel>
 
+        <!-- History List -->
         <ListView x:Name="HistoryListView" Grid.Row="1" Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding}"/>
+                    <TextBlock Text="{Binding}" TextWrapping="Wrap" FontSize="16" Margin="5"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

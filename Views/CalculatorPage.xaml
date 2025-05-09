@@ -33,49 +33,48 @@
                                     <VisualState x:Name="Normal"/>
                                     <VisualState x:Name="PointerOver">
                                         <Storyboard>
-                                            <ColorAnimation Duration="0" 
-                                             Storyboard.TargetName="Border" 
-                                             Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" 
-                                             To="#20AAAAAA"/>
+                                            <ColorAnimation Duration="0"
+                                                            Storyboard.TargetName="Border"
+                                                            Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                            To="#20AAAAAA"/>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ColorAnimation Duration="0"
-                                             Storyboard.TargetName="Border" 
-                                             Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)" 
-                                             To="#30888888"/>
+                                                            Storyboard.TargetName="Border"
+                                                            Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                            To="#30888888"/>
                                             <DoubleAnimation Duration="0:0:0.1"
-                                             Storyboard.TargetName="ScaleTransform"
-                                             Storyboard.TargetProperty="ScaleX"/>
+                                                             Storyboard.TargetName="ScaleTransform"
+                                                             Storyboard.TargetProperty="ScaleX"/>
                                             <DoubleAnimation Duration="0:0:0.1"
-                                             Storyboard.TargetName="ScaleTransform"
-                                             Storyboard.TargetProperty="ScaleY"/>
+                                                             Storyboard.TargetName="ScaleTransform"
+                                                             Storyboard.TargetProperty="ScaleY"/>
                                         </Storyboard>
                                     </VisualState>
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                             <Border x:Name="Border"
-                             Background="{TemplateBinding Background}"
-                             BorderBrush="{TemplateBinding BorderBrush}"
-                             BorderThickness="{TemplateBinding BorderThickness}"
-                             CornerRadius="{TemplateBinding CornerRadius}">
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="{TemplateBinding CornerRadius}">
                                 <Border.RenderTransform>
                                     <ScaleTransform x:Name="ScaleTransform" ScaleX="1" ScaleY="1"/>
                                 </Border.RenderTransform>
                                 <ContentPresenter x:Name="ContentPresenter"
-                                 ContentTemplate="{TemplateBinding ContentTemplate}"
-                                 Content="{TemplateBinding Content}"
-                                 HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                 VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                 Margin="{TemplateBinding Padding}"/>
+                                                  ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                  Content="{TemplateBinding Content}"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  Margin="{TemplateBinding Padding}"/>
                             </Border>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-
         <Style TargetType="Button" x:Key="NumberButtonStyle" BasedOn="{StaticResource CalculatorButtonStyle}">
             <Setter Property="Background" Value="{ThemeResource ButtonBackground}"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -114,16 +113,16 @@
                                 </VisualStateGroup>
                             </VisualStateManager.VisualStateGroups>
                             <Border x:Name="Border"
-                     Background="{TemplateBinding Background}"
-                     BorderBrush="{TemplateBinding BorderBrush}"
-                     BorderThickness="{TemplateBinding BorderThickness}"
-                     CornerRadius="{TemplateBinding CornerRadius}">
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="{TemplateBinding CornerRadius}">
                                 <ContentPresenter x:Name="ContentPresenter"
-                         ContentTemplate="{TemplateBinding ContentTemplate}"
-                         Content="{TemplateBinding Content}"
-                         HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                         VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                         Margin="{TemplateBinding Padding}"/>
+                                                  ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                  Content="{TemplateBinding Content}"
+                                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                                  Margin="{TemplateBinding Padding}"/>
                             </Border>
                         </Border>
                     </ControlTemplate>
@@ -131,78 +130,78 @@
             </Setter>
         </Style>
     </Page.Resources>
-    <Grid x:Name="ContentGrid" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
-        <Grid.RenderTransform>
-            <TranslateTransform X="0" Y="0"/>
-        </Grid.RenderTransform>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="100"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Viewbox Stretch="Uniform" StretchDirection="Both" Grid.Row="1" MaxHeight="120" Margin="0, -10, 0, 0" HorizontalAlignment="Right">
-            <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                <TextBlock x:Name="OperationTextBlock"
-                   Text=""
-                   FontSize="7"
-                   TextAlignment="Right"
-                   HorizontalAlignment="Right"
-                   Margin="12,-5,5,-5"
-                   Opacity="0.7"/>
-                <TextBlock x:Name="DisplayTextBlock"
-                   Text="0"
-                   FontSize="14"
-                   TextAlignment="Right"
-                   HorizontalAlignment="Right"
-                   Margin="12,5,5,10"
-                   FontWeight="SemiBold"
-                   IsTextSelectionEnabled="True"/>
-            </StackPanel>
-        </Viewbox>
-        <Grid Grid.Row="2" Margin="0"  >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+    <Grid>
+        <Grid x:Name="ContentGrid" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TranslateTransform X="0" Y="0"/>
+            </Grid.RenderTransform>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-
-            <Button Content="&#xe94c;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Margin="2" Grid.Row="0" Grid.Column="0" Style="{StaticResource CalculatorButtonStyle}" FontSize="15" Click="PercentButton_Click"/>
-            <Button Content="CE" Margin="2" Grid.Row="0" Grid.Column="1" Style="{StaticResource CalculatorButtonStyle}" FontSize="16" Click="ClearEntryButton_Click"/>
-            <Button Content="C"  Margin="2" Grid.Row="0" Grid.Column="2" Style="{StaticResource CalculatorButtonStyle}" FontSize="16" Click="ClearButton_Click"/>
-            <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xe750;" Margin="2" Grid.Row="0" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="17" Click="BackspaceButton_Click"/>
-            <Button Content="𝑥²" Margin="2" Grid.Row="1" Grid.Column="0" Style="{StaticResource CalculatorButtonStyle}" FontSize="16" Click="SquareButton_Click"/>
-            <Button Content="&#xe90b;" FontFamily="/Assets/Fonts/icomoon.ttf#icomoon" Margin="2" Grid.Row="1" Grid.Column="2" Style="{StaticResource CalculatorButtonStyle}" FontSize="19" Click="SquareRootButton_Click"/>
-            <Button Content="&#xe90c;" FontFamily="/Assets/Fonts/icomoon.ttf#icomoon" Margin="2" Grid.Row="1" Grid.Column="1" Style="{StaticResource CalculatorButtonStyle}" FontSize="19" Click="CubeRootButton_Click"/>
-
-            <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xE94A;"  Margin="2" Grid.Row="1" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}"  FontSize="14" Click="OperatorButton_Click"/>
-            <Button Content="7" Margin="2" Grid.Row="2" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="8" Margin="2" Grid.Row="2" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="9" Margin="2" Grid.Row="2" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xE947;"  Margin="2" Grid.Row="2" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
-
-            <Button Content="4" Margin="2" Grid.Row="3" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="5" Margin="2" Grid.Row="3" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="6" Margin="2" Grid.Row="3" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xE949;"  Margin="2" Grid.Row="3" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
-
-            <Button Content="1" Margin="2" Grid.Row="4" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="2" Margin="2" Grid.Row="4" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="3" Margin="2" Grid.Row="4" Grid.Column="2" Style="{StaticResource NumberButtonStyle}"  FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="&#xE948;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Margin="2" Grid.Row="4" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
-
-            <Button Content="𝑥&#x2B8;" Margin="2" Grid.Row="5" Grid.Column="0" Style="{StaticResource CalculatorButtonStyle}" FontSize="18" Click="PowerButton_Click"/>
-            <Button Content="0" Margin="2" Grid.Row="5" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
-            <Button Content="." Margin="2" Grid.Row="5" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="24" Click="DecimalButton_Click"/>
-            <Button Content="&#xe94e;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Margin="2" Grid.Row="5" Grid.Column="3" Style="{StaticResource AccentButtonStyle}"   FontSize="15" Click="EqualsButton_Click"/>
+            <Viewbox Stretch="Uniform" StretchDirection="Both" Grid.Row="1" MaxHeight="120" Margin="0, -10, 0, 0" HorizontalAlignment="Right">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                    <Button Content="&#xe81c;" Background="Transparent" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" HorizontalAlignment="Right" 
+                            FontSize="5" BorderThickness="0" VerticalAlignment="Top" Height="12" Width="12" Padding="0"
+                            Margin="0,-14,1,0" Click="HistoryButton_Click" CornerRadius="3"/>
+                    <TextBlock x:Name="OperationTextBlock"
+                               Text=""
+                               FontSize="7"
+                               TextAlignment="Right"
+                               HorizontalAlignment="Right"
+                               Margin="12,-2,5,-5"
+                               Opacity="0.7"/>
+                    <TextBlock x:Name="DisplayTextBlock"
+                               Text="0"
+                               FontSize="14"
+                               TextAlignment="Right"
+                               HorizontalAlignment="Right"
+                               Margin="12,7,5,10"
+                               FontWeight="SemiBold"
+                               IsTextSelectionEnabled="True"/>
+                </StackPanel>
+            </Viewbox>
+            <Grid Grid.Row="2" Margin="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Content="&#xe94c;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Margin="2" Grid.Row="0" Grid.Column="0" Style="{StaticResource CalculatorButtonStyle}" FontSize="15" Click="PercentButton_Click"/>
+                <Button Content="CE" Margin="2" Grid.Row="0" Grid.Column="1" Style="{StaticResource CalculatorButtonStyle}" FontSize="16" Click="ClearEntryButton_Click"/>
+                <Button Content="C" Margin="2" Grid.Row="0" Grid.Column="2" Style="{StaticResource CalculatorButtonStyle}" FontSize="16" Click="ClearButton_Click"/>
+                <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xe750;" Margin="2" Grid.Row="0" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="17" Click="BackspaceButton_Click"/>
+                <Button Content="𝑥²" Margin="2" Grid.Row="1" Grid.Column="0" Style="{StaticResource CalculatorButtonStyle}" FontSize="16" Click="SquareButton_Click"/>
+                <Button Content="&#xe90b;" FontFamily="/Assets/Fonts/icomoon.ttf#icomoon" Margin="2" Grid.Row="1" Grid.Column="2" Style="{StaticResource CalculatorButtonStyle}" FontSize="19" Click="SquareRootButton_Click"/>
+                <Button Content="&#xe90c;" FontFamily="/Assets/Fonts/icomoon.ttf#icomoon" Margin="2" Grid.Row="1" Grid.Column="1" Style="{StaticResource CalculatorButtonStyle}" FontSize="19" Click="CubeRootButton_Click"/>
+                <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xE94A;" Margin="2" Grid.Row="1" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
+                <Button Content="7" Margin="2" Grid.Row="2" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="8" Margin="2" Grid.Row="2" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="9" Margin="2" Grid.Row="2" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xE947;" Margin="2" Grid.Row="2" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
+                <Button Content="4" Margin="2" Grid.Row="3" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="5" Margin="2" Grid.Row="3" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="6" Margin="2" Grid.Row="3" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Content="&#xE949;" Margin="2" Grid.Row="3" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
+                <Button Content="1" Margin="2" Grid.Row="4" Grid.Column="0" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="2" Margin="2" Grid.Row="4" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="3" Margin="2" Grid.Row="4" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="&#xE948;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Margin="2" Grid.Row="4" Grid.Column="3" Style="{StaticResource CalculatorButtonStyle}" FontSize="14" Click="OperatorButton_Click"/>
+                <Button Content="𝑥ʸ" Margin="2" Grid.Row="5" Grid.Column="0" Style="{StaticResource CalculatorButtonStyle}" FontSize="18" Click="PowerButton_Click"/>
+                <Button Content="0" Margin="2" Grid.Row="5" Grid.Column="1" Style="{StaticResource NumberButtonStyle}" FontSize="18" Click="NumberButton_Click"/>
+                <Button Content="." Margin="2" Grid.Row="5" Grid.Column="2" Style="{StaticResource NumberButtonStyle}" FontSize="24" Click="DecimalButton_Click"/>
+                <Button Content="&#xe94e;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" Margin="2" Grid.Row="5" Grid.Column="3" Style="{StaticResource AccentButtonStyle}" FontSize="15" Click="EqualsButton_Click"/>
+            </Grid>
         </Grid>
     </Grid>
 </Page>

@@ -592,4 +592,24 @@ public sealed partial class CalculatorPage : Page
             ContentGrid.Transitions = new TransitionCollection { entranceThemeTransition };
         }
     }
+    private void HistoryButton_Click(object sender, RoutedEventArgs e)
+    {
+        // Set the calculation history after creating the HistoryPage
+        var historyPage = new HistoryPage();
+        historyPage.SetHistory(_calculationHistory); // Assuming a method to set history exists
+
+        // Create a ContentDialog to display the HistoryPage as a pop-up
+        var dialog = new ContentDialog
+        {
+            Content = historyPage,
+            CloseButtonText = "Close",
+            FullSizeDesired = false,
+            HorizontalAlignment = HorizontalAlignment.Stretch,
+            VerticalAlignment = VerticalAlignment.Bottom,
+            XamlRoot = this.XamlRoot // Set the XamlRoot to the current page's XamlRoot
+        };
+
+        // Show the dialog
+        _ = dialog.ShowAsync();
+    }
 }

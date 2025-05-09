@@ -23,5 +23,19 @@ namespace Calculator.Views
                 HistoryListView.ItemsSource = _history;
             }
         }
+        private void ClearHistoryButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Clear the history list
+            HistoryListView.ItemsSource = null;
+        }
+        public void SetHistory(List<string> history)
+        {
+            _history = history;
+            if (HistoryListView != null)
+            {
+                HistoryListView.ItemsSource = _history;
+            }
+        }
+
     }
 }
