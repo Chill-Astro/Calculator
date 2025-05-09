@@ -10,13 +10,13 @@
 	<Grid Background="Transparent">
 		<StackPanel HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,20,0,0" Spacing="8">
 
-			<TextBlock Text="First Side [a] :" Style="{StaticResource BaseTextBlockStyle}"/>
+			<TextBlock Text="First Coeffecient [a] :" Style="{StaticResource BaseTextBlockStyle}"/>
 			<TextBox x:Name="CoefficientATextBox" Width="250" HorizontalAlignment="Stretch" InputScope="Number"/>
 
-			<TextBlock Text="Second Side [b] :" Style="{StaticResource BaseTextBlockStyle}"/>
+            <TextBlock Text="Second Coeffecient [b] :" Style="{StaticResource BaseTextBlockStyle}"/>
 			<TextBox x:Name="CoefficientBTextBox" Width="250" HorizontalAlignment="Stretch" InputScope="Number"/>
 
-			<TextBlock Text="Third Side [c] :" Style="{StaticResource BaseTextBlockStyle}"/>
+            <TextBlock Text="Third Coeffecient [c] :" Style="{StaticResource BaseTextBlockStyle}"/>
 			<TextBox x:Name="CoefficientCTextBox" Width="250" HorizontalAlignment="Stretch" InputScope="Number"/>
 
 			<Button Content="Calculate"
