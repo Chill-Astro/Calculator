@@ -26,28 +26,84 @@ public sealed partial class BaseConverterPage : Page
             return;
         }
 
-        if (!int.TryParse(fromBaseItem.Content.ToString().Split('(')[1].TrimEnd(')'), out int fromBase) ||
-            !int.TryParse(toBaseItem.Content.ToString().Split('(')[1].TrimEnd(')'), out int toBase))
+        // Extract the base number from the ComboBoxItem content (assuming format like "Binary (2)")
+        // Added null checks and improved parsing robustness slightly
+        int fromBase;
+        string fromBaseContent = fromBaseItem.Content?.ToString();
+        if (string.IsNullOrEmpty(fromBaseContent) || !TryExtractBase(fromBaseContent, out fromBase))
         {
-            ResultTextBlock.Text = "Invalid base format.";
+            ResultTextBlock.Text = "Invalid 'From' base format.";
             return;
         }
+
+        int toBase;
+        string toBaseContent = toBaseItem.Content?.ToString();
+        if (string.IsNullOrEmpty(toBaseContent) || !TryExtractBase(toBaseContent, out toBase))
+        {
+            ResultTextBlock.Text = "Invalid 'To' base format.";
+            return;
+        }
+
 
         string inputNumber = InputTextBox.Text.ToUpper(); // Handle hexadecimal A-F
 
         try
         {
+            // Use Convert.ToInt64 to convert from the source base to decimal (long)
             long decimalValue = Convert.ToInt64(inputNumber, fromBase);
+            // Use Convert.ToString to convert from decimal (long) to the target base
             string result = Convert.ToString(decimalValue, toBase).ToUpper();
             ResultTextBlock.Text = result;
         }
         catch (FormatException)
         {
-            ResultTextBlock.Text = $"Invalid input '{inputNumber}' for base {fromBase}.";
+            // Catch FormatException specifically for invalid input characters for the given base
+            ResultTextBlock.Text = $"Invalid input '{InputTextBox.Text}' for base {fromBase}.";
+        }
+        catch (OverflowException)
+        {
+            // Catch OverflowException if the number is too large for long
+            ResultTextBlock.Text = $"Input number is too large for conversion.";
+        }
+        catch (ArgumentOutOfRangeException)
+        {
+            // Catch ArgumentOutOfRangeException if base is less than 2 or greater than 36
+            ResultTextBlock.Text = $"Invalid base value. Bases must be between 2 and 36.";
         }
         catch (Exception ex)
         {
-            ResultTextBlock.Text = $"An error occurred: {ex.Message}";
+            // Catch any other unexpected errors
+            ResultTextBlock.Text = $"An unexpected error occurred: {ex.Message}";
         }
     }
+
+    // Helper method to safely extract the base number from the ComboBoxItem content
+    private bool TryExtractBase(string content, out int baseValue)
+    {
+        baseValue = 0;
+        try
+        {
+            int startIndex = content.LastIndexOf('(');
+            int endIndex = content.LastIndexOf(')');
+            if (startIndex != -1 && endIndex != -1 && endIndex > startIndex)
+            {
+                string baseString = content.Substring(startIndex + 1, endIndex - startIndex - 1);
+                return int.TryParse(baseString, out baseValue);
+            }
+        }
+        catch (Exception)
+        {
+            // Ignore exceptions during parsing, just return false
+        }
+        return false;
+    }
+
+    // You might want a Clear button or method for this page as well
+    // private void ClearButton_Click(object sender, RoutedEventArgs e)
+    // {
+    //     InputTextBox.Text = "";
+    //     ResultTextBlock.Text = ""; // Or initial prompt
+    //     FromBaseComboBox.SelectedIndex = -1;
+    //     ToBaseComboBox.SelectedIndex = -1;
+    // }
 }

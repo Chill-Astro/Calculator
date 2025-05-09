@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿// File: Views/UnitConverterPage.xaml.cs
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ namespace Calculator.Views;
 
 public sealed partial class UnitConverterPage : Page
 {
+    // Dictionary to store units by category (full names)
     private Dictionary<string, List<string>> unitsByCategory = new Dictionary<string, List<string>>()
     {
         {"Length", new List<string>{"Meters", "Feet", "Inches", "Kilometers", "Miles", "Centimeters", "Millimeters", "Yards", "Nautical Miles"}},
@@ -22,6 +24,103 @@ public sealed partial class UnitConverterPage : Page
         {"Data (Digital Storage)", new List<string>{"Bits", "Bytes", "Kilobytes", "Megabytes", "Gigabytes", "Terabytes"}},
         {"Angle", new List<string>{"Degrees", "Radians"}}
     };
+
+    // Dictionary to map full unit names to symbols for output display
+    private Dictionary<string, string> unitSymbols = new Dictionary<string, string>()
+    {
+        // Length
+        {"Meters", "m"},
+        {"Feet", "ft"},
+        {"Inches", "in"},
+        {"Kilometers", "km"},
+        {"Miles", "mi"},
+        {"Centimeters", "cm"},
+        {"Millimeters", "mm"},
+        {"Yards", "yd"},
+        {"Nautical Miles", "nmi"},
+
+        // Weight (Mass)
+        {"Kilograms", "kg"},
+        {"Pounds", "lb"},
+        {"Grams", "g"},
+        {"Ounces", "oz"},
+        {"Milligrams", "mg"},
+        {"Stones", "st"},
+        {"Tons (metric)", "t"}, // or "tonne"
+        {"Tons (US)", "ton (US)"},
+
+        // Volume
+        {"Liters", "L"}, // or "l"
+        {"Gallons (US)", "gal (US)"},
+        {"Gallons (UK)", "gal (UK)"},
+        {"Cubic Meters", "m³"},
+        {"Cubic Feet", "ft³"},
+        {"Cubic Inches", "in³"},
+        {"Milliliters", "mL"}, // or "ml"
+        {"Cups (US)", "cup (US)"}, // Common abbreviation
+        {"Pints (US)", "pt (US)"},
+        {"Quarts (US)", "qt (US)"},
+
+        // Temperature
+        {"Celsius", "°C"},
+        {"Fahrenheit", "°F"},
+        {"Kelvin", "K"},
+
+        // Area
+        {"Square Meters", "m²"},
+        {"Square Feet", "ft²"},
+        {"Square Inches", "in²"},
+        {"Square Kilometers", "km²"},
+        {"Square Miles", "mi²"},
+        {"Hectares", "ha"},
+        {"Acres", "ac"},
+
+        // Time
+        {"Seconds", "s"},
+        {"Minutes", "min"},
+        {"Hours", "h"},
+        {"Days", "d"},
+        {"Weeks", "wk"},
+        {"Years", "yr"},
+
+        // Speed
+        {"Meters per second", "m/s"},
+        {"Kilometers per hour", "km/h"},
+        {"Miles per hour", "mph"},
+        {"Knots", "kn"},
+
+        // Energy
+        {"Joules", "J"},
+        {"Kilojoules", "kJ"},
+        {"Calories", "cal"},
+        {"Kilocalories", "kcal"},
+        {"British Thermal Units", "BTU"},
+
+        // Pressure
+        {"Pascals", "Pa"},
+        {"Kilopascals", "kPa"},
+        {"Bar", "bar"},
+        {"Pounds per square inch", "psi"},
+        {"Atmospheres", "atm"},
+
+        // Power
+        {"Watts", "W"},
+        {"Kilowatts", "kW"},
+        {"Horsepower", "hp"},
+
+        // Data (Digital Storage)
+        {"Bits", "bit"},
+        {"Bytes", "B"},
+        {"Kilobytes", "KB"}, // or KiB for kibibyte
+        {"Megabytes", "MB"}, // or MiB for mebibyte
+        {"Gigabytes", "GB"}, // or GiB for gibibyte
+        {"Terabytes", "TB"}, // or TiB for tebibyte
+
+        // Angle
+        {"Degrees", "°"},
+        {"Radians", "rad"}
+    };
+
 
     public UnitConverterPage()
     {
@@ -42,7 +141,7 @@ public sealed partial class UnitConverterPage : Page
                 ToUnitComboBox.SelectedIndex = 1; // Default to a different unit
             }
         }
-    }    
+    }
 
     private void ConvertButton_Click(object sender, RoutedEventArgs e)
     {
@@ -95,7 +194,12 @@ public sealed partial class UnitConverterPage : Page
                     break;
             }
 
-            ResultTextBlock.Text = $"{valueToConvert} {fromUnit} = {result:F2} {toUnit}".ToUpper();
+            // Get the symbols for the selected units
+            string fromUnitSymbol = unitSymbols.ContainsKey(fromUnit) ? unitSymbols[fromUnit] : fromUnit;
+            string toUnitSymbol = unitSymbols.ContainsKey(toUnit) ? unitSymbols[toUnit] : toUnit;
+
+            // Format the output string using the symbols
+            ResultTextBlock.Text = $"{valueToConvert} {fromUnitSymbol} = {result:F2} {toUnitSymbol}".ToUpper();
         }
         else
         {
@@ -103,7 +207,7 @@ public sealed partial class UnitConverterPage : Page
         }
     }
 
-    // Conversion logic functions
+    // Conversion logic functions (kept as they are, only output formatting changes)
     private double ConvertLength(double value, string from, string to)
     {
         if (from == to) return value;
@@ -283,7 +387,7 @@ public sealed partial class UnitConverterPage : Page
             case "Meters per second": metersPerSecond = value; break;
             case "Kilometers per hour": metersPerSecond = value * 1000 / 3600; break;
             case "Miles per hour": metersPerSecond = value * 1609.34 / 3600; break;
-            case "Knots": metersPerSecond = value * 1.852; break;
+            case "Knots": metersPerSecond = value * 1.852 / 3.6; break; // Corrected conversion for knots to m/s
         }
 
         switch (to)
@@ -291,7 +395,7 @@ public sealed partial class UnitConverterPage : Page
             case "Meters per second": return metersPerSecond;
             case "Kilometers per hour": return metersPerSecond * 3600 / 1000;
             case "Miles per hour": return metersPerSecond * 3600 / 1609.34;
-            case "Knots": return metersPerSecond / 1.852;
+            case "Knots": return metersPerSecond * 3.6 / 1.852; // Corrected conversion for m/s to knots
             default: return 0;
         }
     }
