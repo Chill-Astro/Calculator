@@ -72,7 +72,6 @@ public sealed partial class CalculatorPage : Page
             return; // Exit the method after starting a new calculation
         }
 
-
         if (_isNewNumberInput || DisplayTextBlock.Text == "0")
         {
             DisplayTextBlock.Text = buttonContent;
@@ -92,11 +91,20 @@ public sealed partial class CalculatorPage : Page
             if (double.TryParse(DisplayTextBlock.Text, out double currentNumber))
             {
                 _currentNumber = currentNumber;
-                // Consider using a standard format or no format here unless needed
-                // DisplayTextBlock.Text = currentNumber.ToString("");
+
+                // Apply formatting only if the number is an integer
+                if (DisplayTextBlock.Text.Contains("."))
+                {
+                    DisplayTextBlock.Text = currentNumber.ToString(); // No formatting for decimals
+                }
+                else
+                {
+                    DisplayTextBlock.Text = currentNumber.ToString("N0"); // Format with commas for integers
+                }
             }
         }
     }
+
 
     private void DecimalButton_Click(object sender, RoutedEventArgs e)
     {
@@ -327,11 +335,18 @@ public sealed partial class CalculatorPage : Page
     {
         _divisionByZeroOccurred = false; // Reset flag at the start of each operation
 
+        double result;
         switch (operatorSymbol)
         {
-            case "+": return num1 + num2;
-            case "-": return num1 - num2;
-            case "×": return num1 * num2;
+            case "+":
+                result = num1 + num2;
+                break;
+            case "-":
+                result = num1 - num2;
+                break;
+            case "×":
+                result = num1 * num2;
+                break;
             case "÷":
                 if (num2 == 0)
                 {
@@ -343,11 +358,20 @@ public sealed partial class CalculatorPage : Page
                     _previousNumber = 0; // Reset previous number on error
                     return double.NaN; // Return NaN or another indicator for error
                 }
-                return num1 / num2;
-            case "^": return Math.Pow(num1, num2);
-            default: return num2; // Should not happen if operator is handled
+                result = num1 / num2;
+                break;
+            case "^":
+                result = Math.Pow(num1, num2);
+                break;
+            default:
+                result = num2; // Should not happen if operator is handled
+                break;
         }
+
+        // Round the result to 15 decimal places to avoid floating-point precision issues
+        return Math.Round(result, 15);
     }
+
 
     private string GetOperatorSymbol(string operatorContent)
     {
