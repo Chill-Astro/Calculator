@@ -97,13 +97,4 @@ public sealed partial class BaseConverterPage : Page
         }
         return false;
     }
-
-    // You might want a Clear button or method for this page as well
-    // private void ClearButton_Click(object sender, RoutedEventArgs e)
-    // {
-    //     InputTextBox.Text = "";
-    //     ResultTextBlock.Text = ""; // Or initial prompt
-    //     FromBaseComboBox.SelectedIndex = -1;
-    //     ToBaseComboBox.SelectedIndex = -1;
-    // }
 }
