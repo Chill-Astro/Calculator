@@ -12,6 +12,7 @@ namespace Calculator.Views
         public HistoryPage()
         {
             this.InitializeComponent();
+            _history = new List<string>();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -19,23 +20,35 @@ namespace Calculator.Views
             base.OnNavigatedTo(e);
             if (e.Parameter is List<string> history)
             {
-                _history = history;
-                HistoryListView.ItemsSource = _history;
-            }
-        }
-        private void ClearHistoryButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Clear the history list
-            HistoryListView.ItemsSource = null;
-        }
-        public void SetHistory(List<string> history)
-        {
-            _history = history;
-            if (HistoryListView != null)
-            {
-                HistoryListView.ItemsSource = _history;
+                SetHistory(history);
             }
         }
 
+        private void ClearHistoryButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Clear the history list
+            _history.Clear();
+            UpdateHistoryDisplay();
+        }
+
+        public void SetHistory(List<string> history)
+        {
+            _history = history;
+            UpdateHistoryDisplay();
+        }
+
+        private void UpdateHistoryDisplay()
+        {
+            if (_history == null || _history.Count == 0)
+            {
+                NoHistoryTextBlock.Visibility = Visibility.Visible;
+                HistoryListView.ItemsSource = null;
+            }
+            else
+            {
+                NoHistoryTextBlock.Visibility = Visibility.Collapsed;
+                HistoryListView.ItemsSource = _history;
+            }
+        }
     }
 }

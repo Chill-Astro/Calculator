@@ -11,24 +11,37 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <!-- Title and Clear Button -->
             <RowDefinition Height="*"/>
-            <!-- History List -->
         </Grid.RowDefinitions>
 
         <!-- Title and Clear Button -->
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Center" Margin="20">
-            <Button Content="Clear" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,0,0"
-                    Click="ClearHistoryButton_Click" Style="{StaticResource AccentButtonStyle}"/>
-        </StackPanel>
+        <Grid Grid.Row="0" Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="History" FontWeight="SemiBold" FontSize="20" VerticalAlignment="Center" Grid.Column="0" />
+            <Button Content="&#xe74d;" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" 
+                    VerticalAlignment="Center" Grid.Column="1"
+                    Click="ClearHistoryButton_Click" Style="{StaticResource AccentButtonStyle}" />
+        </Grid>
 
         <!-- History List -->
-        <ListView x:Name="HistoryListView" Grid.Row="1" Margin="20">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextBlock Text="{Binding}" TextWrapping="Wrap" FontSize="16" Margin="5"/>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+        <Grid Grid.Row="1" Margin="20">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+                <StackPanel>
+                    <TextBlock x:Name="NoHistoryTextBlock" Text="There's no history" 
+                               Visibility="Collapsed" FontSize="10" HorizontalAlignment="Center" Margin="10"/>
+                    <ListView x:Name="HistoryListView" MaxHeight="400">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding}" TextWrapping="Wrap" FontSize="16" Margin="5"/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Page>

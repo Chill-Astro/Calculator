@@ -606,7 +606,7 @@ public sealed partial class CalculatorPage : Page
             FullSizeDesired = false,
             HorizontalAlignment = HorizontalAlignment.Stretch,
             VerticalAlignment = VerticalAlignment.Bottom,
-            XamlRoot = this.XamlRoot // Set the XamlRoot to the current page's XamlRoot
+            XamlRoot = this.XamlRoot, // Set the XamlRoot to the current page's XamlRoot
         };
 
         // Show the dialog
