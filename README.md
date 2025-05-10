@@ -5,7 +5,7 @@
 
 It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
-Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
+Currently available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
 ---
 
@@ -35,9 +35,9 @@ Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
 ## Installation : 
 
-1.  Download the `.msix` and `.cer` files from the [releases page.](https://github.com/Chill-Astro/Calculator/releases)
-2.  Import the `.cer` file to your trusted root certificates store. (This is only required for the first installation).
-3.  Install the `.msix` file as you normally would.
+1.  Download the `.msix` and `.cer` files from the [latest release.](https://github.com/Chill-Astro/Calculator/releases/latest)
+2.  Import the `.cer` file to your `Trusted Root Certificates` Store. [ ONLY FIRST RUN! ].
+3.  Install the `.msix` file.
 
 ---
 
@@ -51,8 +51,14 @@ Currently available for **Windows 11 and Windows 10 [ 20H2 and Higher ]**.
 
 ---
 
-### What's Next?
+## Icon Sources and Credits :
 
+- [Icons8](https://icons8.com) : For Unit Convertor, 
+- [SVG REPO](https://www.svgrepo.com/) : For Calculaor, Unit Convertor, Heron's Formula, and most of the icons.
+- [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
+- [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons [ Upcoming Release ].
+
+### What's Left? [ Fixed in Upcoming Release v11.26100.8.0 ] :
 * Keymaps for All Operators and %.
 * History Functionality [ A prototype `HistoryPage.xaml` is available and can be implemented! ].
 
