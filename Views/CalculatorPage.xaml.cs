@@ -451,6 +451,13 @@ public sealed partial class CalculatorPage : Page
         var isAltPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Menu).HasFlag(CoreVirtualKeyStates.Down);
         var isShiftPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Shift).HasFlag(CoreVirtualKeyStates.Down);
 
+        // Handle Enter key to behave like the Equals button
+        if (e.Key == VirtualKey.Enter && !isControlPressed && !isAltPressed && !isShiftPressed)
+        {
+            EqualsButton_Click(this, null); // Call the Equals button click handler
+            e.Handled = true; // Mark as handled
+            return;
+        }
         // Handle Shift + 5 (e.g., for the '%' operator)
         if (e.Key == VirtualKey.Number5 && isShiftPressed)
         {
@@ -512,7 +519,7 @@ public sealed partial class CalculatorPage : Page
         }
 
         // Handle Enter key only when no modifiers are pressed
-        if (e.Key == VirtualKey.Enter && !isControlPressed && !isAltPressed && !isShiftPressed)
+        if (e.Key == (VirtualKey)0xBB)
         {
             EqualsButton_Click(this, null);
             e.Handled = true;
