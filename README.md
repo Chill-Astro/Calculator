@@ -58,8 +58,7 @@ Currently available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 - [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
 - [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons [ Upcoming Release ].
 
-### What's Next?
-
+### What's Left? [ Fixed in Upcoming Release v11.26100.8.0 ] :
 * Keymaps for All Operators and %.
 * History Functionality [ A prototype `HistoryPage.xaml` is available and can be implemented! ].
 
