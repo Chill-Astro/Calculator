@@ -6,6 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{x:Null}"
+    IsTabStop="True"
     KeyDown="CalculatorPage_KeyDown"
     Loaded="CalculatorPage_Loaded">
     <Page.Resources>
@@ -133,7 +134,7 @@
     <Grid>
         <Button Content="&#xe81c;" Background="Transparent" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" HorizontalAlignment="Right" 
         FontSize="15" BorderThickness="0" VerticalAlignment="Top" Height="35" Width="35" Padding="3"
-        Margin="0,-55,2,0" Click="HistoryButton_Click" CornerRadius="3"/>
+        Margin="0,-55,1,0" Click="HistoryButton_Click" CornerRadius="3" KeyDown="CalculatorPage_KeyDown"/>
         <Grid x:Name="ContentGrid" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TranslateTransform X="0" Y="0"/>

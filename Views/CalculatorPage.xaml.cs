@@ -7,6 +7,8 @@ using Windows.System;
 using Microsoft.UI.Xaml.Automation.Peers;
 using System.Collections.Generic;
 using System;
+using Windows.UI.Core;
+using Microsoft.UI.Input;
 using Microsoft.UI.Xaml.Media.Animation;
 using Microsoft.UI.Xaml.Media; // Added for SolidColorBrush
 
@@ -20,7 +22,7 @@ public sealed partial class CalculatorPage : Page
         InitializeComponent();
         ClearCalculator();
         this.Focus(FocusState.Programmatic);
-        // Hook up the Loaded event to ensure focus is set after the page is loaded
+        this.KeyDown += CalculatorPage_KeyDown;
         this.Loaded += CalculatorPage_Loaded;
     }
 
@@ -443,9 +445,14 @@ public sealed partial class CalculatorPage : Page
         _isNewNumberInput = true;
     }
 
-    // Keep the Keyboard input logic and FindButtonAndClick methods as they are
     private void CalculatorPage_KeyDown(object sender, KeyRoutedEventArgs e)
     {
+        var isControlPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Control).HasFlag(CoreVirtualKeyStates.Down);
+        if (isControlPressed && e.Key == VirtualKey.H)
+        {
+            // Call the History button click handler
+            HistoryButton_Click(this, new RoutedEventArgs());
+        }
         switch (e.Key)
         {
             case VirtualKey.Number0:
@@ -491,39 +498,26 @@ public sealed partial class CalculatorPage : Page
 
             // Decimal point
             case VirtualKey.Decimal:
-                // Assuming you have a button with "." content
                 FindButtonAndClick(".");
                 break;
 
-            // Numpad Decimal (handle separately if needed, VirtualKey.Decimal is usually the main one)
-            // case VirtualKey.Divide: // Removed duplicate case causing CS0152 error - Corrected this line
-            //      // Assuming you have a button with "." content
-            //      FindButtonAndClick(".");
-            //      break;
-
-
             // Enter key for equals
             case VirtualKey.Enter:
-                // Assuming you have a button with "&#xe94e;" content for Equals
-                FindButtonAndClick("&#xe94e;"); // Or the actual content of your Equals button
+                FindButtonAndClick("=");
                 break;
 
             // Basic operators
             case VirtualKey.Add:
-                // Assuming you have a button with "+" content
                 FindButtonAndClick("+");
                 break;
             case VirtualKey.Subtract:
-                // Assuming you have a button with "-" content
                 FindButtonAndClick("-");
                 break;
             case VirtualKey.Multiply:
-                // Assuming you have a button with "×" content
-                FindButtonAndClick("×"); // Or the actual content of your Multiply button
+                FindButtonAndClick("×");
                 break;
             case VirtualKey.Divide:
-                // Assuming you have a button with "÷" content
-                FindButtonAndClick("÷"); // Or the actual content of your Divide button
+                FindButtonAndClick("÷");
                 break;
 
             // Backspace
@@ -536,7 +530,7 @@ public sealed partial class CalculatorPage : Page
                 ClearCalculator();
                 break;
         }
-        // Mark event as handled if needed, e.Handled = true;
+        e.Handled = true; // Mark event as handled
     }
 
     private void FindButtonAndClick(string content)
@@ -580,42 +574,54 @@ public sealed partial class CalculatorPage : Page
             }
         }
     }
-
-
     private void CalculatorPage_Loaded(object sender, RoutedEventArgs e)
     {
-        this.Focus(FocusState.Programmatic);
-        // Start the entrance animation (ensure ContentGrid is defined in XAML)
-        if (ContentGrid != null)
+        this.Focus(FocusState.Programmatic); // Ensure the page has focus
+        ContentGrid.Focus(FocusState.Programmatic); // Optionally focus the ContentGrid
+    }
+    private async void HistoryButton_Click(object sender, RoutedEventArgs e)
+    {
+        // Check if a ContentDialog is already open by tracking it manually
+        if (_isDialogOpen)
         {
-            var entranceThemeTransition = new EntranceThemeTransition();
-            ContentGrid.Transitions = new TransitionCollection { entranceThemeTransition };
+            return; // Prevent opening another dialog
+        }
+
+        _isDialogOpen = true; // Set the flag to indicate a dialog is open
+
+        try
+        {
+            // Set the calculation history after creating the HistoryPage
+            var historyPage = new HistoryPage();
+            historyPage.SetHistory(_calculationHistory); // Assuming a method to set history exists
+
+            // Create a ContentDialog to display the HistoryPage as a pop-up
+            var dialog = new ContentDialog
+            {
+                Content = historyPage,
+                CloseButtonText = "Close",
+                FullSizeDesired = false,
+                XamlRoot = App.MainWindow.Content.XamlRoot, // Ensure XamlRoot is set to the main window
+                RequestedTheme = this.RequestedTheme, // Match the theme of the current page
+            };
+
+            // Center the dialog explicitly
+            dialog.HorizontalAlignment = HorizontalAlignment.Center;
+            dialog.VerticalAlignment = VerticalAlignment.Center;
+            dialog.MaxHeight = App.MainWindow.Bounds.Height * 0.8; // Set max height to 80% of the window height
+            dialog.MinHeight = App.MainWindow.Bounds.Height * 0.5; // Set min height to 50% of the window height
+            dialog.MinWidth = App.MainWindow.Bounds.Width * 0.8; // Set a minimum width for the dialog
+
+            // Show the dialog
+            await dialog.ShowAsync();
+        }
+        finally
+        {
+            _isDialogOpen = false; // Reset the flag when the dialog is closed
         }
     }
-    private void HistoryButton_Click(object sender, RoutedEventArgs e)
-    {
-        // Set the calculation history after creating the HistoryPage
-        var historyPage = new HistoryPage();
-        historyPage.SetHistory(_calculationHistory); // Assuming a method to set history exists
 
-        // Create a ContentDialog to display the HistoryPage as a pop-up
-        var dialog = new ContentDialog
-        {
-            Content = historyPage,
-            CloseButtonText = "Close",
-            FullSizeDesired = false,
-            XamlRoot = this.XamlRoot, // Set the XamlRoot to the current page's XamlRoot
-            RequestedTheme = this.RequestedTheme, // Match the theme of the current page
-            HorizontalAlignment = HorizontalAlignment.Center,
-            VerticalAlignment = VerticalAlignment.Center,
-            MaxWidth = 600, // Set a maximum width for the dialog
-            MaxHeight = 400, // Set a maximum height for the dialog            
-            MinHeight = 300  // Set a minimum height for the dialog
-        };
-
-        // Show the dialog
-        _ = dialog.ShowAsync();
-    }
-
+    // Add a private field to track if a dialog is open
+    private bool _isDialogOpen = false;
 
 }
