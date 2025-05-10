@@ -19,6 +19,7 @@ Currently at **v11.26100.8.0**, and available for **Windows 11 and Windows 10 [ 
 - High Precision for decimals. ✅
 - Modern UI with Fluid Animations and Transitions. ✅
 - Theme switching built in. ✅
+- History Support for the Base Calculator UI.
 - Backdrop switching build in [ B/w Mica Alt and Acrylic ].
   
   ---
