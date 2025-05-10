@@ -131,9 +131,9 @@ public sealed partial class CalculatorPage : Page
 
     private void OperatorButton_Click(object sender, RoutedEventArgs e)
     {
-        Button clickedButton = (Button)sender;
-        string operatorContent = clickedButton.Content.ToString();
-        string standardOperator = "";
+        var clickedButton = (Button)sender;
+        var operatorContent = clickedButton.Content.ToString();
+        var standardOperator = "";
 
         // Map button content to standard operator symbols
         if (operatorContent == "\uE94A" || operatorContent == "÷") // Division symbol (handle both if needed)
@@ -158,7 +158,7 @@ public sealed partial class CalculatorPage : Page
         }
         // Add other operators if necessary
 
-        string operatorSymbolForDisplay = GetOperatorSymbol(standardOperator); // Declared once here
+        var operatorSymbolForDisplay = GetOperatorSymbol(standardOperator);
 
 
         // If the last operation was equals, the current displayed number is the result
@@ -387,11 +387,11 @@ public sealed partial class CalculatorPage : Page
         {
             if (_currentOperator == "+" || _currentOperator == "-")
             {
-                _currentNumber = _previousNumber * (_currentNumber / 100);
+                _currentNumber = _previousNumber * (_currentNumber / 100.0); // Ensure division by 100.0 for precision
             }
             else if (_currentOperator == "×" || _currentOperator == "÷")
             {
-                _currentNumber = _currentNumber / 100;
+                _currentNumber /= 100.0; // Use compound assignment for clarity
             }
 
             DisplayTextBlock.Text = _currentNumber.ToString("N0");
@@ -400,7 +400,7 @@ public sealed partial class CalculatorPage : Page
         }
         else
         {
-            _currentNumber = _currentNumber / 100;
+            _currentNumber /= 100.0; // Use compound assignment for clarity
             DisplayTextBlock.Text = _currentNumber.ToString("N0");
             OperationTextBlock.Text = $"{_currentNumber * 100}%";
             _isNewNumberInput = true;
@@ -448,7 +448,12 @@ public sealed partial class CalculatorPage : Page
     {
         var isControlPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Control).HasFlag(CoreVirtualKeyStates.Down);
         var isAltPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Menu).HasFlag(CoreVirtualKeyStates.Down);
-        var isShiftPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Shift).HasFlag(CoreVirtualKeyStates.Down);
+        bool isShiftPressed = false;
+        var coreWindow = CoreWindow.GetForCurrentThread();
+        if (coreWindow != null)
+        {
+            isShiftPressed = (coreWindow.GetKeyState(VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+        }
         if (isControlPressed && e.Key == VirtualKey.H)
         {
             HistoryButton_Click(this, new RoutedEventArgs());
@@ -485,7 +490,7 @@ public sealed partial class CalculatorPage : Page
             return;
         }
 
-        if (e.Key == VirtualKey.Decimal)
+        if (e.Key == (VirtualKey)0xBE)
         {
             DecimalButton_Click(this, null);
             e.Handled = true; // Mark as handled
@@ -499,7 +504,39 @@ public sealed partial class CalculatorPage : Page
             e.Handled = true;
             return;
         }
+        if (e.Key == (VirtualKey)0xBB)
+        {
+            OperatorButton_Click(FindButtonByContent("\uE948"), null);
+            e.Handled = true;
+            return;
+        }
+        if (e.Key == (VirtualKey)0xBD)
+        {
+            OperatorButton_Click(FindButtonByContent("\uE949"), null);
+            e.Handled = true;
+            return;
+        }
+        if (e.Key == VirtualKey.Multiply || (e.Key == VirtualKey.Number8 && isShiftPressed))
+        {
+            OperatorButton_Click(FindButtonByContent("×"), null);
+            e.Handled = true;
+            return;
+        }
+        if (e.Key == (VirtualKey)0xBF)
+        {
+            OperatorButton_Click(FindButtonByContent("\uE94A"), null);
+            e.Handled = true;
+            return;
+        }
+        if (e.Key == VirtualKey.Number5 && isShiftPressed)
+        {
+            PercentButton_Click(this, null);
+            e.Handled = true;
+            return;
+        }
     }
+
+
 
     private Button FindButtonByContent(string content)
     {
