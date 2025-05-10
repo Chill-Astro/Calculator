@@ -31,7 +31,7 @@
         <Grid Grid.Row="1" Margin="20">
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
                 <StackPanel>
-                    <TextBlock x:Name="NoHistoryTextBlock" Text="There's no history" 
+                    <TextBlock x:Name="NoHistoryTextBlock" Text="There's no history yet." 
                                Visibility="Collapsed" FontSize="10" HorizontalAlignment="Center" Margin="10"/>
                     <ListView x:Name="HistoryListView" MaxHeight="400">
                         <ListView.ItemTemplate>

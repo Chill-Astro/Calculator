@@ -131,6 +131,9 @@
         </Style>
     </Page.Resources>
     <Grid>
+        <Button Content="&#xe81c;" Background="Transparent" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" HorizontalAlignment="Right" 
+        FontSize="15" BorderThickness="0" VerticalAlignment="Top" Height="35" Width="35" Padding="3"
+        Margin="0,-55,2,0" Click="HistoryButton_Click" CornerRadius="3"/>
         <Grid x:Name="ContentGrid" Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TranslateTransform X="0" Y="0"/>
@@ -142,9 +145,6 @@
             </Grid.RowDefinitions>
             <Viewbox Stretch="Uniform" StretchDirection="Both" Grid.Row="1" MaxHeight="120" Margin="0, -10, 0, 0" HorizontalAlignment="Right">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Bottom">
-                    <Button Content="&#xe81c;" Background="Transparent" FontFamily="ms-appx:///Assets/Fonts/Segoe.ttf#Segoe Fluent Icons" HorizontalAlignment="Right" 
-                            FontSize="5" BorderThickness="0" VerticalAlignment="Top" Height="12" Width="12" Padding="0"
-                            Margin="0,-14,1,0" Click="HistoryButton_Click" CornerRadius="3"/>
                     <TextBlock x:Name="OperationTextBlock"
                                Text=""
                                FontSize="7"

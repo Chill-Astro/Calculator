@@ -604,12 +604,18 @@ public sealed partial class CalculatorPage : Page
             Content = historyPage,
             CloseButtonText = "Close",
             FullSizeDesired = false,
-            HorizontalAlignment = HorizontalAlignment.Stretch,
-            VerticalAlignment = VerticalAlignment.Bottom,
             XamlRoot = this.XamlRoot, // Set the XamlRoot to the current page's XamlRoot
+            RequestedTheme = this.RequestedTheme, // Match the theme of the current page
+            HorizontalAlignment = HorizontalAlignment.Center,
+            VerticalAlignment = VerticalAlignment.Center,
+            MaxWidth = 600, // Set a maximum width for the dialog
+            MaxHeight = 400, // Set a maximum height for the dialog            
+            MinHeight = 300  // Set a minimum height for the dialog
         };
 
         // Show the dialog
         _ = dialog.ShowAsync();
     }
+
+
 }
