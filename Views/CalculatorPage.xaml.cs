@@ -21,8 +21,7 @@ public sealed partial class CalculatorPage : Page
         ViewModel = App.GetService<CalculatorViewModel>();
         InitializeComponent();
         ClearCalculator();
-        this.Focus(FocusState.Programmatic);
-        this.KeyDown += CalculatorPage_KeyDown;
+        this.Focus(FocusState.Programmatic);        
         this.Loaded += CalculatorPage_Loaded;
     }
 
@@ -448,110 +447,70 @@ public sealed partial class CalculatorPage : Page
     private void CalculatorPage_KeyDown(object sender, KeyRoutedEventArgs e)
     {
         var isControlPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Control).HasFlag(CoreVirtualKeyStates.Down);
+        var isAltPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Menu).HasFlag(CoreVirtualKeyStates.Down);
+        var isShiftPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Shift).HasFlag(CoreVirtualKeyStates.Down);
         if (isControlPressed && e.Key == VirtualKey.H)
         {
-            // Call the History button click handler
             HistoryButton_Click(this, new RoutedEventArgs());
+            e.Handled = true; // Mark as handled
+            return;
         }
-        switch (e.Key)
+
+        if (e.Key == VirtualKey.C)
         {
-            case VirtualKey.Number0:
-            case VirtualKey.NumberPad0:
-                FindButtonAndClick("0");
-                break;
-            case VirtualKey.Number1:
-            case VirtualKey.NumberPad1:
-                FindButtonAndClick("1");
-                break;
-            case VirtualKey.Number2:
-            case VirtualKey.NumberPad2:
-                FindButtonAndClick("2");
-                break;
-            case VirtualKey.Number3:
-            case VirtualKey.NumberPad3:
-                FindButtonAndClick("3");
-                break;
-            case VirtualKey.Number4:
-            case VirtualKey.NumberPad4:
-                FindButtonAndClick("4");
-                break;
-            case VirtualKey.Number5:
-            case VirtualKey.NumberPad5:
-                FindButtonAndClick("5");
-                break;
-            case VirtualKey.Number6:
-            case VirtualKey.NumberPad6:
-                FindButtonAndClick("6");
-                break;
-            case VirtualKey.Number7:
-            case VirtualKey.NumberPad7:
-                FindButtonAndClick("7");
-                break;
-            case VirtualKey.Number8:
-            case VirtualKey.NumberPad8:
-                FindButtonAndClick("8");
-                break;
-            case VirtualKey.Number9:
-            case VirtualKey.NumberPad9:
-                FindButtonAndClick("9");
-                break;
-
-            // Decimal point
-            case VirtualKey.Decimal:
-                FindButtonAndClick(".");
-                break;
-
-            // Enter key for equals
-            case VirtualKey.Enter:
-                FindButtonAndClick("=");
-                break;
-
-            // Basic operators
-            case VirtualKey.Add:
-                FindButtonAndClick("+");
-                break;
-            case VirtualKey.Subtract:
-                FindButtonAndClick("-");
-                break;
-            case VirtualKey.Multiply:
-                FindButtonAndClick("×");
-                break;
-            case VirtualKey.Divide:
-                FindButtonAndClick("÷");
-                break;
-
-            // Backspace
-            case VirtualKey.Back:
-                BackspaceButton_Click(null, null);
-                break;
-
-            // Escape for clear
-            case VirtualKey.Escape:
-                ClearCalculator();
-                break;
+            ClearButton_Click(this, null);
+            e.Handled = true; // Mark as handled
+            return;
         }
-        e.Handled = true; // Mark event as handled
+
+        if (e.Key == VirtualKey.Back)
+        {
+            BackspaceButton_Click(this, null);
+            e.Handled = true; // Mark as handled
+            return;
+        }
+
+        if (e.Key >= VirtualKey.Number0 && e.Key <= VirtualKey.Number9)
+        {
+            string number = (e.Key - VirtualKey.Number0).ToString();
+            NumberButton_Click(FindButtonByContent(number), null);
+            e.Handled = true; // Mark as handled
+            return;
+        }
+        else if (e.Key >= VirtualKey.NumberPad0 && e.Key <= VirtualKey.NumberPad9)
+        {
+            string number = (e.Key - VirtualKey.NumberPad0).ToString();
+            NumberButton_Click(FindButtonByContent(number), null);
+            e.Handled = true; // Mark as handled
+            return;
+        }
+
+        if (e.Key == VirtualKey.Decimal)
+        {
+            DecimalButton_Click(this, null);
+            e.Handled = true; // Mark as handled
+            return;
+        }
+
+        // Handle Enter key only when no modifiers are pressed
+        if (e.Key == VirtualKey.Enter && !isControlPressed && !isAltPressed && !isShiftPressed)
+        {
+            EqualsButton_Click(this, null);
+            e.Handled = true;
+            return;
+        }
     }
 
-    private void FindButtonAndClick(string content)
+    private Button FindButtonByContent(string content)
     {
-        // This method seems to rely on finding buttons by their displayed content.
-        // This might be fragile if button content changes (e.g., localization).
-        // Consider giving buttons x:Name and finding them by name.
-
         foreach (var element in FindVisualChildren<Button>(this))
         {
             if (element.Content?.ToString() == content)
             {
-                // Ensure the button is enabled and visible before invoking
-                if (element.IsEnabled && element.Visibility == Visibility.Visible)
-                {
-                    ButtonAutomationPeer peer = ButtonAutomationPeer.CreatePeerForElement(element) as ButtonAutomationPeer;
-                    peer?.Invoke();
-                    break; // Stop after finding and clicking the first matching button
-                }
+                return element;
             }
         }
+        return null; // Return null if no matching button is found
     }
 
     // Helper method to find visual children (keep this as is)
