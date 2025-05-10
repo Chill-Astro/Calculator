@@ -61,7 +61,7 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 ## Icon Sources and Credits :
 
 - [Icons8](https://icons8.com) : For all the Mensuration and Quadratic Equation Solver Menu Logos, 
-- [SVG REPO](https://www.svgrepo.com/) : For Calculator, Unit Convertor, Heron's Formula, and most of the icons.
+- [SVG REPO](https://www.svgrepo.com/) : For Calculator Menu Logo, Unit Convertor, Heron's Formula, and most of the icons.
 - [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
 - [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons.
 
