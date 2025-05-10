@@ -5,7 +5,9 @@
 
 It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
-Currently available for **Windows 11 and Windows 10 [ 20H2+ ]**.
+[ CodeName Calc+ ] can also be run using App Execution Aliases. These are `calc+.exe`, `calcx.exe`, `calcx-11.exe` and `cac.exe`.
+
+Currently at **v11.26100.8.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
 ---
 
@@ -23,38 +25,46 @@ Currently available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
 ## Previews :
 
-- Full Preview [ v11.26100.5.0 ] :
+- Image Preview :
 
-  https://github.com/user-attachments/assets/a2bc2dca-39fa-4169-83d1-457b58ae921f
+![image](https://github.com/user-attachments/assets/1869715f-d336-4efa-a9fc-f8f8c6a87b5b)
 
-- New Settings Page with Acrylic Option [ v11.26100.7.0 ] :
-  
-   https://github.com/user-attachments/assets/dcea1a2b-077c-4a51-939c-f54dc8d3f19f
+- History Preview :
+
+https://github.com/user-attachments/assets/624ade09-6050-4a4e-965d-7ef7938f4c1e
+
+- Scripted Actions Preview :
+
+https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ---
 
 ## Installation : 
 
 1.  Download the `.msix` and `.cer` files from the [latest release.](https://github.com/Chill-Astro/Calculator/releases/latest)
-2.  Import the `.cer` file to your `Trusted Root Certificates` Store. [ ONLY FIRST RUN! ].
+2.  Import the `.cer` file to the `Trusted Root Certificates` Store. [ ONLY FIRST RUN! ].
 3.  Install the `.msix` file.
 
 ---
 
 ## Requirements :
 
-* **Operating System:** Windows 11 or Windows 10 version 20H2 [ 19041 or higher ].
+* **Operating System :** Windows 11 or Windows 10 version 20H2 [ 19041 or higher ].
+* **.NET Runtime :** .NET 8.0 Runtime is required for the App to run.
 * **For Building from Source:**
     * Visual Studio with the WinUI and .NET development workloads.
-    * .NET 8.0 SDK
-    * Windows App SDK 26100.xxxx
+    * .NET 8.0 SDK / .NET 9.0 SDK.
+    * Windows App SDK 26100.xxxx or Higher.
 
 ---
 
 ## Icon Sources and Credits :
 
-- [Icons8](https://icons8.com) : For Unit Convertor, 
-- [SVG REPO](https://www.svgrepo.com/) : For Calculaor, Unit Convertor, Heron's Formula, and most of the icons.
+- [Icons8](https://icons8.com) : For all the Mensuration and Quadratic Equation Solver Menu Logos, 
+- [SVG REPO](https://www.svgrepo.com/) : For Calculator, Unit Convertor, Heron's Formula, and most of the icons.
 - [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
-- [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons [ Upcoming Release ].
+- [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons.
+
 ---
+
+
