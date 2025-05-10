@@ -23,6 +23,7 @@ public sealed partial class CalculatorPage : Page
         ClearCalculator();
         this.Focus(FocusState.Programmatic);        
         this.Loaded += CalculatorPage_Loaded;
+        this.KeyDown += CalculatorPage_KeyDown;
     }
 
     public CalculatorViewModel ViewModel
@@ -448,12 +449,25 @@ public sealed partial class CalculatorPage : Page
     {
         var isControlPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Control).HasFlag(CoreVirtualKeyStates.Down);
         var isAltPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Menu).HasFlag(CoreVirtualKeyStates.Down);
-        bool isShiftPressed = false;
-        var coreWindow = CoreWindow.GetForCurrentThread();
-        if (coreWindow != null)
+        var isShiftPressed = InputKeyboardSource.GetKeyStateForCurrentThread(VirtualKey.Shift).HasFlag(CoreVirtualKeyStates.Down);
+
+        // Handle Shift + 5 (e.g., for the '%' operator)
+        if (e.Key == VirtualKey.Number5 && isShiftPressed)
         {
-            isShiftPressed = (coreWindow.GetKeyState(VirtualKey.Shift) & CoreVirtualKeyStates.Down) == CoreVirtualKeyStates.Down;
+            PercentButton_Click(this, null); // Call the Percent button click handler
+            e.Handled = true; // Mark as handled
+            return;
         }
+
+        // Handle Shift + 8 (e.g., for the multiplication operator '×')
+        if (e.Key == VirtualKey.Number8 && isShiftPressed)
+        {
+            OperatorButton_Click(FindButtonByContent("\uE947"), null); // Call the multiplication button click handler
+            e.Handled = true; // Mark as handled
+            return;
+        }
+
+        // Handle other key combinations
         if (isControlPressed && e.Key == VirtualKey.H)
         {
             HistoryButton_Click(this, new RoutedEventArgs());
@@ -528,14 +542,7 @@ public sealed partial class CalculatorPage : Page
             e.Handled = true;
             return;
         }
-        if (e.Key == VirtualKey.Number5 && isShiftPressed)
-        {
-            PercentButton_Click(this, null);
-            e.Handled = true;
-            return;
-        }
     }
-
 
 
     private Button FindButtonByContent(string content)
