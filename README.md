@@ -5,7 +5,9 @@
 
 It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
-[ CodeName Calc+ ] can also be run using App Execution Aliases. These are `calc+.exe`, `calcx.exe`, `calcx-11.exe` and `cac.exe`.
+It can also be run using App Execution Aliases [ for only .msix version ]. These are `calc+.exe`, `calcx.exe`, `calcx-11.exe` and `cac.exe`.
+
+Installer Version supports `calculator.exe` only.
 
 Currently at **v11.26100.8.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
@@ -77,7 +79,7 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 - [Icons8](https://icons8.com) : For all the Mensuration and Quadratic Equation Solver Menu Logos, 
 - [SVG REPO](https://www.svgrepo.com/) : For Calculator Menu Logo, Unit Convertor, Heron's Formula, and most of the icons.
 - [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
-- [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons.
+- [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons. Also this inspired me to make this app.
 
 ---
 
