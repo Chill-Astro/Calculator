@@ -21,8 +21,15 @@ Currently at **v11.26100.8.0**, and available for **Windows 11 and Windows 10 [ 
 - Theme switching built in. ✅
 - History Support for the Base Calculator UI. ✅
 - Backdrop switching built in. [ B/w Mica Alt and Acrylic ] ✅
+- Available in both Msix & Installer Variants. ✅
   
   ---
+
+### Install Calculator [ Installer Variant ] from Winget :
+      
+      winget install Calculator.unp
+
+---
 
 ## Previews :
 
@@ -45,6 +52,12 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 1.  Download the `.msix` and `.cer` files from the [latest release.](https://github.com/Chill-Astro/Calculator/releases/latest)
 2.  Import the `.cer` file to the `Trusted Root Certificates` Store. [ ONLY FIRST RUN! ].
 3.  Install the `.msix` file.
+
+<p align="center">
+  ---------------------[ OR ]---------------------
+</p>
+
+-  Download the `Calculator-Setup.exe` to install the app easily.
 
 ---
 
