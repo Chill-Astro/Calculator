@@ -78,6 +78,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 
 [Files]
 Source: "C:\Users\Master\Chill-Astro\Calculator\Calculator\publish\*"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\Master\Chill-Astro\Calculator\Calculator\publish\Assets\*"; DestDir: "{app}\Assets"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
