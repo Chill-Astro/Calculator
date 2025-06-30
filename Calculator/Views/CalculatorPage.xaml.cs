@@ -23,7 +23,7 @@ public sealed partial class CalculatorPage : Page
         ClearCalculator();
         this.Focus(FocusState.Programmatic);        
         this.Loaded += CalculatorPage_Loaded;
-        this.KeyDown += CalculatorPage_KeyDown;
+        // Removed duplicate KeyDown event subscription
     }
 
     public CalculatorViewModel ViewModel
