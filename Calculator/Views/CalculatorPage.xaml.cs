@@ -21,9 +21,9 @@ public sealed partial class CalculatorPage : Page
         ViewModel = App.GetService<CalculatorViewModel>();
         InitializeComponent();
         ClearCalculator();
-        this.Focus(FocusState.Programmatic);        
+        this.Focus(FocusState.Programmatic);
         this.Loaded += CalculatorPage_Loaded;
-        // Removed duplicate KeyDown event subscription
+        this.KeyDown += CalculatorPage_KeyDown;
     }
 
     public CalculatorViewModel ViewModel
