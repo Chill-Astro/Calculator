@@ -1,15 +1,15 @@
 <p align="center">
   <img src="https://github.com/Chill-Astro/Calculator/blob/main/Calculator/Assets/StoreLogo.scale-400.png" width="100px" height="100px" alt="Calculator Logo">
 </p>
-<h1 align="center">Calculator by Chill-Astro</h1>
+<h1 align="center">Calculator [+]</h1>
 
 It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
-It can also be run using App Execution Aliases [ for only .msix version ]. These are `calc+.exe`, `calcx.exe`, `calcx-11.exe` and `cac.exe`.
+It can also be run using App Execution Aliases [ .msix version ]. These are `calc+.exe`, `calculator.exe`.
 
 Installer Version supports `calculator.exe` only.
 
-Currently at **v11.26100.8.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
+Currently at **v11.26100.10.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
 ---
 
@@ -27,7 +27,7 @@ Currently at **v11.26100.8.0**, and available for **Windows 11 and Windows 10 [ 
   
   ---
 
-### Install Calculator [ Installer Variant ] from Winget :
+### Install Calculator [ Installer ] from Winget :
       
       winget install Calculator.unp
 
@@ -66,7 +66,6 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 ## Requirements :
 
 * **Operating System :** Windows 11 or Windows 10 version 20H2 [ 19041 or higher ].
-* **.NET Runtime :** .NET 8.0 Runtime is required for the App to run.
 * **For Building from Source:**
     * Visual Studio with the WinUI and .NET development workloads.
     * .NET 8.0 SDK / .NET 9.0 SDK.
