@@ -20,12 +20,12 @@ Currently at **v11.26100.10.0**, and available for **Windows 11 and Windows 10 [
 - Fast and Error-Proof Calculations. ✅
 - High Precision for decimals. ✅
 - Modern UI with Fluid Animations and Transitions. ✅
-- Theme switching built in. ✅
 - History Support for the Base Calculator UI. ✅
+- Theme switching built in. ✅
 - Backdrop switching built in. [ B/w Mica Alt and Acrylic ] ✅
 - Available in both Msix & Installer Variants. ✅
-  
-  ---
+
+---
 
 ### Install Calculator [ Installer ] from Winget :
       
