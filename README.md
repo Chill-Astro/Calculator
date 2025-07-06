@@ -63,13 +63,30 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ---
 
-## Requirements :
+## Building from Source :
 
-* **Operating System :** Windows 11 or Windows 10 version 20H2 [ 19041 or higher ].
-* **For Building from Source:**
-    * Visual Studio with the WinUI and .NET development workloads.
-    * .NET 8.0 SDK / .NET 9.0 SDK.
-    * Windows App SDK 26100.xxxx or Higher.
+- Install Visual Studio 2022 with **WinUI Application Development** and **.NET Desktop Development** workloads.
+  - Windows 11 is Recommended. [ Build 26100 + is Best for Development ]
+  - [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) is recommended for contributing.
+  - .NET 8.0 Runtime LTS is must.
+  - Get the latest Windows 11 SDK [26100.xxxx].
+  - Commnity Edition is Enough for Builing the Solutiuon. Pro and Enterprise Editions can also be used.
+  - Github Copilot and Live Share can be skipped for Storage Saving.
+ 
+![image](https://github.com/user-attachments/assets/0a18b87a-de85-40f9-80bc-ef2575dc221c)
+
+- Get the Code :
+  
+      git clone https://github.com/Chill-Astro/Calculator.git
+
+- Open [Calculator.sln](/Calculator.sln) in Visual Studio.
+- Hit Deploy as shown in Screenshot. [Building is Automatically Done while Deploying.]
+
+![image](https://github.com/user-attachments/assets/d343c12f-03c0-4e52-95d8-925c5262f304)
+
+- Calculator is now Deployed and now it shall appear in the Start Menu.
+
+![image](https://github.com/user-attachments/assets/99678fdb-c955-4818-a7bf-5d58fdfa1cfd)
 
 ---
 
