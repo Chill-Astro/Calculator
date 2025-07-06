@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://github.com/Chill-Astro/Calculator/blob/main/Calculator/Assets/StoreLogo.scale-400.png" width="100px" height="100px" alt="Calculator Logo">
 </p>
-<h1 align="center">Calculator [+]</h1>
+<h1 align="center">Calculator</h1>
 
 It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
