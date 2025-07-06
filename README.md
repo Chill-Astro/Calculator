@@ -5,7 +5,7 @@
 
 It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
 
-It can also be run using App Execution Aliases [ .msix version ]. These are `calc+.exe`, `calculator.exe`.
+It can also be run from Terminal using App Execution Aliases [ .msix version ]. These are `calc+.exe`, `calculator.exe`.
 
 Installer Version supports `calculator.exe` only.
 
@@ -52,7 +52,7 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 ## Installation : 
 
 1.  Download the `.msix` and `.cer` files from the [latest release.](https://github.com/Chill-Astro/Calculator/releases/latest)
-2.  Import the `.cer` file to the `Trusted Root Certificates` Store. [ ONLY FIRST RUN! ].
+2.  Import the `.cer` file to the `Trusted Root Certificates` Store. [ ONLY ON FIRST RUN! ].
 3.  Install the `.msix` file.
 
 <p align="center">
@@ -70,7 +70,7 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
   - [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) is recommended for contributing.
   - .NET 8.0 Runtime LTS is must.
   - Get the latest Windows 11 SDK [26100.xxxx].
-  - Commnity Edition is Enough for Builing the Solutiuon. Pro and Enterprise Editions can also be used.
+  - Commnity Edition is sufficient for contributing and testing. Pro and Enterprise Editions can also be used.
   - Github Copilot and Live Share can be skipped for Storage Saving.
  
 ![image](https://github.com/user-attachments/assets/0a18b87a-de85-40f9-80bc-ef2575dc221c)
@@ -94,7 +94,7 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 - [Icons8](https://icons8.com) : For all the Mensuration and Quadratic Equation Solver Menu Logos, 
 - [SVG REPO](https://www.svgrepo.com/) : For Calculator Menu Logo, Unit Convertor, Heron's Formula, and most of the icons.
-- [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` for the Icons.
+- [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` file for the Icons.
 - [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons. Also this inspired me to make this app.
 
 ---
