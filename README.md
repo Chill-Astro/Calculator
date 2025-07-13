@@ -99,6 +99,17 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ---
 
+## ⚠️ IMPORTANT NOTICE ⚠️
+
+Please be aware: There are fraudulent repositories on GitHub that are cloning this project's name and using AI-generated readmes, but they contain **completely random and unrelated files in each release**. These are NOT official versions of this project.
+
+**ALWAYS ensure you are downloading or cloning this project ONLY from its official and legitimate source:**
+`https://github.com/Chill-Astro/Calculator`
+
+I am trying my best to report these people.
+
+---
+
 ## Note from Developer :
 
 Appreciate my effort? Why not leave a Star ⭐ ! Also if forked, please credit me for my effort and thanks if you do! :)
