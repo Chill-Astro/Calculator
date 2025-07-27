@@ -84,7 +84,7 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ![image](https://github.com/user-attachments/assets/d343c12f-03c0-4e52-95d8-925c5262f304)
 
-- Calculator is now Deployed and now it shall appear in the Start Menu.
+Calculator is now Deployed and now it shall appear in the Start Menu.
 
 ![image](https://github.com/user-attachments/assets/99678fdb-c955-4818-a7bf-5d58fdfa1cfd)
 
