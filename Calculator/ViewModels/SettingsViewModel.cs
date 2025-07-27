@@ -35,6 +35,10 @@ public partial class SettingsViewModel : ObservableRecipient
     [ObservableProperty]
     private bool _isMicaAltEnabled;
 
+    // Default version if not found
+    private static readonly Version DefaultVersion = new Version(11, 26100, 10, 0);
+    public static Version AppVersion { get; private set; } = DefaultVersion;
+
     public ICommand SwitchThemeCommand
     {
         get;
@@ -86,14 +90,28 @@ public partial class SettingsViewModel : ObservableRecipient
 
         if (RuntimeHelper.IsMSIX)
         {
-            var packageVersion = Package.Current.Id.Version;
-            version = new(packageVersion.Major, packageVersion.Minor, packageVersion.Build, packageVersion.Revision);
+            try
+            {
+                var packageVersion = Windows.ApplicationModel.Package.Current.Id.Version;
+                version = new Version(packageVersion.Major, packageVersion.Minor, packageVersion.Build, packageVersion.Revision);
+            }
+            catch
+            {
+                version = DefaultVersion;
+            }
         }
         else
         {
-            version = Assembly.GetExecutingAssembly().GetName().Version!;
+            try
+            {
+                version = Assembly.GetExecutingAssembly().GetName().Version ?? DefaultVersion;
+            }
+            catch
+            {
+                version = DefaultVersion;
+            }
         }
-
-        return $" {"AppDisplayName".GetLocalized()} - v{version.Major}.{version.Minor}.{version.Build}.{version.Revision}";
+        AppVersion = version;
+        return $"Calculator - v{version.Major}.{version.Minor}.{version.Build}.{version.Revision}";
     }
 }

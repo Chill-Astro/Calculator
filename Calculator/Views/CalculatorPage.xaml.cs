@@ -87,26 +87,27 @@ public sealed partial class CalculatorPage : Page
             }
         }
 
-        // Update _currentNumber and format DisplayTextBlock
-        if (DisplayTextBlock.Text.Length > 0 && DisplayTextBlock.Text != "N/A" && DisplayTextBlock.Text != "Not Defined")
+        // Only update _currentNumber and format if there is no decimal point
+        if (!DisplayTextBlock.Text.Contains("."))
         {
-            if (double.TryParse(DisplayTextBlock.Text, out double currentNumber))
+            if (DisplayTextBlock.Text.Length > 0 && DisplayTextBlock.Text != "N/A" && DisplayTextBlock.Text != "Not Defined")
             {
-                _currentNumber = currentNumber;
-
-                // Apply formatting only if the number is an integer
-                if (DisplayTextBlock.Text.Contains("."))
+                if (double.TryParse(DisplayTextBlock.Text, out double currentNumber))
                 {
-                    DisplayTextBlock.Text = currentNumber.ToString(); // No formatting for decimals
-                }
-                else
-                {
+                    _currentNumber = currentNumber;
                     DisplayTextBlock.Text = currentNumber.ToString("N0"); // Format with commas for integers
                 }
             }
         }
+        else
+        {
+            // If there is a decimal, just parse for calculation but do not format the display
+            if (double.TryParse(DisplayTextBlock.Text, out double currentNumber))
+            {
+                _currentNumber = currentNumber;
+            }
+        }
     }
-
 
     private void DecimalButton_Click(object sender, RoutedEventArgs e)
     {
