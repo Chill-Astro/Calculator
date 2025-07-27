@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 Calculator-Cache
 Calculator-SetupFiles
+Calculator-Installer
 
 # User-specific files
 *.rsuser
