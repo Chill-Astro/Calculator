@@ -26,6 +26,8 @@
 	  <AppxPackageDir>C:\Users\Master\Downloads\</AppxPackageDir>
 	  <PlatformTarget>x64</PlatformTarget>
 	  <WindowsPackageType>MSIX</WindowsPackageType>
+	  <Version>11.26100.10.0</Version>
+	  <AssemblyVersion>11.26100.10.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
