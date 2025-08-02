@@ -9,7 +9,7 @@
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPNOREPAIR" Value="1"/>
-    <ROW Property="ARPPRODUCTICON" Value="WindowIcon.exe" Type="8"/>
+    <ROW Property="ARPPRODUCTICON" Value="WindowIcon_1.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="Chill-Astro"/>
@@ -55,262 +55,263 @@
     <ROW Component="AI_CustomARPName" ComponentId="{1A050248-B945-4C10-AE43-54E81CD7A704}" Directory_="APPDIR" Attributes="260" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_DisableModify" ComponentId="{E2B8C555-1EFB-42BF-8C54-0395EB0B1332}" Directory_="APPDIR" Attributes="260" KeyPath="NoModify" Options="1"/>
     <ROW Component="APPDIR" ComponentId="{229DC981-27BF-436C-B670-C1F4836940D7}" Directory_="APPDIR" Attributes="0"/>
-    <ROW Component="Calculator.Core.dll" ComponentId="{BCC9F243-950C-4A74-B8F7-ACDDBF4342BE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.Core.dll"/>
-    <ROW Component="Calculator.dll" ComponentId="{DBD58BEA-1BF9-4110-8F17-7270FA3B8FE2}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.dll"/>
-    <ROW Component="Calculator.exe" ComponentId="{367C089C-9E29-4C1A-9210-12D0673D6116}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.exe"/>
+    <ROW Component="Calculator.Core.dll" ComponentId="{5E54A079-4151-4228-A7BD-67CA693D3D74}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.Core.dll"/>
+    <ROW Component="Calculator.dll" ComponentId="{92E0B90D-D2AE-4C50-B199-7F125211A0BA}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.dll"/>
+    <ROW Component="Calculator.exe" ComponentId="{38478BB0-049B-4EAC-9C1D-FEACC3BBFA1E}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.exe"/>
     <ROW Component="ChillAstro" ComponentId="{905E1A2E-49F1-4823-9C14-7CE31A0BCAC3}" Directory_="ChillAstro_Dir" Attributes="0"/>
-    <ROW Component="CommunityToolkit.Mvvm.dll" ComponentId="{285E26D9-3891-4795-9361-BBD5CE518BFC}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="CommunityToolkit.Mvvm.dll"/>
-    <ROW Component="LargeTile.scale100.png" ComponentId="{DA853DD1-3578-442C-AB41-A1A54D77E345}" Directory_="Assets_Dir" Attributes="0" KeyPath="LargeTile.scale100.png" Type="0"/>
-    <ROW Component="Microsoft.CSharp.dll" ComponentId="{EB15E919-C8C6-4D98-9258-4CC483E5A8DB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.CSharp.dll"/>
-    <ROW Component="Microsoft.DiaSymReader.Native.amd64.dll" ComponentId="{4B4AC613-C47E-48F5-9C27-F9EBC6DA73DD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.DiaSymReader.Native.amd64.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.Abstractions.dll" ComponentId="{AD4AD773-A6CA-47AD-BD1D-B8D360454482}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Abstractions.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.Binder.dll" ComponentId="{FEBC4810-479A-4C48-91F7-C10CD974F908}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Binder.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.CommandLine.dll" ComponentId="{D58C1F55-6055-4141-B473-091FE395034E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.CommandLine.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.EnvironmentVariables.dll" ComponentId="{7DFE08FD-5D53-45A4-8AFE-F225058234EB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.FileExtensions.dll" ComponentId="{57C4CABF-240F-4DAC-82FA-30DBAD43C856}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.FileExtensions.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.Json.dll" ComponentId="{65628AA5-9E8A-4347-817E-BD3A86AF7BCA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Json.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.UserSecrets.dll" ComponentId="{68ADDBD2-E74E-4C91-85F1-93823EDE5C13}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.UserSecrets.dll"/>
-    <ROW Component="Microsoft.Extensions.Configuration.dll" ComponentId="{FADAC28C-2913-4690-B1E9-481B9E071356}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.dll"/>
-    <ROW Component="Microsoft.Extensions.DependencyInj_1_ection.dll" ComponentId="{BD1ECACF-AF2B-4D68-B8A0-9ACF31310CF0}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll"/>
-    <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{7F6644C1-13CE-4C45-9A7A-77346AB01F88}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
-    <ROW Component="Microsoft.Extensions.Diagnostics.Abstractions.dll" ComponentId="{2654D180-2A9D-48A9-A974-6FBBCB9352D9}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.Abstractions.dll"/>
-    <ROW Component="Microsoft.Extensions.Diagnostics.dll" ComponentId="{671508BD-D000-422E-A40A-B26E7F6EEB3E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.dll"/>
-    <ROW Component="Microsoft.Extensions.FileProviders.Abstractions.dll" ComponentId="{BCBF9970-26CA-4B95-97A5-D34F2E844D2D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
-    <ROW Component="Microsoft.Extensions.FileProviders.Physical.dll" ComponentId="{7141DD98-E7F9-4C60-BE4B-266A746A82BD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Physical.dll"/>
-    <ROW Component="Microsoft.Extensions.FileSystemGlobbing.dll" ComponentId="{4E283E63-C0C5-4644-81D2-581932E62C93}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileSystemGlobbing.dll"/>
-    <ROW Component="Microsoft.Extensions.Hosting.Abstractions.dll" ComponentId="{9569F668-CFBE-4683-A075-CD16E9B26824}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.Abstractions.dll"/>
-    <ROW Component="Microsoft.Extensions.Hosting.dll" ComponentId="{53632A85-B5C3-4678-8237-2256D5E7CC83}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.Abstractions.dll" ComponentId="{9DD0DA65-C920-42D4-8448-319F0A5B3C6B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Abstractions.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.Configuration.dll" ComponentId="{039DB3AF-BC28-432D-95A3-FE906389CE77}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Configuration.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.Console.dll" ComponentId="{59361D69-C55D-4B13-9711-DB88E3D2DA48}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Console.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.Debug.dll" ComponentId="{88DAE68E-BF82-4989-AA4D-6FE825664BC1}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Debug.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.EventLog.dll" ComponentId="{62E18C28-0C2D-4E53-80E5-41F80B55549D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.EventLog.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.EventSource.dll" ComponentId="{DB78CAF8-2EA8-4229-8DF7-F4661E485E4A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.EventSource.dll"/>
-    <ROW Component="Microsoft.Extensions.Logging.dll" ComponentId="{017B46F1-C5BF-4720-9E58-A735F05CEB39}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.dll"/>
-    <ROW Component="Microsoft.Extensions.Options.ConfigurationExtensions.dll" ComponentId="{AFC904B1-E9EE-498B-974F-FA27AF4BFFC3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
-    <ROW Component="Microsoft.Extensions.Options.dll" ComponentId="{C7469AD0-2669-4299-9078-3DE5E5A5174A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.dll"/>
-    <ROW Component="Microsoft.Extensions.Primitives.dll" ComponentId="{388714D7-D61B-4830-87AE-2AE749DF954B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll"/>
-    <ROW Component="Microsoft.Graphics.Imaging.Projection.dll" ComponentId="{3C6FF914-7F29-47DF-97DE-BE9F9D13E180}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Graphics.Imaging.Projection.dll"/>
-    <ROW Component="Microsoft.InteractiveExperiences.Projection.dll" ComponentId="{E187C80B-D9AD-4458-A98E-2ABF14A84A8D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.InteractiveExperiences.Projection.dll"/>
-    <ROW Component="Microsoft.Security.Authentication.OAuth.Projection.dll" ComponentId="{9007EBCB-3830-4497-BAC6-1F9E0ABBABEA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Security.Authentication.OAuth.Projection.dll"/>
-    <ROW Component="Microsoft.VisualBasic.Core.dll" ComponentId="{CB9D5DCA-8B49-4A65-B50A-B30433A9DFE4}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.VisualBasic.Core.dll"/>
-    <ROW Component="Microsoft.VisualBasic.dll" ComponentId="{F5176913-2835-43FC-8E23-73E336638AF8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.VisualBasic.dll"/>
-    <ROW Component="Microsoft.Web.WebView2.Core.Projection.dll" ComponentId="{7DDC580D-BE82-4485-AEEB-CC2C97119AAE}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.Core.Projection.dll"/>
-    <ROW Component="Microsoft.Web.WebView2.Core.dll" ComponentId="{A47FBAB7-03BF-48C3-9045-15C3DEEF2DAE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.Web.WebView2.Core.dll"/>
-    <ROW Component="Microsoft.Win32.Primitives.dll" ComponentId="{F48A8E1B-96E7-456B-AC98-30DB06C21FDF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Win32.Primitives.dll"/>
-    <ROW Component="Microsoft.Win32.Registry.dll" ComponentId="{8E7EC40C-137C-477A-ACA6-E801248B8CCC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.Win32.Registry.dll"/>
-    <ROW Component="Microsoft.WinUI.dll" ComponentId="{185D4BD1-DC84-474E-9A01-50FCF4500897}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.WinUI.dll"/>
-    <ROW Component="Microsoft.Windows.AI.ContentSafety.Projection.dll" ComponentId="{BACD8F16-89E3-472B-9480-BA0BAC01C3F6}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.ContentSafety.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.AI.Imaging.Projection.dll" ComponentId="{6EFFBFDF-137A-433A-921F-31675FD7975D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.Imaging.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.AI.Projection.dll" ComponentId="{6A167501-A6B5-45E4-A455-A69AC0476DEE}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.AI.Text.Projection.dll" ComponentId="{8252DC09-EA91-406C-83DA-A8600E393CDA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.Text.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.AppLifecycle.Projection.dll" ComponentId="{4E8F33CB-A4C9-472F-A131-A2C21BEB594D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AppLifecycle.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.AppNotifications.Builder.Projection.dll" ComponentId="{F16A0678-77B5-400F-9FDF-B4DB684941C5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AppNotifications.Builder.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.AppNotifications.Projection.dll" ComponentId="{F14BB46E-5A90-4533-9A01-58535CB748BF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AppNotifications.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.ApplicationModel.Background.Projection.dll" ComponentId="{C0FBF8D2-C4C3-4EEA-AF6F-E5EC8BC5BD7D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.Background.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll" ComponentId="{E0D193C1-420B-470D-912C-B52855A21E90}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.ApplicationModel.Resources.Projection.dll" ComponentId="{7D4DAB09-7034-4940-9171-CF3165913133}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.Resources.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll" ComponentId="{0DD1B535-5097-4F56-A2B1-8174C4A8015B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.ApplicationModel_1_.Background.UniversalBGTask.dll" ComponentId="{BF14C69A-BACB-4437-831C-7E4D02CC411D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll"/>
-    <ROW Component="Microsoft.Windows.BadgeNotifications.Projection.dll" ComponentId="{CACA60FB-0254-4C7F-BD9D-1EACCD20FD4C}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.BadgeNotifications.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.Management.Deployment.Projection.dll" ComponentId="{9829FCD0-6297-457B-A1AC-22897D9FD7C0}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Management.Deployment.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.Media.Capture.Projection.dll" ComponentId="{0825139E-8DEE-40A1-B7F5-C7CF5F261088}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Media.Capture.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.PushNotifications.Projection.dll" ComponentId="{9EFAC6F8-304B-4A7E-8FE1-4763021925A2}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.PushNotifications.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.SDK.NET.dll" ComponentId="{570DE14B-F98B-4E27-9771-3471C599F11B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.SDK.NET.dll"/>
-    <ROW Component="Microsoft.Windows.Security.AccessControl.Projection.dll" ComponentId="{DF2C8B81-48D2-402D-AB8E-5D4965B88A13}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Security.AccessControl.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.Storage.Projection.dll" ComponentId="{8D653FB5-0B03-4B33-B59B-A034B598BA64}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Storage.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.System.Power.Projection.dll" ComponentId="{4D50D44E-11D1-4EB9-96B1-4CB7BB2A60AF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.System.Power.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.System.Projection.dll" ComponentId="{F17CCF8E-EFA3-4A66-9FFC-E748D469C072}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.System.Projection.dll"/>
-    <ROW Component="Microsoft.Windows.Widgets.Projection.dll" ComponentId="{D1F279DF-551B-46A8-80BD-6D8A260E1362}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Widgets.Projection.dll"/>
-    <ROW Component="Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" ComponentId="{BA034DCC-C7C4-49DF-B5D5-3243A84040C2}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.WindowsAppRuntime.Bootstrap.Net.dll"/>
-    <ROW Component="Microsoft.WindowsAppRuntime.Bootstrap.dll" ComponentId="{F7B07C87-148F-46E6-A6EA-CAB8726F0A25}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.WindowsAppRuntime.Bootstrap.dll"/>
-    <ROW Component="Microsoft.Xaml.Interactivity.dll" ComponentId="{DD510743-89AB-40FB-8874-7CCC36B7B060}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Xaml.Interactivity.dll"/>
-    <ROW Component="Newtonsoft.Json.dll" ComponentId="{6D36B212-74F1-4677-9CC3-56E1625AC1CF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="CommunityToolkit.Mvvm.dll" ComponentId="{E973A4E0-C1B8-4601-A797-5E94577F1A86}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="CommunityToolkit.Mvvm.dll"/>
+    <ROW Component="LargeTile.scale100.png" ComponentId="{79D91C80-3664-4534-824A-BFE876C2BC6F}" Directory_="Assets_Dir" Attributes="0" KeyPath="LargeTile.scale100.png" Type="0"/>
+    <ROW Component="Microsoft.CSharp.dll" ComponentId="{F519F45D-C2A6-49A5-BCBA-A34C0FC7E227}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.CSharp.dll"/>
+    <ROW Component="Microsoft.DiaSymReader.Native.amd64.dll" ComponentId="{76F3F4E5-9E13-4B5E-AAC8-C92BFAFA8733}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.DiaSymReader.Native.amd64.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Abstractions.dll" ComponentId="{1C053ED3-CA13-4737-BE78-C39EEAD25980}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Binder.dll" ComponentId="{46F3928A-9128-4600-A59D-ABDC7F5EF935}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.CommandLine.dll" ComponentId="{C9C48CD6-E90B-48FA-B4E3-A566DA6AA464}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.CommandLine.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.EnvironmentVariables.dll" ComponentId="{9A8DF2FD-8005-4E04-9A63-09559F52508C}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.FileExtensions.dll" ComponentId="{65F3E7E4-D9EF-462D-8979-63E8A6AAD727}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.FileExtensions.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Json.dll" ComponentId="{A183AEC9-8E96-4877-A454-B7E2CEE312D7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Json.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.UserSecrets.dll" ComponentId="{18B34CD1-C818-4941-A829-46514099C18E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.UserSecrets.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.dll" ComponentId="{A5E7CF14-7509-4A68-87A0-7D468413B160}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInj_1_ection.dll" ComponentId="{325F2B9B-09E7-4F52-83E7-384456044EFD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{C26336D2-A073-4990-A606-EE5EBC2DD737}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Diagnostics.Abstractions.dll" ComponentId="{75B97444-B80F-495D-A8A4-32DEC4CFA41D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Diagnostics.dll" ComponentId="{9133717B-CFB9-4FD1-A3B2-BB22BFC7E3A8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.dll"/>
+    <ROW Component="Microsoft.Extensions.FileProviders.Abstractions.dll" ComponentId="{6D1DEE77-27FD-419C-AB24-3777A8B290AD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.FileProviders.Physical.dll" ComponentId="{18FE155E-CCD4-44BD-B367-263222505F45}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Physical.dll"/>
+    <ROW Component="Microsoft.Extensions.FileSystemGlobbing.dll" ComponentId="{3E7216E3-B921-4AF8-8249-3EE746CA1790}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <ROW Component="Microsoft.Extensions.Hosting.Abstractions.dll" ComponentId="{A0594663-2347-4A21-812F-58448172FA48}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Hosting.dll" ComponentId="{365870AA-0550-434E-83ED-955FD3BFA816}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Abstractions.dll" ComponentId="{9BD7E4AE-A4B4-4DBF-8A7E-DE7BF02E717F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Configuration.dll" ComponentId="{78CB5073-BC8E-451A-9BC6-3F411BBA385D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Configuration.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Console.dll" ComponentId="{9A0D5EA8-B31F-4D54-AA70-3C000442BCBF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Console.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Debug.dll" ComponentId="{C0BDF56A-75D4-4439-9E0D-708FF0FDEBB7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Debug.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.EventLog.dll" ComponentId="{0F2CD2D0-F26A-4828-A7FC-C5E74EB7BADA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.EventLog.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.EventSource.dll" ComponentId="{A96129E6-1161-4237-A5BA-1B359A52DA05}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.EventSource.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.dll" ComponentId="{C1B2FD91-39B5-44F9-930C-0CE260070410}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.dll"/>
+    <ROW Component="Microsoft.Extensions.Options.ConfigurationExtensions.dll" ComponentId="{2ECB9C8C-6136-488C-83BC-2CFCADA437A5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
+    <ROW Component="Microsoft.Extensions.Options.dll" ComponentId="{F7F64693-73E0-42E3-8074-56EA2180E922}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.dll"/>
+    <ROW Component="Microsoft.Extensions.Primitives.dll" ComponentId="{8859A3AE-6A35-4B46-8FB0-0616994D2B5B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Component="Microsoft.Graphics.Imaging.Projection.dll" ComponentId="{F76243AA-68FB-4324-BED9-112FBE7279CA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Graphics.Imaging.Projection.dll"/>
+    <ROW Component="Microsoft.InteractiveExperiences.Projection.dll" ComponentId="{911EA155-B953-4C40-AE04-09E828F3F90B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.InteractiveExperiences.Projection.dll"/>
+    <ROW Component="Microsoft.Security.Authentication.OAuth.Projection.dll" ComponentId="{D7455F8F-F887-4C89-871B-66908A7C1DEF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Security.Authentication.OAuth.Projection.dll"/>
+    <ROW Component="Microsoft.VisualBasic.Core.dll" ComponentId="{D7ABD34C-E0B8-4970-B82D-F73DEB1D20D7}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.VisualBasic.Core.dll"/>
+    <ROW Component="Microsoft.VisualBasic.dll" ComponentId="{519B7BB4-9998-40FA-8966-F80AD2490D4D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.VisualBasic.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Core.Projection.dll" ComponentId="{EB8BDBC3-7545-4F1E-A86A-A0E46197B6B5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.Core.Projection.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Core.dll" ComponentId="{C90A8FE4-D2C5-4D88-BF4F-D72BFE2048BC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Component="Microsoft.Win32.Primitives.dll" ComponentId="{62744B46-C7BA-4FC7-B2F8-E6C2DF996144}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Win32.Primitives.dll"/>
+    <ROW Component="Microsoft.Win32.Registry.dll" ComponentId="{462B6930-17F8-43DC-9742-8BF493274128}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.Win32.Registry.dll"/>
+    <ROW Component="Microsoft.WinUI.dll" ComponentId="{F7843C40-BCB2-4CCE-BC0D-815554F21DA7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.WinUI.dll"/>
+    <ROW Component="Microsoft.Windows.AI.ContentSafety.Projection.dll" ComponentId="{D80A1E4A-0D55-4E05-B3F8-6293CCA598B1}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.ContentSafety.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.AI.Imaging.Projection.dll" ComponentId="{C9EEF289-B3FB-4142-BD6B-CABC6506775A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.Imaging.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.AI.Projection.dll" ComponentId="{29D38428-1B66-406E-803A-6CE7C07E0C0E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.AI.Text.Projection.dll" ComponentId="{8C01CFEC-41E2-4FAA-B9EF-A41F1E818F09}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AI.Text.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.AppLifecycle.Projection.dll" ComponentId="{CADA1A85-3DB5-4566-81FB-D6409AE6D3BD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AppLifecycle.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.AppNotifications.Builder.Projection.dll" ComponentId="{A57C3302-EAC8-4B1C-9FEB-53FED7BAA22A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AppNotifications.Builder.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.AppNotifications.Projection.dll" ComponentId="{5CA84F82-E175-43F3-A229-B9017C331E29}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.AppNotifications.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel.Background.Projection.dll" ComponentId="{41D1729A-BD0A-4708-9C5D-113BBADAABC9}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.Background.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll" ComponentId="{4AE112D8-FE87-44F9-8D49-6C8FD386A5C8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel.Resources.Projection.dll" ComponentId="{3B316E89-80D6-40A8-89D1-6CDBABC0192E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.Resources.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll" ComponentId="{2E43603D-A6EF-4639-BB88-2BA84D65B83C}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.ApplicationModel_1_.Background.UniversalBGTask.dll" ComponentId="{3C1D1FB1-813C-4147-97DD-340859BC4D49}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.Windows.ApplicationModel.Background.UniversalBGTask.dll"/>
+    <ROW Component="Microsoft.Windows.BadgeNotifications.Projection.dll" ComponentId="{8D720DCB-AF05-49B0-9FA6-2C8B234E03F3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.BadgeNotifications.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.Management.Deployment.Projection.dll" ComponentId="{B3CAC080-7045-4ADD-BAC1-124AEB948B48}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Management.Deployment.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.Media.Capture.Projection.dll" ComponentId="{966A2EF3-88BF-4016-96A8-690A70DF67B7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Media.Capture.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.PushNotifications.Projection.dll" ComponentId="{1E627F65-6E5E-405C-A8C6-67EB04A091D1}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.PushNotifications.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.SDK.NET.dll" ComponentId="{232AE92C-6077-46CB-B78B-B76E0D07C8BB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.SDK.NET.dll"/>
+    <ROW Component="Microsoft.Windows.Security.AccessControl.Projection.dll" ComponentId="{867A8FD9-06B8-4112-BF0E-4F570FD5CF9B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Security.AccessControl.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.Storage.Projection.dll" ComponentId="{D5A9B8C4-AF4C-48EE-9882-E3DE8299727D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Storage.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.System.Power.Projection.dll" ComponentId="{85906A97-3D28-4071-AA7D-43B284B23261}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.System.Power.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.System.Projection.dll" ComponentId="{88D31AF7-E5CE-4B1A-971A-86E5B43C231F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.System.Projection.dll"/>
+    <ROW Component="Microsoft.Windows.Widgets.Projection.dll" ComponentId="{85F0DEE6-8576-44F9-9C97-B7A6F6EE89DD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Windows.Widgets.Projection.dll"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.Bootstrap.Net.dll" ComponentId="{FFA73F64-B879-4222-82B0-CD57D48B30F3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.WindowsAppRuntime.Bootstrap.Net.dll"/>
+    <ROW Component="Microsoft.WindowsAppRuntime.Bootstrap.dll" ComponentId="{E231BE20-D764-4C28-9876-7BC9837E9D18}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Microsoft.WindowsAppRuntime.Bootstrap.dll"/>
+    <ROW Component="Microsoft.Xaml.Interactivity.dll" ComponentId="{7EAFC22E-26F5-4D01-A6A2-1C718A462909}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Microsoft.Xaml.Interactivity.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{35208429-7BBC-41AD-AA1B-22C4A147BC4E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
     <ROW Component="ProductInformation" ComponentId="{B51E9377-2AE5-4EE7-ADED-97E07C073DD8}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
-    <ROW Component="System.AppContext.dll" ComponentId="{91026A26-1D94-477E-A3A3-DDBEDCF2CA98}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.AppContext.dll"/>
-    <ROW Component="System.Buffers.dll" ComponentId="{ED73A4F6-2351-4B9A-A525-9A806B61047E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Buffers.dll"/>
-    <ROW Component="System.Collections.Concurrent.dll" ComponentId="{025BA368-29F2-4A15-8C8F-E62CFA62A32F}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.Concurrent.dll"/>
-    <ROW Component="System.Collections.Immutable.dll" ComponentId="{A3B1FDB0-EE05-4E19-A976-18EA16ADFE41}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.Immutable.dll"/>
-    <ROW Component="System.Collections.NonGeneric.dll" ComponentId="{99863537-9659-42B6-A759-8543CE7DF396}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.NonGeneric.dll"/>
-    <ROW Component="System.Collections.Specialized.dll" ComponentId="{4043879F-8D4C-4FBB-B489-657B21AE9233}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.Specialized.dll"/>
-    <ROW Component="System.Collections.dll" ComponentId="{38FB3755-3307-42CA-B568-F5102BF49876}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.dll"/>
-    <ROW Component="System.ComponentModel.Annotations.dll" ComponentId="{1679DA97-61B0-4405-85E8-EE704D760BE0}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.Annotations.dll"/>
-    <ROW Component="System.ComponentModel.DataAnnotations.dll" ComponentId="{0B34EED4-5938-4D22-93AE-8C48E210AB6E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ComponentModel.DataAnnotations.dll"/>
-    <ROW Component="System.ComponentModel.EventBasedAsync.dll" ComponentId="{EA7E8E72-DA56-4659-B4DB-7245D8C009D5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.EventBasedAsync.dll"/>
-    <ROW Component="System.ComponentModel.Primitives.dll" ComponentId="{2CFD5535-F589-44B1-B843-9CE7FFE5C202}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.Primitives.dll"/>
-    <ROW Component="System.ComponentModel.TypeConverter.dll" ComponentId="{B142A891-406C-4331-B5D7-58E72A982C03}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.TypeConverter.dll"/>
-    <ROW Component="System.ComponentModel.dll" ComponentId="{F8B70847-E2E2-4D23-BE58-DBB0E5DE7D3B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.dll"/>
-    <ROW Component="System.Configuration.dll" ComponentId="{95AE22B1-4D73-44D0-95B3-8FB2232F9311}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Configuration.dll"/>
-    <ROW Component="System.Console.dll" ComponentId="{DB9888CB-3FDF-4CE6-9B9C-C48117411758}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Console.dll"/>
-    <ROW Component="System.Core.dll" ComponentId="{ACB189C7-4781-40A2-95A5-BB9A7590D061}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Core.dll"/>
-    <ROW Component="System.Data.Common.dll" ComponentId="{1D8A9652-92FE-48C8-A607-22591EBC9D67}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Data.Common.dll"/>
-    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{A91BA906-7825-4A4B-8EF8-AFE3BF6ACBF9}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
-    <ROW Component="System.Data.dll" ComponentId="{32A9BDFC-67A9-4128-8742-7E5598023BBD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Data.dll"/>
-    <ROW Component="System.Diagnostics.Contracts.dll" ComponentId="{971B0904-0DEE-42FD-B2F1-3D8EB42C5EB5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Contracts.dll"/>
-    <ROW Component="System.Diagnostics.Debug.dll" ComponentId="{8787CA2F-BE85-4E5F-9527-B9F406EC349B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Debug.dll"/>
-    <ROW Component="System.Diagnostics.DiagnosticSource.dll" ComponentId="{5A75C9D8-BD28-459B-894D-3CD985CFBD0E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.DiagnosticSource.dll"/>
-    <ROW Component="System.Diagnostics.EventLog.Messages.dll" ComponentId="{D9A9A1C0-B969-4DDF-A88A-ADCB883B9C30}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.Messages.dll"/>
-    <ROW Component="System.Diagnostics.EventLog.dll" ComponentId="{4DF6018E-D9D2-4067-AC70-F4A04D44BCFB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.dll"/>
-    <ROW Component="System.Diagnostics.FileVersionInfo.dll" ComponentId="{C1993707-2CA1-44B0-94AF-4CD7625361AE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.FileVersionInfo.dll"/>
-    <ROW Component="System.Diagnostics.Process.dll" ComponentId="{8DC16C76-A887-48D0-8683-23ACAE3F9007}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.Process.dll"/>
-    <ROW Component="System.Diagnostics.StackTrace.dll" ComponentId="{8AE328D2-F18C-4167-84E7-F29577D7F037}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.StackTrace.dll"/>
-    <ROW Component="System.Diagnostics.TextWriterTraceListener.dll" ComponentId="{44344A00-F89C-4C1C-B62A-9C09C2FDADE2}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.TextWriterTraceListener.dll"/>
-    <ROW Component="System.Diagnostics.Tools.dll" ComponentId="{03F2DD50-EB62-48FF-989C-3259E3600AFB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Tools.dll"/>
-    <ROW Component="System.Diagnostics.TraceSource.dll" ComponentId="{776603D5-4C9D-4527-B09F-8CE9A5A45E01}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.TraceSource.dll"/>
-    <ROW Component="System.Diagnostics.Tracing.dll" ComponentId="{71B5DCE8-BE14-430F-9451-6A02B5717565}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Tracing.dll"/>
-    <ROW Component="System.Drawing.Primitives.dll" ComponentId="{8A80FC22-D554-4A67-A9C6-0BF1D242FE8A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Drawing.Primitives.dll"/>
-    <ROW Component="System.Drawing.dll" ComponentId="{70C214A9-92E9-4BF8-BB4E-99553B7EADBA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Drawing.dll"/>
-    <ROW Component="System.Dynamic.Runtime.dll" ComponentId="{FE7C69F6-58A3-4863-9BC7-906CC11D8B80}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Dynamic.Runtime.dll"/>
-    <ROW Component="System.Formats.Asn1.dll" ComponentId="{1B59F2A1-5AE4-4982-9644-543DE5AC90FA}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Formats.Asn1.dll"/>
-    <ROW Component="System.Formats.Tar.dll" ComponentId="{5367FFC6-7D13-4B1E-B7F8-9102F5A6E2DA}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Formats.Tar.dll"/>
-    <ROW Component="System.Globalization.Calendars.dll" ComponentId="{1A133E29-9DBE-463C-AF55-57FA84C0AFBE}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Globalization.Calendars.dll"/>
-    <ROW Component="System.Globalization.Extensions.dll" ComponentId="{774DC18F-9CBD-4CB2-B555-E3EBBDE984F8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Globalization.Extensions.dll"/>
-    <ROW Component="System.Globalization.dll" ComponentId="{F04F00DD-4DA0-4D0E-B438-9E64C0A283B3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Globalization.dll"/>
-    <ROW Component="System.IO.Compression.Brotli.dll" ComponentId="{DF655202-F10D-49FE-BFB9-CED6EA821606}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.Brotli.dll"/>
-    <ROW Component="System.IO.Compression.FileSystem.dll" ComponentId="{A1FA6B6E-95A7-4C1D-B32E-2CFBE004B6C1}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.Compression.FileSystem.dll"/>
-    <ROW Component="System.IO.Compression.Native.dll" ComponentId="{CD2BA2C7-4F62-425A-A5EC-C78E403DAEDB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.Native.dll"/>
-    <ROW Component="System.IO.Compression.ZipFile.dll" ComponentId="{37814248-4059-4D13-BB69-D574E6D3ADB1}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.ZipFile.dll"/>
-    <ROW Component="System.IO.Compression.dll" ComponentId="{170E15F1-176E-426F-A57D-E77C96C45839}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.dll"/>
-    <ROW Component="System.IO.FileSystem.AccessControl.dll" ComponentId="{723FD32E-EFD8-42FB-8A2B-B089EB0469F5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.FileSystem.AccessControl.dll"/>
-    <ROW Component="System.IO.FileSystem.DriveInfo.dll" ComponentId="{06E7501A-95EF-4F71-B5A3-EC968F79374C}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.FileSystem.DriveInfo.dll"/>
-    <ROW Component="System.IO.FileSystem.Primitives.dll" ComponentId="{615DC661-0A54-4CBC-B72B-0E75681658E7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.FileSystem.Primitives.dll"/>
-    <ROW Component="System.IO.FileSystem.Watcher.dll" ComponentId="{B7F920BF-45C8-4DF6-8D6B-4F56D3DDC090}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.FileSystem.Watcher.dll"/>
-    <ROW Component="System.IO.FileSystem.dll" ComponentId="{9353FED4-4ADF-41BB-A522-70A6B030989F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.FileSystem.dll"/>
-    <ROW Component="System.IO.IsolatedStorage.dll" ComponentId="{998A276F-4051-40D7-B06E-16C8E582BD36}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.IsolatedStorage.dll"/>
-    <ROW Component="System.IO.MemoryMappedFiles.dll" ComponentId="{E64DA0CB-D4C2-48DA-871E-14BECAC019EB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.MemoryMappedFiles.dll"/>
-    <ROW Component="System.IO.Pipelines.dll" ComponentId="{FDD91DDD-F198-4D00-AF66-357935A9BD6E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.Pipelines.dll"/>
-    <ROW Component="System.IO.Pipes.AccessControl.dll" ComponentId="{1D1053A1-CBA7-46ED-9935-6A1583402C2C}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.Pipes.AccessControl.dll"/>
-    <ROW Component="System.IO.Pipes.dll" ComponentId="{B4E7D0F5-3A5F-4D75-875B-99F9CA6B698D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Pipes.dll"/>
-    <ROW Component="System.IO.UnmanagedMemoryStream.dll" ComponentId="{1812C809-0249-43F0-8455-910A64F0643F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.UnmanagedMemoryStream.dll"/>
-    <ROW Component="System.IO.dll" ComponentId="{22957A1C-30DA-41AF-97BE-B325BC59F594}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.dll"/>
-    <ROW Component="System.Linq.Expressions.dll" ComponentId="{8B8B6236-F1CF-4918-8C40-AF56D4E04BEE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.Expressions.dll"/>
-    <ROW Component="System.Linq.Parallel.dll" ComponentId="{8B653970-80C3-4FEA-853C-D085A8E85702}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.Parallel.dll"/>
-    <ROW Component="System.Linq.Queryable.dll" ComponentId="{49D5B20F-7ED7-42AB-9EE8-811BC0D1FDB3}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.Queryable.dll"/>
-    <ROW Component="System.Linq.dll" ComponentId="{9656EE2B-C003-4A82-9DF5-9D9F6B4A53EE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.dll"/>
-    <ROW Component="System.Memory.dll" ComponentId="{9BE197D0-0A4A-4324-BD53-98C016887C81}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Memory.dll"/>
-    <ROW Component="System.Net.Http.Json.dll" ComponentId="{FA64EF15-1277-4A89-869E-14E56F0153C1}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Http.Json.dll"/>
-    <ROW Component="System.Net.Http.dll" ComponentId="{30832F0F-EE62-4A1F-A669-1C2CD793938A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Http.dll"/>
-    <ROW Component="System.Net.HttpListener.dll" ComponentId="{E6D117C0-A607-4395-B49A-9F2356F8EFAA}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.HttpListener.dll"/>
-    <ROW Component="System.Net.Mail.dll" ComponentId="{32F3E5BE-A89D-4CC5-9BB8-4C194A56EDCE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Mail.dll"/>
-    <ROW Component="System.Net.NameResolution.dll" ComponentId="{5110872B-BE57-4403-950F-8449C69023A0}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.NameResolution.dll"/>
-    <ROW Component="System.Net.NetworkInformation.dll" ComponentId="{38DE67B5-E380-4B70-9BAB-C9B3268BCFA0}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.NetworkInformation.dll"/>
-    <ROW Component="System.Net.Ping.dll" ComponentId="{728CA4B9-5BAC-471C-81FE-19A4F44C2252}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Ping.dll"/>
-    <ROW Component="System.Net.Primitives.dll" ComponentId="{FD0BFA0C-53C5-482D-9B78-B2DAE6CB5FF6}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Primitives.dll"/>
-    <ROW Component="System.Net.Quic.dll" ComponentId="{9511FBDE-36F2-40A1-8626-4DA95DD074BC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Quic.dll"/>
-    <ROW Component="System.Net.Requests.dll" ComponentId="{F7939A0F-8266-4962-A7DA-413C1C8E1298}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Requests.dll"/>
-    <ROW Component="System.Net.Security.dll" ComponentId="{6121CBF3-D2D1-409F-9CEA-740394EA9AB7}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Security.dll"/>
-    <ROW Component="System.Net.ServicePoint.dll" ComponentId="{9714DB0D-DFE7-4A13-810C-580AECED2770}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.ServicePoint.dll"/>
-    <ROW Component="System.Net.Sockets.dll" ComponentId="{D31CCC30-5B4C-44E3-9BBD-DCB7B78F6CDE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Sockets.dll"/>
-    <ROW Component="System.Net.WebClient.dll" ComponentId="{A05EC8E2-4EEA-4DF9-9F0B-B4BAD281C455}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebClient.dll"/>
-    <ROW Component="System.Net.WebHeaderCollection.dll" ComponentId="{ADA5F275-2AA5-45A4-9A7E-0481F46CD0C5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebHeaderCollection.dll"/>
-    <ROW Component="System.Net.WebProxy.dll" ComponentId="{D2F85845-155E-42B9-83E2-A25A340CC95D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebProxy.dll"/>
-    <ROW Component="System.Net.WebSockets.Client.dll" ComponentId="{D9E77212-9273-4461-A3FE-B98B19C892F5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebSockets.Client.dll"/>
-    <ROW Component="System.Net.WebSockets.dll" ComponentId="{31EB6A4C-F5F0-44D2-8565-A16736435410}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebSockets.dll"/>
-    <ROW Component="System.Net.dll" ComponentId="{81EFEB2C-3C83-44F4-A7D6-3AFD977DC9D7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Net.dll"/>
-    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{097AD441-2709-45FA-B806-F4511C1FD9F3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
-    <ROW Component="System.Numerics.dll" ComponentId="{A0AA8E71-2930-455D-A0CC-189926BB8FA4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Numerics.dll"/>
-    <ROW Component="System.ObjectModel.dll" ComponentId="{9CABEB47-F808-4160-97DC-787568DD4208}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ObjectModel.dll"/>
-    <ROW Component="System.Private.CoreLib.dll" ComponentId="{488217F0-4D5A-4976-A5F4-805EE5A5D572}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.CoreLib.dll"/>
-    <ROW Component="System.Private.DataContractSerialization.dll" ComponentId="{1F20276A-00CF-4A13-8843-4132D9597C9A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.DataContractSerialization.dll"/>
-    <ROW Component="System.Private.Uri.dll" ComponentId="{2D4CB57C-3FEB-4CC8-A120-1580138150A3}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.Uri.dll"/>
-    <ROW Component="System.Private.Xml.Linq.dll" ComponentId="{C19E5CE2-ABFD-488F-8E90-070EA6F216DC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.Xml.Linq.dll"/>
-    <ROW Component="System.Private.Xml.dll" ComponentId="{CD483C2F-1203-425B-B57A-2D385FD62E68}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.Xml.dll"/>
-    <ROW Component="System.Reflection.DispatchProxy.dll" ComponentId="{2F40A20C-4451-4549-AAE0-82FE3E32A666}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.DispatchProxy.dll"/>
-    <ROW Component="System.Reflection.Emit.ILGeneration.dll" ComponentId="{B95683B7-17FD-4217-AF19-A9E63695A02E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Emit.ILGeneration.dll"/>
-    <ROW Component="System.Reflection.Emit.Lightweight.dll" ComponentId="{7619416B-F7BF-4FA7-96EB-1EEFF215EEF5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Emit.Lightweight.dll"/>
-    <ROW Component="System.Reflection.Emit.dll" ComponentId="{DB96AFF6-6254-4890-9C48-25BFCF63C814}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.Emit.dll"/>
-    <ROW Component="System.Reflection.Extensions.dll" ComponentId="{DDAA2105-C67D-4E07-861A-14D222C1EF0A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Extensions.dll"/>
-    <ROW Component="System.Reflection.Metadata.dll" ComponentId="{33212048-B228-442C-831F-D91B61A0C676}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.Metadata.dll"/>
-    <ROW Component="System.Reflection.Primitives.dll" ComponentId="{D3724EA9-2C2E-492A-9912-C88B1ED27C8F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Primitives.dll"/>
-    <ROW Component="System.Reflection.TypeExtensions.dll" ComponentId="{59B04A21-FD3E-4B20-AB6F-413A9A881F11}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.TypeExtensions.dll"/>
-    <ROW Component="System.Reflection.dll" ComponentId="{C423C44C-63C0-4592-BF8B-3429AB29E409}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.dll"/>
-    <ROW Component="System.Resources.Reader.dll" ComponentId="{D25D8485-6D1F-4E44-AD3B-8867A643E249}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Resources.Reader.dll"/>
-    <ROW Component="System.Resources.ResourceManager.dll" ComponentId="{80789199-DD45-412C-8EC0-29C2841F83AB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Resources.ResourceManager.dll"/>
-    <ROW Component="System.Resources.Writer.dll" ComponentId="{6BD26B62-C78D-47C2-9A8C-A9C2B3C11538}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Resources.Writer.dll"/>
-    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{D562F834-E700-4666-812D-FE07BC1BA309}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
-    <ROW Component="System.Runtime.CompilerServices.VisualC.dll" ComponentId="{31BE746A-2330-41EB-9BE3-9A4FA2B80EEB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.CompilerServices.VisualC.dll"/>
-    <ROW Component="System.Runtime.Extensions.dll" ComponentId="{69E729F2-73DD-4912-A027-E43E9DE6ABF3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Extensions.dll"/>
-    <ROW Component="System.Runtime.Handles.dll" ComponentId="{B9109195-7B1F-4191-8196-8D97C4ADCF54}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Handles.dll"/>
-    <ROW Component="System.Runtime.InteropServices.JavaScript.dll" ComponentId="{509B770B-C3F3-45D5-980F-DE5484CF17FD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.InteropServices.JavaScript.dll"/>
-    <ROW Component="System.Runtime.InteropServices.RuntimeInformation.dll" ComponentId="{A4BF72EE-985B-4F87-AD74-AA41C523D004}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.InteropServices.RuntimeInformation.dll"/>
-    <ROW Component="System.Runtime.InteropServices.dll" ComponentId="{DAE2832A-8D33-43CB-86B9-F5DA48FF7B31}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.InteropServices.dll"/>
-    <ROW Component="System.Runtime.Intrinsics.dll" ComponentId="{08F9AE38-D968-4613-AA05-A52FA57D9E69}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Intrinsics.dll"/>
-    <ROW Component="System.Runtime.Loader.dll" ComponentId="{905622A0-AF5D-4074-8899-5D3F3B90A609}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Loader.dll"/>
-    <ROW Component="System.Runtime.Numerics.dll" ComponentId="{4CD5809C-563A-490C-8741-2C4CC6A9CDE4}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.Numerics.dll"/>
-    <ROW Component="System.Runtime.Serialization.Formatters.dll" ComponentId="{4A2F3FC5-54B4-4F71-B9E3-0B3CED4D2A71}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.Serialization.Formatters.dll"/>
-    <ROW Component="System.Runtime.Serialization.Json.dll" ComponentId="{AC4E9B42-15E8-4FDE-8FF0-518CE709F409}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Json.dll"/>
-    <ROW Component="System.Runtime.Serialization.Primitives.dll" ComponentId="{CB496643-E7DB-415E-9494-46D2D17861F2}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.Serialization.Primitives.dll"/>
-    <ROW Component="System.Runtime.Serialization.Xml.dll" ComponentId="{F1C79E58-2BB9-4E55-854A-3EFC7D77EA46}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Xml.dll"/>
-    <ROW Component="System.Runtime.Serialization.dll" ComponentId="{79F9A905-FCB7-4EC3-B992-0721FDC772E3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.dll"/>
-    <ROW Component="System.Runtime.dll" ComponentId="{54F6AF07-2AFC-4E86-A74D-D7F721CE5B3E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.dll"/>
-    <ROW Component="System.Security.AccessControl.dll" ComponentId="{87BFDC77-E92C-4AA5-BAA8-B11BB477EFEE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.AccessControl.dll"/>
-    <ROW Component="System.Security.Claims.dll" ComponentId="{B07D3154-1A39-478A-B13B-62FB9C8E4DB1}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.Claims.dll"/>
-    <ROW Component="System.Security.Cryptography.Algorithms.dll" ComponentId="{8A523E91-9C94-4F73-BD86-297E571DACAF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Algorithms.dll"/>
-    <ROW Component="System.Security.Cryptography.Cng.dll" ComponentId="{6B754E7E-8056-43A2-8C44-A67C10B201FD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Cng.dll"/>
-    <ROW Component="System.Security.Cryptography.Csp.dll" ComponentId="{C66E90AF-4A1C-4AC5-A5E7-C6DC69CA01BB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Csp.dll"/>
-    <ROW Component="System.Security.Cryptography.Encoding.dll" ComponentId="{6FF6CCEE-5ADB-49FE-9532-43B6031ED800}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Encoding.dll"/>
-    <ROW Component="System.Security.Cryptography.OpenSsl.dll" ComponentId="{761C54FA-EBEF-4C00-9762-0E4CD9C23585}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.OpenSsl.dll"/>
-    <ROW Component="System.Security.Cryptography.Primitives.dll" ComponentId="{06587861-D0B4-4A75-B96A-E75AD17A3383}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Primitives.dll"/>
-    <ROW Component="System.Security.Cryptography.X509Certificates.dll" ComponentId="{42974F1C-9AF8-4625-993F-39FA0542E15E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.X509Certificates.dll"/>
-    <ROW Component="System.Security.Cryptography.dll" ComponentId="{2A5D0399-3AB2-4F5C-B2E9-FB2E04017B03}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.Cryptography.dll"/>
-    <ROW Component="System.Security.Principal.Windows.dll" ComponentId="{FFFAC0F5-ACFC-487A-AB2C-6021F2D0CBAD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.Principal.Windows.dll"/>
-    <ROW Component="System.Security.Principal.dll" ComponentId="{BD090338-E67D-4CD1-835C-7B8B8B9A83D4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Principal.dll"/>
-    <ROW Component="System.Security.SecureString.dll" ComponentId="{91C8A570-CBB7-4790-B485-63BC2CD5E443}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.SecureString.dll"/>
-    <ROW Component="System.Security.dll" ComponentId="{AFA1F82C-9817-4582-9680-011ABD071769}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.dll"/>
-    <ROW Component="System.ServiceModel.Web.dll" ComponentId="{1ABBE8CD-8ADF-4DC6-9F95-D4AAE2E3ACDF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ServiceModel.Web.dll"/>
-    <ROW Component="System.ServiceProcess.dll" ComponentId="{45B85C84-B98E-4774-81D4-ECB5135D7180}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ServiceProcess.dll"/>
-    <ROW Component="System.Text.Encoding.CodePages.dll" ComponentId="{B03211CA-7A34-47DD-A615-6BE0CE4A923C}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Text.Encoding.CodePages.dll"/>
-    <ROW Component="System.Text.Encoding.Extensions.dll" ComponentId="{025B7ACD-2723-4FA8-AB81-A03831CC83F8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Encoding.Extensions.dll"/>
-    <ROW Component="System.Text.Encoding.dll" ComponentId="{BA9B2E84-AE3F-42B6-8C64-C6789965A207}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Encoding.dll"/>
-    <ROW Component="System.Text.Encodings.Web.dll" ComponentId="{76AEB6C2-B30A-4BFD-8DC3-3DD9F3DCD731}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Encodings.Web.dll"/>
-    <ROW Component="System.Text.Json.dll" ComponentId="{6940E375-EB4B-4562-BE42-FEB160BBE513}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Json.dll"/>
-    <ROW Component="System.Text.RegularExpressions.dll" ComponentId="{D9A26971-BD10-456C-8F8C-84C7ECC0B47D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Text.RegularExpressions.dll"/>
-    <ROW Component="System.Threading.Channels.dll" ComponentId="{EB91BEB3-A668-41AD-978E-0D590CD04E4B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.Channels.dll"/>
-    <ROW Component="System.Threading.Overlapped.dll" ComponentId="{7AC0562C-363F-45AE-8547-A2AF436AEA84}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Overlapped.dll"/>
-    <ROW Component="System.Threading.Tasks.Dataflow.dll" ComponentId="{1ED13510-6D85-46FE-AE69-1C20D36528CD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.Tasks.Dataflow.dll"/>
-    <ROW Component="System.Threading.Tasks.Extensions.dll" ComponentId="{440E1359-17A7-43E6-A7E8-5935BCAFA1A5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Tasks.Extensions.dll"/>
-    <ROW Component="System.Threading.Tasks.Parallel.dll" ComponentId="{B6D9195F-3648-4E24-B5D6-9648DE57BB85}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.Tasks.Parallel.dll"/>
-    <ROW Component="System.Threading.Tasks.dll" ComponentId="{9E4F3B39-3B34-493F-9780-CF566A2569C0}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Tasks.dll"/>
-    <ROW Component="System.Threading.Thread.dll" ComponentId="{812D53AB-2F1A-4D90-90CB-A1734FAEEAB3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Thread.dll"/>
-    <ROW Component="System.Threading.ThreadPool.dll" ComponentId="{B6D2C641-FD3B-421E-ADDE-2A662D2C59A5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.ThreadPool.dll"/>
-    <ROW Component="System.Threading.Timer.dll" ComponentId="{77CD0811-C316-4424-9D70-C31FF5729B21}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Timer.dll"/>
-    <ROW Component="System.Threading.dll" ComponentId="{E2088C3B-9AAB-4DE8-A62E-7B9B68E9FF07}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.dll"/>
-    <ROW Component="System.Transactions.Local.dll" ComponentId="{1D8B1790-500C-431E-93B5-D2F9596E6A29}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Transactions.Local.dll"/>
-    <ROW Component="System.Transactions.dll" ComponentId="{689CD467-27C6-4F99-B65D-10633C9FB3D4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Transactions.dll"/>
-    <ROW Component="System.ValueTuple.dll" ComponentId="{A54C5928-0912-4DA7-85C2-8ED244130961}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ValueTuple.dll"/>
-    <ROW Component="System.Web.HttpUtility.dll" ComponentId="{B21D2B84-390A-4162-AD3E-7A3E06ABFD85}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Web.HttpUtility.dll"/>
-    <ROW Component="System.Web.dll" ComponentId="{6A260184-21BE-4486-A3F8-7A7751983693}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Web.dll"/>
-    <ROW Component="System.Windows.dll" ComponentId="{458DAF17-CFAE-4B30-91C1-1EE245CDBF9E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Windows.dll"/>
-    <ROW Component="System.Xml.Linq.dll" ComponentId="{C0879714-A535-4686-88E6-8150B1298FF1}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
-    <ROW Component="System.Xml.ReaderWriter.dll" ComponentId="{9F5D1C67-5021-44E9-B95F-09944BD38C63}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.ReaderWriter.dll"/>
-    <ROW Component="System.Xml.Serialization.dll" ComponentId="{0D2DCDF9-4807-4342-9897-AF724B9D55B3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.Serialization.dll"/>
-    <ROW Component="System.Xml.XDocument.dll" ComponentId="{53A0B74A-2126-4C5D-AFD2-0FA4274D13EC}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XDocument.dll"/>
-    <ROW Component="System.Xml.XPath.XDocument.dll" ComponentId="{C44AC85B-8FE6-478A-94AD-8A7BCC0C4CDC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Xml.XPath.XDocument.dll"/>
-    <ROW Component="System.Xml.XPath.dll" ComponentId="{5D6478D0-DF71-4D89-9292-9D2A4DA81CAC}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XPath.dll"/>
-    <ROW Component="System.Xml.XmlDocument.dll" ComponentId="{95774B60-330C-4F5B-9925-13D7251A6064}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XmlDocument.dll"/>
-    <ROW Component="System.Xml.XmlSerializer.dll" ComponentId="{791A22E4-9930-4F76-A54F-7CE4E38253E4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XmlSerializer.dll"/>
-    <ROW Component="System.Xml.dll" ComponentId="{37587DF6-8858-4670-B7EE-C05800FAFD56}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.dll"/>
-    <ROW Component="System.dll" ComponentId="{109B2EB0-3C7B-4EFD-A1F0-65892CF332E4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.dll"/>
-    <ROW Component="WebView2Loader.dll" ComponentId="{8ED13199-338B-4B3C-9643-1D5E4C360721}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="WebView2Loader.dll"/>
-    <ROW Component="WinRT.Runtime.dll" ComponentId="{2A0E5BE5-A2E7-4B99-9CB9-FF5264438ED5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="WinRT.Runtime.dll"/>
-    <ROW Component="WinUIEx.dll" ComponentId="{A79A8B39-7791-46F9-A5EF-62FC7889CFB4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="WinUIEx.dll"/>
-    <ROW Component="WindowsBase.dll" ComponentId="{3F0AB75F-6817-4F50-8E2E-4765D8176E79}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="WindowsBase.dll"/>
-    <ROW Component="appsettings.json" ComponentId="{D4D4A37F-F816-4D64-B01E-F9A13462B4BB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="appsettings.json" Type="0"/>
-    <ROW Component="clretwrc.dll" ComponentId="{D5A15F02-D51A-42CA-86A5-E7B26D33648D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="clretwrc.dll"/>
-    <ROW Component="clrgc.dll" ComponentId="{637BE2C0-8000-4518-9451-725E05114EAF}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="clrgc.dll"/>
-    <ROW Component="clrjit.dll" ComponentId="{F6A12EDA-BCDD-4C06-A3BE-0C8F4F8CFF70}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="clrjit.dll"/>
-    <ROW Component="coreclr.dll" ComponentId="{8D9B4B56-A34B-45A4-8F4D-6313D7C57F31}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="coreclr.dll"/>
-    <ROW Component="createdump.exe" ComponentId="{A59692A9-9B37-4F93-9F06-04D93F4DEA4D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="createdump.exe"/>
-    <ROW Component="hostfxr.dll" ComponentId="{9DF73ED1-8427-4EAB-9731-F7EBCC52F9AB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="hostfxr.dll"/>
-    <ROW Component="hostpolicy.dll" ComponentId="{67A66EB9-0794-43F9-B877-4202B2A952ED}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="hostpolicy.dll"/>
-    <ROW Component="icomoon.ttf" ComponentId="{D9A71A92-F6E5-4C72-BEA8-1E7C6ACF32B5}" Directory_="Fonts_Dir" Attributes="0" Type="0"/>
-    <ROW Component="mscordaccore.dll" ComponentId="{21BFE7F8-00B0-48F7-82CF-CF4112BEBD90}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordaccore.dll"/>
-    <ROW Component="mscordaccore_amd64_amd64_8.0.1725.26602.dll" ComponentId="{2DD82675-FB52-4CF1-86EF-98216ADC7206}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordaccore_amd64_amd64_8.0.1725.26602.dll"/>
-    <ROW Component="mscordbi.dll" ComponentId="{D6B02ACC-AD81-4A3D-AB3A-0E67D5AA6563}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordbi.dll"/>
-    <ROW Component="mscorlib.dll" ComponentId="{B74BA410-F491-4A1E-A674-09F2381520C3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="mscorlib.dll"/>
-    <ROW Component="mscorrc.dll" ComponentId="{29662A43-BA66-4803-A019-C83477DCF611}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscorrc.dll"/>
-    <ROW Component="msquic.dll" ComponentId="{FAC28FCE-1E9D-4FAC-8CC7-F2A53E20B7A7}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="msquic.dll"/>
-    <ROW Component="netstandard.dll" ComponentId="{A9A83DF8-E760-4AAE-AD5A-9F1999833BD9}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="netstandard.dll"/>
+    <ROW Component="System.AppContext.dll" ComponentId="{D1C00D25-7894-4E5D-8C21-3C328ACE7960}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.AppContext.dll"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{0BECE77C-E253-4D13-88EB-C3E7AB47FAD3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.Collections.Concurrent.dll" ComponentId="{7AEF27BA-196F-4401-9FB1-28870D49445B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.Concurrent.dll"/>
+    <ROW Component="System.Collections.Immutable.dll" ComponentId="{54012615-9890-4B2F-AA2F-46EB0EA22B22}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.Immutable.dll"/>
+    <ROW Component="System.Collections.NonGeneric.dll" ComponentId="{CCD0D53A-5B11-4816-8ACE-73E3D8C0E4E1}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.NonGeneric.dll"/>
+    <ROW Component="System.Collections.Specialized.dll" ComponentId="{8F1DCAAF-92F5-4635-B7B5-FEF1437BACAD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.Specialized.dll"/>
+    <ROW Component="System.Collections.dll" ComponentId="{15166964-8B07-41AA-830C-08F3234CAE78}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Collections.dll"/>
+    <ROW Component="System.ComponentModel.Annotations.dll" ComponentId="{E9BEAB73-3CEA-4FEA-9E61-9F1A6D38D14E}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.Annotations.dll"/>
+    <ROW Component="System.ComponentModel.DataAnnotations.dll" ComponentId="{1E4EEEAD-72F9-4A89-9A48-1E4B8D4B99DB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ComponentModel.DataAnnotations.dll"/>
+    <ROW Component="System.ComponentModel.EventBasedAsync.dll" ComponentId="{7B721AD2-3567-42DC-870F-0B1CD9CEE0C7}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.EventBasedAsync.dll"/>
+    <ROW Component="System.ComponentModel.Primitives.dll" ComponentId="{78DCD940-7E2D-4FCA-A455-56068509E0EA}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.Primitives.dll"/>
+    <ROW Component="System.ComponentModel.TypeConverter.dll" ComponentId="{AD28F87E-6E8B-407C-9279-31BACFF5FB9E}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.TypeConverter.dll"/>
+    <ROW Component="System.ComponentModel.dll" ComponentId="{07694CC0-B95F-4873-99F6-9A9F471FD714}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ComponentModel.dll"/>
+    <ROW Component="System.Configuration.dll" ComponentId="{2F8B02F9-0BB8-4087-9203-0E52DAF18955}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Configuration.dll"/>
+    <ROW Component="System.Console.dll" ComponentId="{177796AA-958F-4D81-9C1B-7F79FC00DBCF}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Console.dll"/>
+    <ROW Component="System.Core.dll" ComponentId="{0EBC65B1-0AB9-407F-B7EB-860808638094}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Core.dll"/>
+    <ROW Component="System.Data.Common.dll" ComponentId="{BDF12278-E70B-4BAE-87C1-AF57437159BF}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Data.Common.dll"/>
+    <ROW Component="System.Data.DataSetExtensions.dll" ComponentId="{F690EEF8-D65C-4569-A1C4-B030B075CBE5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Data.DataSetExtensions.dll"/>
+    <ROW Component="System.Data.dll" ComponentId="{A147A366-53B2-4B68-A7CD-8402A20C7354}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Data.dll"/>
+    <ROW Component="System.Diagnostics.Contracts.dll" ComponentId="{7F3E5741-3E27-4D43-B82A-DE03A4FCF637}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Contracts.dll"/>
+    <ROW Component="System.Diagnostics.Debug.dll" ComponentId="{11BE07D0-0F45-4219-BE82-7726232AF874}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Debug.dll"/>
+    <ROW Component="System.Diagnostics.DiagnosticSource.dll" ComponentId="{FCD69E9F-4DF3-486D-B6A3-FC2BC881B4F8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.DiagnosticSource.dll"/>
+    <ROW Component="System.Diagnostics.EventLog.Messages.dll" ComponentId="{2AB8CDD0-340C-4CA7-883F-6F4432D72914}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.Messages.dll"/>
+    <ROW Component="System.Diagnostics.EventLog.dll" ComponentId="{49C8B812-3119-4814-96A3-11C2F0DEC298}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.dll"/>
+    <ROW Component="System.Diagnostics.FileVersionInfo.dll" ComponentId="{D98F97C6-2268-40E5-8107-B09121F834BC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.FileVersionInfo.dll"/>
+    <ROW Component="System.Diagnostics.Process.dll" ComponentId="{3E13EA2F-5920-4790-928A-41069F773CA0}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.Process.dll"/>
+    <ROW Component="System.Diagnostics.StackTrace.dll" ComponentId="{7FE0ADCC-59FA-4D5D-A156-2431A1058E63}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.StackTrace.dll"/>
+    <ROW Component="System.Diagnostics.TextWriterTraceListener.dll" ComponentId="{0FFDF9F0-FF67-418A-88C0-65217D200B0C}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.TextWriterTraceListener.dll"/>
+    <ROW Component="System.Diagnostics.Tools.dll" ComponentId="{F4DFA6D8-9DCF-4369-A78F-3884D1327516}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Tools.dll"/>
+    <ROW Component="System.Diagnostics.TraceSource.dll" ComponentId="{A265CBF0-D634-4399-9426-AAA644D03064}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Diagnostics.TraceSource.dll"/>
+    <ROW Component="System.Diagnostics.Tracing.dll" ComponentId="{8785C191-85E4-43D6-A255-F5D370CF5632}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Diagnostics.Tracing.dll"/>
+    <ROW Component="System.Drawing.Primitives.dll" ComponentId="{EA737EC6-0887-4FF9-B784-FCE6E2825B56}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Drawing.Primitives.dll"/>
+    <ROW Component="System.Drawing.dll" ComponentId="{71E64409-AE10-4712-8B85-49D3544BFAC8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Drawing.dll"/>
+    <ROW Component="System.Dynamic.Runtime.dll" ComponentId="{9C996899-3C02-4AF1-8039-C79B26B47A20}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Dynamic.Runtime.dll"/>
+    <ROW Component="System.Formats.Asn1.dll" ComponentId="{D9837435-9CAF-44BD-9D98-4CFEDE14BD20}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Formats.Asn1.dll"/>
+    <ROW Component="System.Formats.Tar.dll" ComponentId="{431B11EA-2423-41E1-9031-78E75A19B207}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Formats.Tar.dll"/>
+    <ROW Component="System.Globalization.Calendars.dll" ComponentId="{82C53C02-598F-4B62-81AC-7EE11AD835CF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Globalization.Calendars.dll"/>
+    <ROW Component="System.Globalization.Extensions.dll" ComponentId="{76101E67-153E-4A6E-929E-2A0DBC615E38}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Globalization.Extensions.dll"/>
+    <ROW Component="System.Globalization.dll" ComponentId="{0A75712C-0C07-4D66-BB3D-84CF5B21731B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Globalization.dll"/>
+    <ROW Component="System.IO.Compression.Brotli.dll" ComponentId="{9AB1EBC3-0B3C-432E-B3EE-B2AB4DE83C23}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.Brotli.dll"/>
+    <ROW Component="System.IO.Compression.FileSystem.dll" ComponentId="{48E63A33-0CED-47C4-BD2F-FA2924342218}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.Compression.FileSystem.dll"/>
+    <ROW Component="System.IO.Compression.Native.dll" ComponentId="{4FA0D79C-5245-4424-9E93-9195C46166CE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.Native.dll"/>
+    <ROW Component="System.IO.Compression.ZipFile.dll" ComponentId="{B4536EA3-7445-40D3-B1BC-348D14134BAE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.ZipFile.dll"/>
+    <ROW Component="System.IO.Compression.dll" ComponentId="{DD73A668-4B90-4DD6-AF28-A92983CE93F3}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Compression.dll"/>
+    <ROW Component="System.IO.FileSystem.AccessControl.dll" ComponentId="{F448CA6D-2C49-496C-8183-7C1290D2EA69}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.FileSystem.AccessControl.dll"/>
+    <ROW Component="System.IO.FileSystem.DriveInfo.dll" ComponentId="{0A11FBA4-1058-42DA-8CA7-E725F6A82BC5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.FileSystem.DriveInfo.dll"/>
+    <ROW Component="System.IO.FileSystem.Primitives.dll" ComponentId="{914752A7-50D1-440A-8C08-EC5220D4000F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.FileSystem.Primitives.dll"/>
+    <ROW Component="System.IO.FileSystem.Watcher.dll" ComponentId="{CDF400F6-27F7-419E-840F-CE4F346FBE52}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.FileSystem.Watcher.dll"/>
+    <ROW Component="System.IO.FileSystem.dll" ComponentId="{8DCACA31-002D-4E87-9837-C6901F65F127}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.FileSystem.dll"/>
+    <ROW Component="System.IO.IsolatedStorage.dll" ComponentId="{FA6121AA-41EC-4002-AFD4-E109B8D4FF9B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.IsolatedStorage.dll"/>
+    <ROW Component="System.IO.MemoryMappedFiles.dll" ComponentId="{4C1602A4-C92F-43BA-8EE4-5C21AB3FF8C9}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.MemoryMappedFiles.dll"/>
+    <ROW Component="System.IO.Pipelines.dll" ComponentId="{421EC6C7-C5D1-414B-A872-90583790B909}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.Pipelines.dll"/>
+    <ROW Component="System.IO.Pipes.AccessControl.dll" ComponentId="{506E6987-2664-4695-8DB2-4B0204F09215}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.Pipes.AccessControl.dll"/>
+    <ROW Component="System.IO.Pipes.dll" ComponentId="{6AAF03DB-9BB8-4A01-ADE3-29748D453FE0}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.IO.Pipes.dll"/>
+    <ROW Component="System.IO.UnmanagedMemoryStream.dll" ComponentId="{37E1880D-1488-46D9-8711-000FDCFB6532}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.UnmanagedMemoryStream.dll"/>
+    <ROW Component="System.IO.dll" ComponentId="{FA78EEFA-7A19-45BE-96C6-1BCDBF98B2AC}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.IO.dll"/>
+    <ROW Component="System.Linq.Expressions.dll" ComponentId="{19A7A669-AE13-4829-9A2E-79A644598585}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.Expressions.dll"/>
+    <ROW Component="System.Linq.Parallel.dll" ComponentId="{3596572D-39AF-4599-A211-3BA303A2AFDB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.Parallel.dll"/>
+    <ROW Component="System.Linq.Queryable.dll" ComponentId="{A4676D01-5122-4FCE-B41D-56C05CC76A2B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.Queryable.dll"/>
+    <ROW Component="System.Linq.dll" ComponentId="{1EA46DBC-A5AB-479D-8699-4BBC1768AF9F}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Linq.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{611DCAAB-0A95-4508-9E5F-FDBC2FCD9DB2}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Net.Http.Json.dll" ComponentId="{F98BDF95-92A1-4A8C-8A7F-38B366133898}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Http.Json.dll"/>
+    <ROW Component="System.Net.Http.dll" ComponentId="{6119CCF9-BFFA-4759-91B3-160121423B66}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Http.dll"/>
+    <ROW Component="System.Net.HttpListener.dll" ComponentId="{77796F42-5486-4D78-973E-A91F3530F782}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.HttpListener.dll"/>
+    <ROW Component="System.Net.Mail.dll" ComponentId="{0EB3449E-710F-483A-99B7-D4BC0D35A5E5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Mail.dll"/>
+    <ROW Component="System.Net.NameResolution.dll" ComponentId="{96264661-E5DA-4A5E-AAA1-D6C92828289D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.NameResolution.dll"/>
+    <ROW Component="System.Net.NetworkInformation.dll" ComponentId="{0BA6DD4E-E491-4836-9B73-F65B1B1D2BDD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.NetworkInformation.dll"/>
+    <ROW Component="System.Net.Ping.dll" ComponentId="{895000D7-6668-411B-B63D-2CBD04B143DD}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Ping.dll"/>
+    <ROW Component="System.Net.Primitives.dll" ComponentId="{718EDDB6-2C00-4C82-9364-61B32660CB25}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Primitives.dll"/>
+    <ROW Component="System.Net.Quic.dll" ComponentId="{63BD204A-FA89-4F50-8445-ECAE0344651B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Quic.dll"/>
+    <ROW Component="System.Net.Requests.dll" ComponentId="{F144B4AD-2695-48B9-9834-3AD46475EBEF}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Requests.dll"/>
+    <ROW Component="System.Net.Security.dll" ComponentId="{6E8B430A-4EFA-4F58-AFCB-9DB6DBEDC32A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Security.dll"/>
+    <ROW Component="System.Net.ServicePoint.dll" ComponentId="{9BF78220-17C8-4624-B40B-CB2DA6ACF105}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.ServicePoint.dll"/>
+    <ROW Component="System.Net.Sockets.dll" ComponentId="{9809B66D-9B77-4C03-B380-33817CC6B852}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.Sockets.dll"/>
+    <ROW Component="System.Net.WebClient.dll" ComponentId="{E25220DC-AC47-44AE-8CE6-C6DE41BBDAAE}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebClient.dll"/>
+    <ROW Component="System.Net.WebHeaderCollection.dll" ComponentId="{F7EB8E4C-6AC1-48A8-A7CE-17989C7E0689}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebHeaderCollection.dll"/>
+    <ROW Component="System.Net.WebProxy.dll" ComponentId="{13A791D2-2756-48CD-A12F-B9C7785E7D09}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebProxy.dll"/>
+    <ROW Component="System.Net.WebSockets.Client.dll" ComponentId="{F60F292C-37F7-4823-AB2D-DCD5DA843BC1}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebSockets.Client.dll"/>
+    <ROW Component="System.Net.WebSockets.dll" ComponentId="{46702B9C-415B-4345-89B1-D5477CDB26A5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Net.WebSockets.dll"/>
+    <ROW Component="System.Net.dll" ComponentId="{5CD8333D-3241-4E02-AA6D-58BDA348A619}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Net.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{1790C179-94FA-4E86-9127-812DFE5E61CB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Numerics.dll" ComponentId="{CD88DEED-9890-44B2-B807-67821F9C3DCA}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Numerics.dll"/>
+    <ROW Component="System.ObjectModel.dll" ComponentId="{E088579C-9489-4BE7-846D-8B3E95938FDB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.ObjectModel.dll"/>
+    <ROW Component="System.Private.CoreLib.dll" ComponentId="{4E87BB7A-8E92-4B22-8C60-68964D0F4D52}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.CoreLib.dll"/>
+    <ROW Component="System.Private.DataContractSerialization.dll" ComponentId="{691A996F-4FF0-4D81-AF76-7B0D577CF96F}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.DataContractSerialization.dll"/>
+    <ROW Component="System.Private.Uri.dll" ComponentId="{220D74C4-0585-4536-B567-720DA9C27A5C}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.Uri.dll"/>
+    <ROW Component="System.Private.Xml.Linq.dll" ComponentId="{C88C6889-6AFE-41FC-978E-3CC1BB11E99F}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.Xml.Linq.dll"/>
+    <ROW Component="System.Private.Xml.dll" ComponentId="{3EEC8CAA-007D-4E58-AE92-02DEADC42F0F}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Private.Xml.dll"/>
+    <ROW Component="System.Reflection.DispatchProxy.dll" ComponentId="{EF525569-EBCF-45B5-B441-E6A0CC3DDFE0}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.DispatchProxy.dll"/>
+    <ROW Component="System.Reflection.Emit.ILGeneration.dll" ComponentId="{9C6EE795-8DD8-454B-A2CD-65A5A82CD1DD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Emit.ILGeneration.dll"/>
+    <ROW Component="System.Reflection.Emit.Lightweight.dll" ComponentId="{C80021D5-8E27-45DC-AD34-EF3E31457A1F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Emit.Lightweight.dll"/>
+    <ROW Component="System.Reflection.Emit.dll" ComponentId="{73CFB23A-4612-446A-9143-48A27CC8ABC7}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.Emit.dll"/>
+    <ROW Component="System.Reflection.Extensions.dll" ComponentId="{40018792-B87D-4481-B385-4AFC09AD341E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Extensions.dll"/>
+    <ROW Component="System.Reflection.Metadata.dll" ComponentId="{2F88D339-6E07-43B0-8D48-41F8BB681595}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.Metadata.dll"/>
+    <ROW Component="System.Reflection.Primitives.dll" ComponentId="{77A5F9CA-3B4D-4020-AD51-B8C2C1BA5E59}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.Primitives.dll"/>
+    <ROW Component="System.Reflection.TypeExtensions.dll" ComponentId="{FF0B6873-CEBD-458A-B19C-C9F1164774C6}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Reflection.TypeExtensions.dll"/>
+    <ROW Component="System.Reflection.dll" ComponentId="{49B9BD7A-2564-4678-8F31-23A4164C7516}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Reflection.dll"/>
+    <ROW Component="System.Resources.Reader.dll" ComponentId="{7997801C-5610-485A-9C5F-63951678EBB9}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Resources.Reader.dll"/>
+    <ROW Component="System.Resources.ResourceManager.dll" ComponentId="{FCA919C0-1DEF-4E67-A417-0468EBA5977A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Resources.ResourceManager.dll"/>
+    <ROW Component="System.Resources.Writer.dll" ComponentId="{C9BED43D-302E-46C0-9E32-981812B119C6}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Resources.Writer.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{EC8EEF5B-B4C8-4C94-8B66-47A1A29F1E27}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.VisualC.dll" ComponentId="{79323784-44DA-4A56-B2BB-A77C325BF760}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.CompilerServices.VisualC.dll"/>
+    <ROW Component="System.Runtime.Extensions.dll" ComponentId="{4017CC32-7CBF-4192-BE97-8B200F600083}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Extensions.dll"/>
+    <ROW Component="System.Runtime.Handles.dll" ComponentId="{C6215F31-B429-4329-90FF-9B97EBBDE352}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Handles.dll"/>
+    <ROW Component="System.Runtime.InteropServices.JavaScript.dll" ComponentId="{5319D419-5B91-4B02-AA07-C450E46D2B02}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.InteropServices.JavaScript.dll"/>
+    <ROW Component="System.Runtime.InteropServices.RuntimeInformation.dll" ComponentId="{00EF14F1-15C4-4C18-A386-C0F587FF31C8}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.InteropServices.RuntimeInformation.dll"/>
+    <ROW Component="System.Runtime.InteropServices.dll" ComponentId="{9BB2B0C0-4559-486A-A649-BB71E92C0EB2}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.InteropServices.dll"/>
+    <ROW Component="System.Runtime.Intrinsics.dll" ComponentId="{62822CEE-E02D-4B50-9884-FDC8E8B2ED1A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Intrinsics.dll"/>
+    <ROW Component="System.Runtime.Loader.dll" ComponentId="{BB55968A-CE88-41E2-A54F-7E83B8318DE7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Loader.dll"/>
+    <ROW Component="System.Runtime.Numerics.dll" ComponentId="{20367795-8C2A-48F5-9ADD-F60EC27726F3}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.Numerics.dll"/>
+    <ROW Component="System.Runtime.Serialization.Formatters.dll" ComponentId="{63ED90DA-792F-41D7-9BE5-39C5322E8EC8}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.Serialization.Formatters.dll"/>
+    <ROW Component="System.Runtime.Serialization.Json.dll" ComponentId="{BA365B20-59D1-44E8-A9B5-AC065E038920}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Json.dll"/>
+    <ROW Component="System.Runtime.Serialization.Primitives.dll" ComponentId="{7116F077-959A-47CB-86EE-EBFAECA26AB8}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Runtime.Serialization.Primitives.dll"/>
+    <ROW Component="System.Runtime.Serialization.Xml.dll" ComponentId="{99587C94-D5A2-46D3-9153-B968584EF05C}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.Xml.dll"/>
+    <ROW Component="System.Runtime.Serialization.dll" ComponentId="{05EA9E16-63A6-4E43-B279-5B995BB12A98}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.Serialization.dll"/>
+    <ROW Component="System.Runtime.dll" ComponentId="{387225C3-4777-495D-86E9-236B77974824}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Runtime.dll"/>
+    <ROW Component="System.Security.AccessControl.dll" ComponentId="{0A6F87E3-1927-4E3E-BD96-074CCB651EDB}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.AccessControl.dll"/>
+    <ROW Component="System.Security.Claims.dll" ComponentId="{ABB4186B-EF00-4519-9A23-C48104F5C5B2}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.Claims.dll"/>
+    <ROW Component="System.Security.Cryptography.Algorithms.dll" ComponentId="{AFB282B3-E094-4CCD-96E2-7CB48630AB71}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Algorithms.dll"/>
+    <ROW Component="System.Security.Cryptography.Cng.dll" ComponentId="{EFAD499B-B55A-419F-B7CB-A91BC1D242B7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Cng.dll"/>
+    <ROW Component="System.Security.Cryptography.Csp.dll" ComponentId="{B1B95637-6EFC-442A-98B6-4B68AE89B9E5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Csp.dll"/>
+    <ROW Component="System.Security.Cryptography.Encoding.dll" ComponentId="{C9969D3D-CFEB-4D32-8B84-F5D735D1A766}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Encoding.dll"/>
+    <ROW Component="System.Security.Cryptography.OpenSsl.dll" ComponentId="{043B19DE-1013-447A-B840-9111974D32BC}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.OpenSsl.dll"/>
+    <ROW Component="System.Security.Cryptography.Primitives.dll" ComponentId="{149C631E-6B93-4536-9DD3-5D149F969B3D}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Primitives.dll"/>
+    <ROW Component="System.Security.Cryptography.X509Certificates.dll" ComponentId="{13248AE4-2688-4C58-A55B-C3E29E85C5BB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Cryptography.X509Certificates.dll"/>
+    <ROW Component="System.Security.Cryptography.dll" ComponentId="{5DF21E57-23EA-46CC-8B28-F955775FEDD5}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.Cryptography.dll"/>
+    <ROW Component="System.Security.Principal.Windows.dll" ComponentId="{443D6063-192C-431C-AE35-51BA4B872B96}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Security.Principal.Windows.dll"/>
+    <ROW Component="System.Security.Principal.dll" ComponentId="{A061EB45-D525-4617-AF5A-91C1EDF7AABF}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.Principal.dll"/>
+    <ROW Component="System.Security.SecureString.dll" ComponentId="{537380AE-8338-4A98-AD34-F0ABA316E518}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.SecureString.dll"/>
+    <ROW Component="System.Security.dll" ComponentId="{C489C745-7951-480F-B4D1-D80573C71559}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Security.dll"/>
+    <ROW Component="System.ServiceModel.Web.dll" ComponentId="{31660C19-AABE-40B4-8576-D1AC560B6862}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ServiceModel.Web.dll"/>
+    <ROW Component="System.ServiceProcess.dll" ComponentId="{AB005E9E-CDA8-4AF0-8524-5A9F7D71C470}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ServiceProcess.dll"/>
+    <ROW Component="System.Text.Encoding.CodePages.dll" ComponentId="{54A06E38-31FC-45FD-ABC3-4F5790242F18}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Text.Encoding.CodePages.dll"/>
+    <ROW Component="System.Text.Encoding.Extensions.dll" ComponentId="{90987DC2-23A0-42FA-BB74-DFD5B142400A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Encoding.Extensions.dll"/>
+    <ROW Component="System.Text.Encoding.dll" ComponentId="{006A1F89-82E6-4E58-B029-12793F8F70F7}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Encoding.dll"/>
+    <ROW Component="System.Text.Encodings.Web.dll" ComponentId="{D0641168-BC66-4DFE-B3C9-A46A893C0AED}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Encodings.Web.dll"/>
+    <ROW Component="System.Text.Json.dll" ComponentId="{11937F70-A7EF-49F4-B20C-513279FC6EEB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Text.Json.dll"/>
+    <ROW Component="System.Text.RegularExpressions.dll" ComponentId="{C0743A41-DC01-4BB5-93F8-0441BC701119}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Text.RegularExpressions.dll"/>
+    <ROW Component="System.Threading.Channels.dll" ComponentId="{8DDB392E-4EAD-47E1-AE9B-4166C149F81A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.Channels.dll"/>
+    <ROW Component="System.Threading.Overlapped.dll" ComponentId="{ABE6CD1D-CFC5-45E1-8BB8-13C0636006CE}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Overlapped.dll"/>
+    <ROW Component="System.Threading.Tasks.Dataflow.dll" ComponentId="{D95C163F-AD96-405F-B1E5-0D001C1DB2C6}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.Tasks.Dataflow.dll"/>
+    <ROW Component="System.Threading.Tasks.Extensions.dll" ComponentId="{66D3EE0F-D05F-406E-9D05-FFD456251C77}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Tasks.Extensions.dll"/>
+    <ROW Component="System.Threading.Tasks.Parallel.dll" ComponentId="{EB2046FC-B995-4D18-9890-5605F27F18AA}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.Tasks.Parallel.dll"/>
+    <ROW Component="System.Threading.Tasks.dll" ComponentId="{651076F3-50CD-4756-9323-B0C780B6CD40}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Tasks.dll"/>
+    <ROW Component="System.Threading.Thread.dll" ComponentId="{1D9E0360-9C9B-42DF-B0B2-C53E4963AEB9}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Thread.dll"/>
+    <ROW Component="System.Threading.ThreadPool.dll" ComponentId="{16872B70-6F6D-4F8B-9C0D-3A1DCEE0F7CE}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.ThreadPool.dll"/>
+    <ROW Component="System.Threading.Timer.dll" ComponentId="{7F12ED02-9F71-49A4-BDC6-D5EC37A1A8BD}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Threading.Timer.dll"/>
+    <ROW Component="System.Threading.dll" ComponentId="{253BD54A-42F3-4C20-B09C-7BC301787F1B}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Threading.dll"/>
+    <ROW Component="System.Transactions.Local.dll" ComponentId="{33C1D9C3-3829-4989-82FE-6CB57E8EDD32}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Transactions.Local.dll"/>
+    <ROW Component="System.Transactions.dll" ComponentId="{9C8EAEB0-CDDC-44C0-914D-D7AD2E9B133B}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Transactions.dll"/>
+    <ROW Component="System.ValueTuple.dll" ComponentId="{334E2D6B-9B53-43B1-B9F3-3B1532C5D7F6}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.ValueTuple.dll"/>
+    <ROW Component="System.Web.HttpUtility.dll" ComponentId="{8C216B42-BAAD-4F01-904F-2402A4E32224}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Web.HttpUtility.dll"/>
+    <ROW Component="System.Web.dll" ComponentId="{CB86C57B-5295-4CFE-B319-3699FFEED7A3}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Web.dll"/>
+    <ROW Component="System.Windows.dll" ComponentId="{A44C882E-7DF3-4FB5-B71F-8FBB72F56E36}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Windows.dll"/>
+    <ROW Component="System.Xml.Linq.dll" ComponentId="{DF744DF9-A959-435D-9D7D-5DD3393CEBFB}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.Linq.dll"/>
+    <ROW Component="System.Xml.ReaderWriter.dll" ComponentId="{3DB2EA6D-2B0A-453E-A91A-495D7CA822F5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.ReaderWriter.dll"/>
+    <ROW Component="System.Xml.Serialization.dll" ComponentId="{728C4FB3-72CA-4C98-B18D-67F99C27E01A}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.Serialization.dll"/>
+    <ROW Component="System.Xml.XDocument.dll" ComponentId="{55DC4FC6-A982-4997-BA66-BB426B503B6C}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XDocument.dll"/>
+    <ROW Component="System.Xml.XPath.XDocument.dll" ComponentId="{DAE2149D-6C4E-40ED-96D7-95D5F2855534}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="System.Xml.XPath.XDocument.dll"/>
+    <ROW Component="System.Xml.XPath.dll" ComponentId="{6BFD3225-9D65-441D-922B-FC61471BCEE5}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XPath.dll"/>
+    <ROW Component="System.Xml.XmlDocument.dll" ComponentId="{DBE01056-9B2B-43E4-8D66-7E081075509E}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XmlDocument.dll"/>
+    <ROW Component="System.Xml.XmlSerializer.dll" ComponentId="{A7B61CBD-9542-440C-BE6D-53FB0DF42648}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.XmlSerializer.dll"/>
+    <ROW Component="System.Xml.dll" ComponentId="{C40289CE-5597-4903-B191-C3C18CC3FF08}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.Xml.dll"/>
+    <ROW Component="System.dll" ComponentId="{E18595CE-131B-4128-8518-02EAA68CAB2F}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="System.dll"/>
+    <ROW Component="WebView2Loader.dll" ComponentId="{133EC94B-8497-40E6-B8B5-6B5B4265A72C}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="WebView2Loader.dll"/>
+    <ROW Component="WinRT.Runtime.dll" ComponentId="{D449DCCD-8F24-4322-9AC9-4942122B6074}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="WinRT.Runtime.dll"/>
+    <ROW Component="WinUIEx.dll" ComponentId="{4FACDA1F-4470-4ED5-91C7-D112405E7A08}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="WinUIEx.dll"/>
+    <ROW Component="WindowsBase.dll" ComponentId="{5AE7CE48-CF0B-4770-8576-79761E593367}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="WindowsBase.dll"/>
+    <ROW Component="appsettings.json" ComponentId="{C296FD1F-A41A-4DD3-BCF6-296CCDF603F4}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="appsettings.json" Type="0"/>
+    <ROW Component="clretwrc.dll" ComponentId="{39C78713-E806-4F5A-B0B4-D44622E7977A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="clretwrc.dll"/>
+    <ROW Component="clrgc.dll" ComponentId="{674DC7ED-1C70-46C8-AE2D-0A506F0EA5E3}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="clrgc.dll"/>
+    <ROW Component="clrjit.dll" ComponentId="{84118DDC-435E-4D1D-BDDA-BA1E392094D1}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="clrjit.dll"/>
+    <ROW Component="coreclr.dll" ComponentId="{422F3024-2227-4828-B0CB-24D7E8913AB4}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="coreclr.dll"/>
+    <ROW Component="createdump.exe" ComponentId="{198FEB5C-C2EB-45E5-BC5D-BA5A52A43956}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="createdump.exe"/>
+    <ROW Component="hostfxr.dll" ComponentId="{968307E1-DB7C-49FB-89CD-FE5B58C36776}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="hostfxr.dll"/>
+    <ROW Component="hostpolicy.dll" ComponentId="{BD3B1A0D-0969-4F2C-9BA2-32E2CD565E91}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="hostpolicy.dll"/>
+    <ROW Component="icomoon.ttf" ComponentId="{21C6E9E7-4250-44FC-80E3-1147FC4CF04A}" Directory_="Fonts_Dir" Attributes="0" Type="0"/>
+    <ROW Component="mscordaccore.dll" ComponentId="{CED8416C-E078-425B-B12B-5924071D211A}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordaccore.dll"/>
+    <ROW Component="mscordaccore_amd64_amd64_8.0.1725.26602.dll" ComponentId="{CDC5B924-424D-48FB-9502-D2D91DF81E11}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordaccore_amd64_amd64_8.0.1725.26602.dll"/>
+    <ROW Component="mscordaccore_amd64_amd64_8.0.1825.31117.dll" ComponentId="{CFAE6449-86FF-4B00-A049-D38064E8135D}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordaccore_amd64_amd64_8.0.1825.31117.dll"/>
+    <ROW Component="mscordbi.dll" ComponentId="{AAF94E1A-DAAC-4092-A293-8575FF53B8DC}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscordbi.dll"/>
+    <ROW Component="mscorlib.dll" ComponentId="{7539EACB-E9BD-41CF-A379-CEFDC0E8DD62}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="mscorlib.dll"/>
+    <ROW Component="mscorrc.dll" ComponentId="{4E0AE640-F6F3-4434-8464-5BE4EC5D3723}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="mscorrc.dll"/>
+    <ROW Component="msquic.dll" ComponentId="{944C202A-A0DC-4819-AF86-858CDA8B78D3}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="msquic.dll"/>
+    <ROW Component="netstandard.dll" ComponentId="{D9958738-CB75-4974-A756-5775C8772C38}" Directory_="CalculatorInstaller_Dir" Attributes="0" KeyPath="netstandard.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
@@ -457,6 +458,7 @@
     <ROW File="Microsoft.Xaml.Interactivity.dll" Component_="Microsoft.Xaml.Interactivity.dll" FileName="MICRO~64.DLL|Microsoft.Xaml.Interactivity.dll" Attributes="0" SourcePath="Calculator-Installer\Microsoft.Xaml.Interactivity.dll" SelfReg="false"/>
     <ROW File="mscordaccore.dll" Component_="mscordaccore.dll" FileName="MSCORD~1.DLL|mscordaccore.dll" Attributes="0" SourcePath="Calculator-Installer\mscordaccore.dll" SelfReg="false"/>
     <ROW File="mscordaccore_amd64_amd64_8.0.1725.26602.dll" Component_="mscordaccore_amd64_amd64_8.0.1725.26602.dll" FileName="MSCORD~2.DLL|mscordaccore_amd64_amd64_8.0.1725.26602.dll" Attributes="0" SourcePath="Calculator-Installer\mscordaccore_amd64_amd64_8.0.1725.26602.dll" SelfReg="false"/>
+    <ROW File="mscordaccore_amd64_amd64_8.0.1825.31117.dll" Component_="mscordaccore_amd64_amd64_8.0.1825.31117.dll" FileName="MSCORD~3.DLL|mscordaccore_amd64_amd64_8.0.1825.31117.dll" Attributes="0" SourcePath="Calculator-Installer\mscordaccore_amd64_amd64_8.0.1825.31117.dll" SelfReg="false"/>
     <ROW File="mscordbi.dll" Component_="mscordbi.dll" FileName="mscordbi.dll" Attributes="0" SourcePath="Calculator-Installer\mscordbi.dll" SelfReg="false"/>
     <ROW File="mscorlib.dll" Component_="mscorlib.dll" FileName="mscorlib.dll" Attributes="0" SourcePath="Calculator-Installer\mscorlib.dll" SelfReg="false"/>
     <ROW File="mscorrc.dll" Component_="mscorrc.dll" FileName="mscorrc.dll" Attributes="0" SourcePath="Calculator-Installer\mscorrc.dll" SelfReg="false"/>
@@ -662,7 +664,7 @@
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
-    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="LICENSE.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="Installer Agreement.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
     <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
@@ -712,6 +714,9 @@
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][Manufacturer]\[ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEnvComponent">
+    <ROW Environment="Path" Name="=-*Path" Value="[~];C:\Program Files\Chill-Astro\Calculator" Component_="APPDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
@@ -799,6 +804,7 @@
     <ROW Feature_="MainFeature" Component_="Microsoft.Xaml.Interactivity.dll"/>
     <ROW Feature_="MainFeature" Component_="mscordaccore.dll"/>
     <ROW Feature_="MainFeature" Component_="mscordaccore_amd64_amd64_8.0.1725.26602.dll"/>
+    <ROW Feature_="MainFeature" Component_="mscordaccore_amd64_amd64_8.0.1825.31117.dll"/>
     <ROW Feature_="MainFeature" Component_="mscordbi.dll"/>
     <ROW Feature_="MainFeature" Component_="mscorlib.dll"/>
     <ROW Feature_="MainFeature" Component_="mscorrc.dll"/>
@@ -975,7 +981,7 @@
     <ROW Feature_="MainFeature" Component_="WinUIEx.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="WindowIcon.exe" SourcePath="..\Chill-Astro\Calculator\Calculator\Assets\WindowIcon.ico" Index="0"/>
+    <ROW Name="WindowIcon_1.exe" SourcePath="Calculator\Assets\WindowIcon.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -1035,8 +1041,8 @@
     <ROW Registry="Windows" Root="-1" Key="Software\Microsoft\Windows" Name="\"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="Calculator" Directory_="DesktopFolder" Name="CALCUL~1|Calculator" Component_="Calculator.exe" Target="[#Calculator.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="CalculatorInstaller_Dir"/>
-    <ROW Shortcut="Calculator_1" Directory_="StartMenuFolder" Name="CALCUL~1|Calculator" Component_="Calculator.exe" Target="[#Calculator.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="CalculatorInstaller_Dir"/>
+    <ROW Shortcut="Calculator" Directory_="DesktopFolder" Name="CALCUL~1|Calculator" Component_="Calculator.exe" Target="[#Calculator.exe]" Description="Calculator by Chill-Astro" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="CalculatorInstaller_Dir"/>
+    <ROW Shortcut="Calculator_1" Directory_="StartMenuFolder" Name="CALCUL~1|Calculator" Component_="Calculator.exe" Target="[#Calculator.exe]" Description="Calculator by Chill-Astro" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="CalculatorInstaller_Dir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
