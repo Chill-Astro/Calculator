@@ -6,9 +6,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
         <ToolTipService.ToolTip>
             <ToolTip Content="Currency rates are provided by exchangerate-api.com. Use the refresh button to update the list."/>
         </ToolTipService.ToolTip>
+
         <Button
             Width="35"
             Height="35"
@@ -32,8 +37,8 @@
             Margin="0,20,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Spacing="10">
-            <ProgressBar x:Name="LoadingProgressBar" Width="130" IsIndeterminate="True" ShowPaused="False" ShowError="False" Visibility="Collapsed"/>
+            Spacing="10"
+            Grid.Row="0">
             <TextBlock
                 HorizontalAlignment="Center"
                 Style="{StaticResource BaseTextBlockStyle}"
@@ -79,5 +84,14 @@
                 Style="{StaticResource BodyTextBlockStyle}"
                 Text="OUTPUT AREA" />
         </StackPanel>
+
+        <ProgressBar x:Name="LoadingProgressBar"
+                     Grid.Row="1"
+                     Height="4"
+                     HorizontalAlignment="Stretch"
+                     VerticalAlignment="Bottom"
+                     Margin="0"
+                     IsIndeterminate="True"
+                     Visibility="Collapsed"/>
     </Grid>
 </Page>
