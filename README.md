@@ -11,6 +11,8 @@ Installer Version supports `calculator.exe` only.
 
 Currently at **v11.26100.10.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
+**v11.26100.11.0** in Development.
+
 ---
 
 ## Key Features :
@@ -97,6 +99,7 @@ Calculator is now Deployed and now it shall appear in the Start Menu.
 - [Icomoon](https://icomoon.io/) : For the Base Calculator Icon and Produce the `.ttf` file for the Icons.
 - [Microsoft Calculator](https://github.com/microsoft/calculator) : For Square Root and Cube Root Button Icons. Also this inspired me to make this app.
 - [Advanced Installer Free](https://www.advancedinstaller.com) : For Creating an Installer for it's Complex Structure.
+- [ExchangeRate-API](https://app.exchangerate-api.com) : For Currency Conversion. [ Free Plan, so Currency Conversion is Limited ]
 
 ---
 
