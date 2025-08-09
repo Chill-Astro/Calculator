@@ -26,8 +26,8 @@
 	  <AppxPackageDir>C:\Users\Master\Downloads\</AppxPackageDir>
 	  <PlatformTarget>x64</PlatformTarget>
 	  <WindowsPackageType>MSIX</WindowsPackageType>
-	  <Version>11.26100.10.0</Version>
-	  <AssemblyVersion>11.26100.10.0</AssemblyVersion>
+	  <Version>11.26100.11.0</Version>
+	  <AssemblyVersion>11.26100.11.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,10 +36,11 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.7" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.7.250606001" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.WinUI.Managed" Version="3.0.0" />
-    <PackageReference Include="WinUIEx" Version="2.5.1" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="WinUIEx" Version="2.6.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -58,4 +59,20 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
+  
+  <ItemGroup>
+    <Compile Remove="C:\Users\Master\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\include\DeploymentManagerAutoInitializer.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="C:\Users\Master\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\include\WindowsAppSDK-VersionInfo.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="C:\Users\Master\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\include\WindowsAppSDK-VersionInfo.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="C:\Users\Master\.nuget\packages\microsoft.windowsappsdk\1.7.250606001\buildTransitive\..\include\DeploymentManagerAutoInitializer.cs" />
+  </ItemGroup>
 </Project>

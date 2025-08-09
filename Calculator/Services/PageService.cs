@@ -69,6 +69,7 @@ public class PageService : IPageService
         Configure<UnitConverterViewModel, UnitConverterPage>();
         Configure<BaseConverterViewModel, BaseConverterPage>();
         Configure<QuadEqnViewModel, QuadEqnPage>();
+        Configure<CurrencyViewModel, CurrencyPage>();
     }
 
     public Type GetPageType(string key)

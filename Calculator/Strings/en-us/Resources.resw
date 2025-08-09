@@ -198,4 +198,7 @@
   <data name="Shell_QuadEqn.Content" xml:space="preserve">
     <value>Quadratic Equation Solver</value>
   </data>
+  <data name="Shell_Currency.Content" xml:space="preserve">
+    <value>Currency Convertor</value>
+  </data>
 </root>
