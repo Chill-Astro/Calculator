@@ -92,6 +92,22 @@ Calculator is now Deployed and now it shall appear in the Start Menu.
 
 ---
 
+## Adding Currency Convertor :
+
+Calculator uses [ExchangeRate-API](https://app.exchangerate-api.com) for Currency conversion. An API key must be mannualy added in the region indicated.
+
+- Open `appsettings.json` : Paste the Code into here.
+
+    {
+        "LocalSettingsOptions": {
+        "ApplicationDataFolder": "Calculator/ApplicationData",
+        "LocalSettingsFile": "LocalSettings.json"
+      },
+      "CurrencyApiKey": "Enter you API Key here...."
+    }
+
+- Buid and Run the Application as shown above.
+
 ## Icon Sources and Credits :
 
 - [Icons8](https://icons8.com) : For all the Mensuration and Quadratic Equation Solver Menu Logos, 
