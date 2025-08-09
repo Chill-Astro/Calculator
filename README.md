@@ -98,13 +98,13 @@ Calculator uses [ExchangeRate-API](https://app.exchangerate-api.com) for Currenc
 
 - Open `appsettings.json` : Paste the Code into here.
 
-    {
-        "LocalSettingsOptions": {
-        "ApplicationDataFolder": "Calculator/ApplicationData",
-        "LocalSettingsFile": "LocalSettings.json"
-      },
-      "CurrencyApiKey": "Enter you API Key here...."
-    }
+        {
+          "LocalSettingsOptions": {
+            "ApplicationDataFolder": "Calculator/ApplicationData",
+            "LocalSettingsFile": "LocalSettings.json"
+          },
+          "CurrencyApiKey": "9ca49724b037fd8cbdd44c08"
+        }
 
 - Buid and Run the Application as shown above.
 
