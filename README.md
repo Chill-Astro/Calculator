@@ -103,7 +103,7 @@ Calculator uses [ExchangeRate-API](https://app.exchangerate-api.com) for Currenc
             "ApplicationDataFolder": "Calculator/ApplicationData",
             "LocalSettingsFile": "LocalSettings.json"
           },
-          "CurrencyApiKey": "9ca49724b037fd8cbdd44c08"
+          "CurrencyApiKey": "Enter API Key Here"
         }
 
 - Buid and Run the Application as shown above.
