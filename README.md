@@ -11,7 +11,13 @@ Installer Version supports `calculator.exe` only.
 
 Currently at **v11.26100.10.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
 
-**v11.26100.11.0** in Development.
+**v11.26100.11.0** in Development [ PAUSED ].
+
+---
+
+## NOTICE :
+
+I am currently unable to update and maintain this project due to my upcoming ICSE Exams. Don't worry the project isn't abandoned. It will be updated after ICSE 2026 Examinations are over. Also there are plans to publish this app to Microsodt Store. I am excited to show this to you!
 
 ---
 
