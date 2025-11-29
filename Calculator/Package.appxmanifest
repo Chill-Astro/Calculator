@@ -20,7 +20,7 @@
 
 	<Properties>
 		<DisplayName>Calculator</DisplayName>
-		<PublisherDisplayName>Chill-Astro</PublisherDisplayName>
+		<PublisherDisplayName>Chill-Astro Software</PublisherDisplayName>
 		<Logo>Assets\StoreLogo.png</Logo>
 	</Properties>
 
