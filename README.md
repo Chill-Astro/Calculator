@@ -45,13 +45,13 @@ I am currently unable to update and maintain this project due to my upcoming ICS
 
 - Image Preview :
 
-![image](https://github.com/user-attachments/assets/1869715f-d336-4efa-a9fc-f8f8c6a87b5b)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fde63b84-3529-4261-814b-2b7c85022ece" />
 
-- History Preview :
+- History Preview [ TO BE UPDATED ] :
 
 https://github.com/user-attachments/assets/624ade09-6050-4a4e-965d-7ef7938f4c1e
 
-- Scripted Actions Preview :
+- Scripted Actions Preview [ TO BE UPDATED ] :
 
 https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
@@ -71,10 +71,10 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ---
 
-## Building from Source :
+## Building from Source [ Screenshots are from Visual Studio 2022 ]  :
 
-- Install Visual Studio 2026 with **WinUI Application Development** and **.NET Desktop Development** workloads.
-  - Windows 11 is Recommended. [ Build 26100 + is Best for Development ]
+- Install Visual Studio 2026 with **WinUI Application Development** and **.NET Desktop Development** workloads. [ Visual Studio 2022 can also be used ].
+  - Windows 11.
   - [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) is recommended for contributing.
   - .NET 10.0 Runtime LTS is must.
   - Get the latest Windows 11 SDK [26100.xxxx].
