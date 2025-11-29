@@ -9,15 +9,15 @@ It can also be run from Terminal using App Execution Aliases [ .msix version ]. 
 
 Installer Version supports `calculator.exe` only.
 
-Currently at **v11.26100.10.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
+Currently at **v11.26100.11.0**, and available for **Windows 11** ONLY.
 
-**v11.26100.11.0** in Development [ PAUSED ].
+**v11.26100.12.0** will be Developed.
 
 ---
 
 ## NOTICE :
 
-I am currently unable to update and maintain this project due to my upcoming ICSE Exams. Don't worry the project isn't abandoned. It will be updated after ICSE 2026 Examinations are over. Also there are plans to publish this app to Microsodt Store. I am excited to show this to you!
+I am currently unable to update and maintain this project due to my upcoming ICSE Exams. Don't worry the project isn't abandoned. It will be updated after ICSE 2026 Examinations are over. Also there are plans to publish this app to Microsoft Store. I am excited to show this to you!
 
 ---
 
@@ -73,10 +73,10 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ## Building from Source :
 
-- Install Visual Studio 2022 with **WinUI Application Development** and **.NET Desktop Development** workloads.
+- Install Visual Studio 2026 with **WinUI Application Development** and **.NET Desktop Development** workloads.
   - Windows 11 is Recommended. [ Build 26100 + is Best for Development ]
   - [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) is recommended for contributing.
-  - .NET 8.0 Runtime LTS is must.
+  - .NET 10.0 Runtime LTS is must.
   - Get the latest Windows 11 SDK [26100.xxxx].
   - Commnity Edition is sufficient for contributing and testing. Pro and Enterprise Editions can also be used.
   - Github Copilot and Live Share can be skipped for Storage Saving.
