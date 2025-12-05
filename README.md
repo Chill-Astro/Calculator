@@ -5,15 +5,15 @@
 
 <div align="center">
   
-It's a Simple Calculator Elevated with Powerful `Scripted Actions`. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
+A **Windows 11** native **WinUI 3 calculator** application that is **Elevated with Powerful Scripted Actions**. This utility combines a modern, clean interface with the ability to perform complex calculations across **Mensuration, Finance, and Unit Conversions**, making it significantly more powerful than standard calculators.
   
-App Execution Aliases for `Msix` Release : `calc+.exe` & `calculator.exe`.
+**Target OS:** **Windows 11** ONLY.  |  **Latest Stable Version:** **v11.26100.11.0**
 
-`Installer` Release supports `calculator.exe` only.
+**App Execution Aliases**
 
-Currently at **v11.26100.11.0**, and available for **Windows 11** ONLY.
+**Msix Release:** `calc+.exe` & `calculator.exe` 
 
-**v11.26100.12.0** will be Developed Soon.
+**Installer Release:** `calculator.exe`
 
 </div>
 
