@@ -3,15 +3,19 @@
 </p>
 <h1 align="center">Calculator</h1>
 
-It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
+<div align="center">
+  
+It's a Simple Calculator Elevated with Powerful `Scripted Actions`. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
+  
+App Execution Aliases for `Msix` Release : `calc+.exe` & `calculator.exe`.
 
-It can also be run from Terminal using App Execution Aliases [ .msix version ]. These are `calc+.exe`, `calculator.exe`.
-
-Installer Version supports `calculator.exe` only.
+`Installer` Release supports `calculator.exe` only.
 
 Currently at **v11.26100.11.0**, and available for **Windows 11** ONLY.
 
-**v11.26100.12.0** will be Developed.
+**v11.26100.12.0** will be Developed Soon.
+
+</div>
 
 ---
 
@@ -35,7 +39,7 @@ I am currently unable to update and maintain this project due to my upcoming ICS
 
 ---
 
-### Install Calculator [ Installer ] from Winget :
+## Install Calculator [ Installer ] from Winget :
       
       winget install Calculator.unp
 
