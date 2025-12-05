@@ -25,6 +25,36 @@ I am currently unable to update and maintain this project due to my upcoming ICS
 
 ---
 
+## Scripted Actions Included [ as of v11.26100.11.0 ] :
+
+- Base Calculator UI.
+- Scientific Calculator UI [ "Possibility" for v11.26100.12.0 ]
+- Convertors :
+  * Unit Convertor
+  * Currency Convertor
+  * Base Convertor
+- Mensuration :
+  * Heron's Formula
+  * Perimeter Calculator
+  * Area Calculator
+  * Volume Calculator
+  * Total Surface Area
+  * Curved Surface Area
+  * Diagonal Calculator
+- Algebra :
+  * Quadratic Equation Solver  
+- Finance :
+  * Simple Interest
+  * Compound Interest
+  * Discounted Price Calculator
+- Extras :
+  * Age Calculator
+  * Date Difference Calculator
+  * Factorial Calculator
+  * Approximation
+  * Prime No. Checker
+  * Right Triangle Checker
+
 ## Key Features :
 
 - Simple and Clean GUI. ✅
