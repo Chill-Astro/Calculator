@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="22.9" version="23.2" Modules="simple" RootPath="." Language="en" Id="{AA8B8686-22C0-4333-8E8A-9DCF1D68DA44}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.9" version="23.3" Modules="simple" RootPath="." Language="en" Id="{AA8B8686-22C0-4333-8E8A-9DCF1D68DA44}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_APP_FILE" Value="[#Calculator.exe]"/>
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
@@ -16,10 +16,10 @@
     <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/Chill-Astro/Calculator/releases"/>
     <ROW Property="CTRLS" Value="2"/>
     <ROW Property="Manufacturer" Value="Chill-Astro Software"/>
-    <ROW Property="ProductCode" Value="1033:{6A18925B-6102-457A-838E-C94880ED8BA8} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{1709EB8D-CF14-4AD9-BA7D-FFBECACD826C} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="Calculator"/>
-    <ROW Property="ProductVersion" Value="11.26100.11.0" Options="32"/>
+    <ROW Property="ProductVersion" Value="11.26100.12.0" Options="32"/>
     <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
     <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
@@ -54,7 +54,7 @@
     <ROW Component="ProductInformation" Value="{B51E9377-2AE5-4EE7-ADED-97E07C073DD8}"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{3D8CCD82-0C5F-409B-A55F-9054195E711D}" Directory_="APPDIR" Attributes="260" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_CustomARPName" ComponentId="{524CB2E9-ACC5-43D4-9C22-447F15F8BAF9}" Directory_="APPDIR" Attributes="260" KeyPath="DisplayName" Options="1"/>
     <ROW Component="AI_DisableModify" ComponentId="{E2B8C555-1EFB-42BF-8C54-0395EB0B1332}" Directory_="APPDIR" Attributes="260" KeyPath="NoModify" Options="1"/>
     <ROW Component="APPDIR" ComponentId="{229DC981-27BF-436C-B670-C1F4836940D7}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="Calculator.Core.dll" ComponentId="{90A31E01-F6AE-4843-8B82-C27902BFB806}" Directory_="CalculatorInstaller_Dir" Attributes="256" KeyPath="Calculator.Core.dll"/>
