@@ -3,23 +3,57 @@
 </p>
 <h1 align="center">Calculator</h1>
 
-It's a Simple Calculator Elevated with Powerful Scripted Actions. This simple yet intuitive GUI application combines a clean interface with the ability to perform complex calculations via custom scripts, making it significantly more powerful than standard calculators.
+<div align="center">
+  
+A **Windows 11** native **WinUI 3 calculator** application that is **Elevated with Powerful Scripted Actions**. This utility combines a modern, clean interface with the ability to perform complex calculations across **Mensuration, Finance, and Unit Conversions**, making it significantly more powerful than standard calculators.
+  
+**Target OS:** **Windows 11** ONLY.  |  **Latest Stable Version:** **v11.26100.11.0**
 
-It can also be run from Terminal using App Execution Aliases [ .msix version ]. These are `calc+.exe`, `calculator.exe`.
+**App Execution Aliases**
 
-Installer Version supports `calculator.exe` only.
+**Msix Release:** `calc+.exe` & `calculator.exe` 
 
-Currently at **v11.26100.10.0**, and available for **Windows 11 and Windows 10 [ 20H2+ ]**.
+**Installer Release:** `calculator.exe`
 
-**v11.26100.11.0** in Development [ PAUSED ].
+</div>
 
 ---
 
 ## NOTICE :
 
-I am currently unable to update and maintain this project due to my upcoming ICSE Exams. Don't worry the project isn't abandoned. It will be updated after ICSE 2026 Examinations are over. Also there are plans to publish this app to Microsodt Store. I am excited to show this to you!
+I am currently unable to update and maintain this project due to my upcoming ICSE Exams. Don't worry the project isn't abandoned. It will be updated after ICSE 2026 Examinations are over. Also there are plans to publish this app to Microsoft Store. I am excited to show this to you!
 
 ---
+
+## Scripted Actions Included [ as of v11.26100.11.0 ] :
+
+- Base Calculator UI.
+- Scientific Calculator UI [ "Possibility" for v11.26100.12.0 ]
+- Convertors :
+  * Unit Convertor
+  * Currency Convertor
+  * Base Convertor
+- Mensuration :
+  * Heron's Formula
+  * Perimeter Calculator
+  * Area Calculator
+  * Volume Calculator
+  * Total Surface Area
+  * Curved Surface Area
+  * Diagonal Calculator
+- Algebra :
+  * Quadratic Equation Solver  
+- Finance :
+  * Simple Interest
+  * Compound Interest
+  * Discounted Price Calculator
+- Extras :
+  * Age Calculator
+  * Date Difference Calculator
+  * Factorial Calculator
+  * Approximation
+  * Prime No. Checker
+  * Right Triangle Checker
 
 ## Key Features :
 
@@ -35,7 +69,7 @@ I am currently unable to update and maintain this project due to my upcoming ICS
 
 ---
 
-### Install Calculator [ Installer ] from Winget :
+## Install Calculator [ Installer ] from Winget :
       
       winget install Calculator.unp
 
@@ -45,13 +79,13 @@ I am currently unable to update and maintain this project due to my upcoming ICS
 
 - Image Preview :
 
-![image](https://github.com/user-attachments/assets/1869715f-d336-4efa-a9fc-f8f8c6a87b5b)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fde63b84-3529-4261-814b-2b7c85022ece" />
 
-- History Preview :
+- History Preview [ TO BE UPDATED ] :
 
 https://github.com/user-attachments/assets/624ade09-6050-4a4e-965d-7ef7938f4c1e
 
-- Scripted Actions Preview :
+- Scripted Actions Preview [ TO BE UPDATED ] :
 
 https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
@@ -71,12 +105,12 @@ https://github.com/user-attachments/assets/870b4683-0e88-4f46-b4e2-9220e19e9a86
 
 ---
 
-## Building from Source :
+## Building from Source [ Screenshots are from Visual Studio 2022 ]  :
 
-- Install Visual Studio 2022 with **WinUI Application Development** and **.NET Desktop Development** workloads.
-  - Windows 11 is Recommended. [ Build 26100 + is Best for Development ]
+- Install Visual Studio 2026 with **WinUI Application Development** and **.NET Desktop Development** workloads. [ Visual Studio 2022 can also be used ].
+  - Windows 11.
   - [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler) is recommended for contributing.
-  - .NET 8.0 Runtime LTS is must.
+  - .NET 10.0 Runtime LTS is must.
   - Get the latest Windows 11 SDK [26100.xxxx].
   - Commnity Edition is sufficient for contributing and testing. Pro and Enterprise Editions can also be used.
   - Github Copilot and Live Share can be skipped for Storage Saving.
